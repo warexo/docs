@@ -6,7 +6,7 @@ Dieses Handbuch stellt den allgemeinen Leitfaden für die Verwendung von Warexo 
 finden oder wenn etwas unklar ist schreiben Sie uns bitte eine E-Mail an hilfe@aggrosoft.de oder erstellen Sie ein
 Support Ticket.
 
-Verbesserungsvorschläge können gerne auch per Github Pull Request erstellt werden.
+Verbesserungsvorschläge können gerne auch per `Github <https://www.github.com/warexo/docs>`__ Pull Request erstellt werden.
 
 .. toctree::
    :caption: Inhalt
