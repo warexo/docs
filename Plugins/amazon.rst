@@ -125,7 +125,7 @@ Suchbegriffe die für alle Artikel zusätzlich mit übertragen werden
 Bestellnummernkreis
 ^^^^^^^^^^^^^^^^^^^
 
-Wenn gewünscht spezieller Bestellnummernkreis für die Aufträge die über Amazon importiert werden (siehe `Nummernkreise <http://docs.aggrowawi.de/allgemein/nummernkreise/>`__)
+Wenn gewünscht spezieller Bestellnummernkreis für die Aufträge die über Amazon importiert werden (siehe `Nummernkreise <http://docs.warexo.de/allgemein/nummernkreise/>`__)
 
 Max. Anzahl der zugeordneten Produktoptionen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

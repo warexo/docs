@@ -45,7 +45,7 @@ Sondervariablen
 
    ##INVOICE_DATE##
 
-Weitere Informationen zu Twig finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/>`__ und im entsprechenden `Handbucheintrag zu Twig <https://docs.aggrowawi.de/dokumente/twig/>`__. Die wichtigsten Variablen innerhalb der Dokumente sind in den einzelnen Einträgen `im Handbuch in der Kategorie Variablen <https://docs.aggrowawi.de/themen/dokumente/variablen/>`__ zu finden.
+Weitere Informationen zu Twig finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/>`__ und im entsprechenden `Handbucheintrag zu Twig <https://docs.warexo.de/dokumente/twig/>`__. Die wichtigsten Variablen innerhalb der Dokumente sind in den einzelnen Einträgen `im Handbuch in der Kategorie Variablen <https://docs.warexo.de/themen/dokumente/variablen/>`__ zu finden.
 
 Dokumentenvorlage ersetzen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -31,7 +31,7 @@ Auf welche Art von Daten bezieht sich das Event, die Schaltfläche taucht in den
 Workflow verknüpfen
 ~~~~~~~~~~~~~~~~~~~
 
-Erstellen Sie einen neuen Workflow (siehe `Workflows <https://docs.aggrowawi.de/automatisierung/workflows/>`__) und wählen Sie als Event das eben erstellte Workflow Event aus. Es erscheint unter seinem Titel in der Liste der Events. Legen Sie die gewünschten Aktionen und Bedingungen fest.
+Erstellen Sie einen neuen Workflow (siehe `Workflows <https://docs.warexo.de/automatisierung/workflows/>`__) und wählen Sie als Event das eben erstellte Workflow Event aus. Es erscheint unter seinem Titel in der Liste der Events. Legen Sie die gewünschten Aktionen und Bedingungen fest.
 
 Workflow Event auslösen
 ~~~~~~~~~~~~~~~~~~~~~~~

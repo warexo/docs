@@ -6,7 +6,7 @@ Gutscheine
 :slug: gutscheine-einstellungen
 :status: published
 
-Für weitere Informationen wie Gutscheinserien und Gutscheine erstellt werden springen Sie bitte zum Handbucheintrag für Gutscheinserien\ `. <https://docs.aggrowawi.de/funktionen/gutscheine/>`__
+Für weitere Informationen wie Gutscheinserien und Gutscheine erstellt werden springen Sie bitte zum Handbucheintrag für Gutscheinserien\ `. <https://docs.warexo.de/funktionen/gutscheine/>`__
 
 Einstellungen
 ~~~~~~~~~~~~~

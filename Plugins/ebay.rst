@@ -81,7 +81,7 @@ Text der an alle Artikelbeschreibungen bei Amazon mit angehangen wird
 Bestellnummernkreis
 ^^^^^^^^^^^^^^^^^^^
 
-Alternativer Bestellnummernkreis für eBay Aufträge die importiert werden (siehe `Nummernkreise <https://docs.aggrowawi.de/allgemein/nummernkreise/>`__)
+Alternativer Bestellnummernkreis für eBay Aufträge die importiert werden (siehe `Nummernkreise <https://docs.warexo.de/allgemein/nummernkreise/>`__)
 
 Lagerbestand nur im Cronjob exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

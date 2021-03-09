@@ -6,7 +6,7 @@ Gutscheine
 :slug: gutscheine
 :status: published
 
-Warexo bietet Ihnen eine umfangreiche Funktion um Gutscheine innerhalb des Systems anzulegen. Die Gutscheine können in `Angeboten <https://docs.aggrowawi.de/auftragsbearbeitung/angebote-anlegen/>`__, im `Webshop <https://docs.aggrowawi.de/daten-im-export/webshop/>`__ und im `Kassensystem <https://docs.aggrowawi.de/point-of-sale-pos/einrichtung/>`__ genutzt werden. Gutscheine werden immer in Serien zusammengefasst um die Verwaltung zu vereinfachen. Um die Gutscheinverwaltung zu öffnen navigieren Sie zum Menüpunkt "Einstellungen" => "Gutscheine". Weitere Einstellungen zu Gutscheinen finden Sie in den zugehörigen `Plugin Einstellungen. <https://docs.aggrowawi.de/plugins/gutscheine-einstellungen/>`__
+Warexo bietet Ihnen eine umfangreiche Funktion um Gutscheine innerhalb des Systems anzulegen. Die Gutscheine können in `Angeboten <https://docs.warexo.de/auftragsbearbeitung/angebote-anlegen/>`__, im `Webshop <https://docs.warexo.de/daten-im-export/webshop/>`__ und im `Kassensystem <https://docs.warexo.de/point-of-sale-pos/einrichtung/>`__ genutzt werden. Gutscheine werden immer in Serien zusammengefasst um die Verwaltung zu vereinfachen. Um die Gutscheinverwaltung zu öffnen navigieren Sie zum Menüpunkt "Einstellungen" => "Gutscheine". Weitere Einstellungen zu Gutscheinen finden Sie in den zugehörigen `Plugin Einstellungen. <https://docs.warexo.de/plugins/gutscheine-einstellungen/>`__
 
 Gutscheinserie erstellen
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,7 +94,7 @@ Nachdem Sie die Gutscheinserie erstellt haben können Sie Gutscheine für diese 
 Zufallsnummern generieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn diese Option aktiviert ist wird für jeden Gutschein automatisch eine Alphanumerische Gutscheinnummer erzeugt. Die Länge dieser Nummer können Sie in den `Plugin Einstellungen des Gutschein Plugins <https://docs.aggrowawi.de/plugins/gutscheine-einstellungen/>`__ beeinflussen.
+Wenn diese Option aktiviert ist wird für jeden Gutschein automatisch eine Alphanumerische Gutscheinnummer erzeugt. Die Länge dieser Nummer können Sie in den `Plugin Einstellungen des Gutschein Plugins <https://docs.warexo.de/plugins/gutscheine-einstellungen/>`__ beeinflussen.
 
 Gutscheinnummer
 ^^^^^^^^^^^^^^^

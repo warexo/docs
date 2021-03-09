@@ -5,7 +5,7 @@ Corona-Steuerhilfegesetz
 :category: Allgemein
 :slug: corona-steuerhilfegesetz
 :status: published
-:attachments: wp-content/uploads/2020/06/Screenshot_2020-06-10-Warexo-Acme-Store2.png
+:attachments: /_static/img/screenshots/Screenshot_2020-06-10-Warexo-Acme-Store2.png
 
 Am 28. Mai 2020 hat der Deutsche Bundestag den Gesetzesentwurf der Regierungskoalition zur Umsetzung steuerlicher Hilfsmaßnahmen zur Bewältigung der Corona-Krise (sog. „Corona-Steuerhilfegesetz“) beschlossen. die Zustimmung durch den Deutschen Bundesrat erfolgte bereits wenige Tage nach dem Bundestag nun am 5. Juni 2020.
 
@@ -244,6 +244,6 @@ Wir übernehmen keine Haftung für jegliche entstandenen Schäden die durch unsa
 
 Bei Fragen kontaktieren Sie uns bitte wie gewohnt über das Ticket System.
 
-.. |image0| image:: {static}wp-content/uploads/2020/06/Screenshot_2020-06-10-Warexo-Acme-Store2.png
+.. |image0| image:: /_static/img/screenshots/Screenshot_2020-06-10-Warexo-Acme-Store2.png
    :class: wp-image-1942
 

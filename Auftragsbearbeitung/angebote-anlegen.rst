@@ -60,7 +60,7 @@ Die Währung die für dieses Angebot verwendet werden soll.
 Geplantes Versanddatum
 ''''''''''''''''''''''
 
-Wenn Sie ein geplantes Versanddatum angeben können Sie über die Workflow Aktion "Geplantes Versanddatum erreicht" eigene Funktionen ausführen. Hierzu muss ein entsprechender `Workflow <https://docs.aggrowawi.de/automatisierung/workflows/>`__ konfiguriert werden.
+Wenn Sie ein geplantes Versanddatum angeben können Sie über die Workflow Aktion "Geplantes Versanddatum erreicht" eigene Funktionen ausführen. Hierzu muss ein entsprechender `Workflow <https://docs.warexo.de/automatisierung/workflows/>`__ konfiguriert werden.
 
 Felder
 ''''''
@@ -206,7 +206,7 @@ Nachdem Sie das Angebot gespeichert haben können Sie über die Schaltfläche [w
 Angebote annehmen
 ^^^^^^^^^^^^^^^^^
 
-Wenn Sie einen Auftrag für dieses Angebot anlegen möchten klicken Sie die Schaltfläche [wawibtn]Auftrag anlegen[/wawibtn] - der zugehörige Auftrag wird angelegt und Sie werden automatisch zum `Auftragsbildschirm <https://docs.aggrowawi.de/warenausgang/auftraege-bearbeiten/>`__ weiter geleitet.
+Wenn Sie einen Auftrag für dieses Angebot anlegen möchten klicken Sie die Schaltfläche [wawibtn]Auftrag anlegen[/wawibtn] - der zugehörige Auftrag wird angelegt und Sie werden automatisch zum `Auftragsbildschirm <https://docs.warexo.de/warenausgang/auftraege-bearbeiten/>`__ weiter geleitet.
 
  
 

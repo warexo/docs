@@ -74,4 +74,4 @@ Lieferanten zu Produkten zuordnen
 
 Nachdem Sie Ihre Lieferanten definiert haben ist es notwendig diese den einzelnen Produkten zuzuordnen und die Einkaufspreise zu definieren, wechseln Sie hierzu in den Bildschirm "Produkte" => "Produktliste" und bearbeiten Sie das gewünschte Produkt. Im Unterpunkt Lieferanten können Sie den Lieferanten und deren Konditionen bestimmen. Eine genaue Beschreibung der Felder finden Sie im Handbuch unter "Eingabefelder" => "Produkte" => "Lieferanten".
 
-[wawibtn type="primary" icon="external-link" url="http://docs.aggrowawi.de/eingabefelder/produkte/#lieferanten"]Seite im Handbuch öffnen[/wawibtn]
+[wawibtn type="primary" icon="external-link" url="http://docs.warexo.de/eingabefelder/produkte/#lieferanten"]Seite im Handbuch öffnen[/wawibtn]

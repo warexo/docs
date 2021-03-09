@@ -26,7 +26,7 @@ Der Nummernkreis für die Belege die über diese Kasse gedruckt werden, jede Kas
 Modell
 ^^^^^^
 
-Das `Modell <http://docs.aggrowawi.de/point-of-sale-pos/modelle/>`__ dieser Kasse
+Das `Modell <http://docs.warexo.de/point-of-sale-pos/modelle/>`__ dieser Kasse
 
 Papierbreite (mm)
 ^^^^^^^^^^^^^^^^^
@@ -36,7 +36,7 @@ Die Breite des angeschlossenen Bondruckers in mm
 Laden
 ^^^^^
 
-Zugehöriger `Laden <http://docs.aggrowawi.de/point-of-sale-pos/laeden/>`__
+Zugehöriger `Laden <http://docs.warexo.de/point-of-sale-pos/laeden/>`__
 
 Kassenbonvorlage
 ^^^^^^^^^^^^^^^^

@@ -46,19 +46,19 @@ Wählen Sie je nach Maßnahme das passende Lager für die retournierte Ware und 
 
 Wenn Sie alle Daten eingegeben haben klicken Sie auf Retoure buchen um den Vorgang abzuschließen.
 
-.. |image0| image:: https://docs.aggrowawi.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store23-1024x375.png
+.. |image0| image:: https://docs.warexo.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store23-1024x375.png
    :class: alignnone size-large wp-image-615
    :width: 980px
    :height: 359px
-.. |image1| image:: https://docs.aggrowawi.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store2-300x45.png
+.. |image1| image:: https://docs.warexo.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store2-300x45.png
    :class: alignnone size-medium wp-image-608
    :width: 300px
    :height: 45px
-.. |image2| image:: https://docs.aggrowawi.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store21-1-1024x118.png
+.. |image2| image:: https://docs.warexo.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store21-1-1024x118.png
    :class: alignnone size-large wp-image-613
    :width: 980px
    :height: 113px
-.. |image3| image:: https://docs.aggrowawi.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store22-300x170.png
+.. |image3| image:: https://docs.warexo.de/wp-content/uploads/2017/10/Screenshot_2019-10-28-Warexo-Acme-Store22-300x170.png
    :class: alignnone size-medium wp-image-611
    :width: 300px
    :height: 170px

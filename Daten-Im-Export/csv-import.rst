@@ -110,7 +110,7 @@ Wenn gewünscht können Sie einen zweiten Schlüssel als zusätzliche Kennzeichn
 Importmodus
 ^^^^^^^^^^^
 
-Wenn Sie Collections (siehe `Reporting <https://docs.aggrowawi.de/daten-im-export/reporting/>`__) importieren kann es sein dass alte Datensätze gelöscht werden müssen. Da der Importer nicht unterscheiden kann ob alte Einträge erhalten werden sollen können Sie das Verhalten hier wählen.
+Wenn Sie Collections (siehe `Reporting <https://docs.warexo.de/daten-im-export/reporting/>`__) importieren kann es sein dass alte Datensätze gelöscht werden müssen. Da der Importer nicht unterscheiden kann ob alte Einträge erhalten werden sollen können Sie das Verhalten hier wählen.
 
 -  **Kollektionen vor dem Import löschen (REPLACE)** - Löscht Collections bevor diese neu angelegt werden
 -  **Kollektionen vor dem Import nicht löschen (SOFT UPDATE)** - Löscht Collections nicht bevor diese angelegt werden

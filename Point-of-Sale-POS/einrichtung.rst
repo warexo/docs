@@ -18,17 +18,17 @@ Systemvoraussetzungen
 -  Foxit Reader (https://www.foxitsoftware.com/de/products/pdf-reader/)
 -  LibreOffice (https://de.libreoffice.org/)
 -  Adobe PDF Reader - DC Version wird derzeit nicht unterstützt (https://www.adobe.com/support/downloads/detail.jsp?ftpID=5507)
--  `WAWIListener <http://docs.aggrowawi.de/allgemein/wawilistener/>`__ installiert und konfiguriert
+-  `WAWIListener <http://docs.warexo.de/allgemein/wawilistener/>`__ installiert und konfiguriert
 
 Warexo Einstellungen
 ~~~~~~~~~~~~~~~~~~~~
 
 Achten Sie darauf dass folgende Einstellungen erfolgt sind:
 
--  `Plugin Einstellungen getätigt <http://docs.aggrowawi.de/plugins/pos/>`__
--  Mindestens 1 `POS Laden erstellt <http://docs.aggrowawi.de/point-of-sale-pos/laeden/>`__
--  Mindestens 1 `POS Modell erstellt <http://docs.aggrowawi.de/point-of-sale-pos/modelle/>`__ für diesen Laden
--  Mindestens 1 `POS Terminal erstellt <http://docs.aggrowawi.de/point-of-sale-pos/terminals/>`__ für dieses Modell
+-  `Plugin Einstellungen getätigt <http://docs.warexo.de/plugins/pos/>`__
+-  Mindestens 1 `POS Laden erstellt <http://docs.warexo.de/point-of-sale-pos/laeden/>`__
+-  Mindestens 1 `POS Modell erstellt <http://docs.warexo.de/point-of-sale-pos/modelle/>`__ für diesen Laden
+-  Mindestens 1 `POS Terminal erstellt <http://docs.warexo.de/point-of-sale-pos/terminals/>`__ für dieses Modell
 -  Mindestens 1 POS Benutzer angelegt (siehe folgender Punkt)
 
 Benutzereinrichtung

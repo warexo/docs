@@ -11,4 +11,4 @@ Im Bildschirm unter "Auftragsverwaltung" => "Rechnungen" finden Sie eine Auflist
 Rechnungsausgangsbuch erstellen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wählen Sie unter der Liste der Rechnungen Format, Monat und Jahr für das Rechnungsausgangsbuch und klicken Sie auf [wawibtn]Herunterladen[/wawibtn] - die Datei wird dann automatisch auf Ihren Computer übertragen. Bitte beachten Sie dass Libreoffice auf dem Server installiert sein muss, weitere Informationen hierzu finden Sie in den `Systemvoraussetzungen <https://docs.aggrowawi.de/allgemein/systemvoraussetzungen/>`__.
+Wählen Sie unter der Liste der Rechnungen Format, Monat und Jahr für das Rechnungsausgangsbuch und klicken Sie auf [wawibtn]Herunterladen[/wawibtn] - die Datei wird dann automatisch auf Ihren Computer übertragen. Bitte beachten Sie dass Libreoffice auf dem Server installiert sein muss, weitere Informationen hierzu finden Sie in den `Systemvoraussetzungen <https://docs.warexo.de/allgemein/systemvoraussetzungen/>`__.

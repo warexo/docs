@@ -29,9 +29,9 @@ Aufträge / Rechnungen
 -  {{order.parentOrder}} - Hauptbestellung (bei Teillieferung)
 -  {{order.parentShippingOrder}} - Hauptlieferung (bei Sammellieferung)
 -  {{order.ordersToShip}} - Bestellungen in der Sammellieferung
--  `{{order.offer.vouchers}} - eingelöste Gutscheine <https://docs.aggrowawi.de/gutscheine-2/>`__
+-  `{{order.offer.vouchers}} - eingelöste Gutscheine <https://docs.warexo.de/gutscheine-2/>`__
 -  {{order.offer.salevouchers}} - generierte Kaufgutscheine
--  `{{order.offer.agentCustomer}} - Vermittler <https://docs.aggrowawi.de/kunden/>`__
+-  `{{order.offer.agentCustomer}} - Vermittler <https://docs.warexo.de/kunden/>`__
 -  {{order.offer.nettoMode}} - Netto-Modus (1/0)
 -  {{order.warehouse}} - Versandlager
 -  {{order.saleschannel}} - Vertriebskanal
@@ -88,4 +88,4 @@ Aufträge / Rechnungen
 -  {{item.storno}} - true, wenn Bestellposition storniert ist
 -  {{item.stornoPositionSum}} - gutgeschriebener Betrag
 -  {{item.stornoPositionText}} - Referenz
--  `{{item.product}} - Artikel <https://docs.aggrowawi.de/twig-variablen-produkte/>`__
+-  `{{item.product}} - Artikel <https://docs.warexo.de/twig-variablen-produkte/>`__
