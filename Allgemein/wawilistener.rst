@@ -5,7 +5,7 @@ Warexo Bridge
 :category: Allgemein
 :slug: wawilistener
 :status: published
-:attachments: wp-content/uploads/2016/02/aggrowawi-listener-active.png
+:attachments: _static/img/screenshots/aggrowawi-listener-active.png
 
 Warexo arbeitet komplett in Ihrem Webbrowser, damit Systemnahe Funktionen wie z.B. Druckfunktionen etc. verwendet werden können benötigen wir eine kleine Software im Hintergrund die mit Warexo kommuniziert. Hierfür würde die sog. Warexo Bridge geschaffen, dieses Java Programm ermöglicht alle nötigen Kommunikationen zwischen dem Arbeitsrechner und der Warenwirtschaft.
 
@@ -86,7 +86,7 @@ Adobe Reader nicht benutzen
 
 Versucht den Druckauftrag direkt per PCL an den Drucker zu senden, PCL fähiger Drucker wird benötigt.
 
-.. |image0| image:: {static}wp-content/uploads/2016/02/aggrowawi-listener-active.png
+.. |image0| image:: _static/img/screenshots/aggrowawi-listener-active.png
    :class: alignnone size-full wp-image-1794
    :width: 146px
    :height: 37px
