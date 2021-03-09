@@ -18,7 +18,7 @@ Systemvoraussetzungen
 -  date.timezone in der php.ini gesetzt
 -  Ioncube loader
 -  CURL
--  PHP exec Funktion erlaubt und folgende Programme erlaubt und im $PATH verfügbar: mysqldump, wget, unzip, rm, grep
+-  PHP exec Funktion erlaubt und folgende Programme erlaubt und im $PATH verfügbar: mysqldump, wget, unzip, rm, grep
 -  `Libreoffice <https://de.libreoffice.org/>`__ (Server Installation)
 -  Ausgehende FTP via TLS Verbindung (FTPS) um Bilder zwischen Warexo und Webshop zu übertragen (nur passive FTPS erlaubt!)
    Eine Übertragung via SFTP ist aus performance Gründen nicht ratsam, wir arbeiten an einer optionalen Unterstützung.
@@ -27,8 +27,8 @@ Systemvoraussetzungen
 Empfohlene Einstellungen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Sie sollten das PHP-XML Modul installiert haben
--  Sie sollten mindestens version 2.6.21 von libxml haben
+-  Sie sollten das PHP-XML Modul installiert haben
+-  Sie sollten mindestens version 2.6.21 von libxml haben
 -  PHP tokenizer sollte aktiviert sein
 -  mbstring Funktionen sollten aktiviert sein
 -  iconv sollte aktiviert sein

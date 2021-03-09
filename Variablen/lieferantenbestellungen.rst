@@ -6,7 +6,7 @@ Lieferantenbestellungen
 :slug: lieferantenbestellungen
 :status: published
 
-| **Allgemeine** **Information**
+| **Allgemeine** **Information**
 | {{entity.orderNumber}} - Bestellnummer
 | {{entity.created|d}} - Bestelldatum
 | {{entity.note}} - Notiz

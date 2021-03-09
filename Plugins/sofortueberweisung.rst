@@ -6,7 +6,7 @@ Sofortüberweisung
 :slug: sofortueberweisung
 :status: published
 
-Wenn Sie die Einstellungen für das Sofortübweisung Plugin hinterlegen können Sie über die Warenwirtschaft Sofortüberweisung Zahlungen empfangen und diese auch wieder (teil-) stornieren. Das Plugin unterstützt derzeit keine Zahlungsaufforderungen per E-Mail - die Zahlung muss also über Ihren Webshop getätigt werden. Der Payment Handler lautet **sofortueberweisung. **
+Wenn Sie die Einstellungen für das Sofortübweisung Plugin hinterlegen können Sie über die Warenwirtschaft Sofortüberweisung Zahlungen empfangen und diese auch wieder (teil-) stornieren. Das Plugin unterstützt derzeit keine Zahlungsaufforderungen per E-Mail - die Zahlung muss also über Ihren Webshop getätigt werden. Der Payment Handler lautet **sofortueberweisung. **
 
 Kunden-Nr.
 ^^^^^^^^^^

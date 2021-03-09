@@ -6,17 +6,17 @@ POS
 :slug: pos
 :status: published
 
-Mit dem Warexo POS Modul können Sie eine oder mehrere Ladengeschäfte und deren Kassen bedienen. Weitere Informationen finden Sie im Handbuchabschnitt zu Point-of-Sale.
+Mit dem Warexo POS Modul können Sie eine oder mehrere Ladengeschäfte und deren Kassen bedienen. Weitere Informationen finden Sie im Handbuchabschnitt zu Point-of-Sale.
 
 Einstellungen
 ~~~~~~~~~~~~~
 
-Im Bildschirm finden Sie im unteren Bereich Beispieldaten für die Einstellungen, Sie können diese einfach übernehmen oder eigene Einstellungen vornehmen.
+Im Bildschirm finden Sie im unteren Bereich Beispieldaten für die Einstellungen, Sie können diese einfach übernehmen oder eigene Einstellungen vornehmen.
 
 Kassenbonvorlage
 ^^^^^^^^^^^^^^^^
 
-Vorlage für den Kassenbon, weitere Informationen zur Formatierung und den einzelnen Variablen finden Sie im Handbuchabschnitt zu Point-of-Sale.
+Vorlage für den Kassenbon, weitere Informationen zur Formatierung und den einzelnen Variablen finden Sie im Handbuchabschnitt zu Point-of-Sale.
 
 Einzahlung auf Bank Konto
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,4 +51,4 @@ Gibt den Zeitabstand in Minuten an in dem die Artikelstammdaten am Terminal mit 
 Bestellungen jede x Minuten in WAWI exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gibt den Zeitabstand in Minuten an in dem die generierten Belege an die Warenwirtschaft gesendet werden
+Gibt den Zeitabstand in Minuten an in dem die generierten Belege an die Warenwirtschaft gesendet werden

@@ -33,4 +33,4 @@ Zahlungserinnerungen nur ab angegebenem Datum versenden
 
 Sollten Sie alte Bestellungen in Warexo importieren können Sie hier festlegen ab welchem frühesten Bestelldatum Bestellungen berücksichtigt werden sollen, wenn Erinnerungen versendet werden.
 
- 
+

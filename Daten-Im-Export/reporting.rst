@@ -32,7 +32,7 @@ Eindeutiger Titel um diesen Report zu identifizieren.
 Dateiname
 ^^^^^^^^^
 
-Wenn gewünscht können Sie einen Dateinamen festlegen unter dem die Exportdatei auf dem Server generiert wird. Wenn Sie keinen Dateinamen eingeben dann wird dieser nach dem ersten  Export automatisch erzeugt.
+Wenn gewünscht können Sie einen Dateinamen festlegen unter dem die Exportdatei auf dem Server generiert wird. Wenn Sie keinen Dateinamen eingeben dann wird dieser nach dem ersten  Export automatisch erzeugt.
 
 CSV-Feldtrennzeichen
 ^^^^^^^^^^^^^^^^^^^^
@@ -260,12 +260,6 @@ Wenn Sie ein Feld wählen bietet Ihnen das System für Collections die Möglichk
 
 Sie können durch die Auswahl von Collections und deren Felder beliebige verknüpfte Werte ermitteln, bitte beachten Sie jedoch dass komplexe Exporte lange Zeit benötigen um erzeugt zu werden.
 
-[caption id="attachment_421" align="aligncenter" width="300"]\ |image0| Beispiel für normalen Feldwert - hier der Titel des Produkts[/caption]
-
-[caption id="attachment_423" align="aligncenter" width="300"]\ |image1| Beispiel für Feldwert einer Collection - hier der Titel der Kategorien.[/caption]
-
-[caption id="attachment_419" align="aligncenter" width="300"]\ |image2| Beispiel für die Auswahl einer Unter-Collection - hier die Mandanten der Kategorien des Produkts[/caption]
-
 Produkte zuweisen
 ~~~~~~~~~~~~~~~~~
 
@@ -285,19 +279,3 @@ Mit einem Workflow verknüpfen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Mit dem Befehl "Workflow mit Bedingungen anlegen" erstellen Sie mit einem Klick einen Workflow mit dem Sie den Report noch genauer begrenzen können. Legen Sie hierzu einfach im erzeugten Report eine neue Aktion mit Bedingungen an.
-
-.. |image0| image:: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Feldwert-Normal-300x61.png
-   :class: size-medium wp-image-421
-   :width: 300px
-   :height: 61px
-   :target: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Feldwert-Normal.png
-.. |image1| image:: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Subfeldwert-300x61.png
-   :class: size-medium wp-image-423
-   :width: 300px
-   :height: 61px
-   :target: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Subfeldwert.png
-.. |image2| image:: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Feldwert-Collection-300x96.png
-   :class: wp-image-419 size-medium
-   :width: 300px
-   :height: 96px
-   :target: http://doku.aggrosoft.de.dedi4489.your-server.de/wp-content/uploads/2017/10/Feldwert-Collection.png

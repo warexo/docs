@@ -5,7 +5,6 @@ eBay
 :category: Plugins
 :slug: ebay
 :status: published
-:attachments: wp-content/uploads/2019/11/300px-EBay_logo.svg_.png
 
 Mit dem eBay Plugin können Sie aus Ihren Produktdaten mit wenigen Klicks vollständige Angebot auf eBay erstellen.
 
@@ -36,7 +35,7 @@ Zugangsdaten
 -  Cert ID
 -  User Token Application ID
 
-Diese Daten erhalten Sie wie oben beschrieben über Ihren eBay Developer Account. Die User Token  Application ID finden Sie im Bereich User Tokens - beantragen Sie bitte einen Auth'n'Auth Token. Bitte achten Sie darauf den Token vollständig zu kopieren oder es kommt zu Authentifizierungsfehlern.
+Diese Daten erhalten Sie wie oben beschrieben über Ihren eBay Developer Account. Die User Token  Application ID finden Sie im Bereich User Tokens - beantragen Sie bitte einen Auth'n'Auth Token. Bitte achten Sie darauf den Token vollständig zu kopieren oder es kommt zu Authentifizierungsfehlern.
 
 Sandbox
 ^^^^^^^
@@ -96,7 +95,7 @@ Dieser Textbaustein wird als Template für Ihre Angebote verwendet (überschreib
 Preisvorschlag erlauben
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Aktiviert die Option "Preisvorschlag erlauben" für neue Angebote standardmäßig (überschreibbar auf Artikelebene).
+Aktiviert die Option "Preisvorschlag erlauben" für neue Angebote standardmäßig (überschreibbar auf Artikelebene).
 
 Bilder-URL
 ^^^^^^^^^^
@@ -111,12 +110,12 @@ Falls Sie bereits länger mit eBay arbeiten kann es sein dass alte Bestellungen 
 Bearbeitungszeit
 ^^^^^^^^^^^^^^^^
 
-Standardwert für die Bearbeitungszeit (überschreibbar auf Artikelebene).
+Standardwert für die Bearbeitungszeit (überschreibbar auf Artikelebene).
 
 Max. Lagerbestand pro Artikel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der zu eBay exportierte Lagerbestand wird diesen Wert nie übersteigen (überschreibbar auf Artikelebene).
+Der zu eBay exportierte Lagerbestand wird diesen Wert nie übersteigen (überschreibbar auf Artikelebene).
 
 Zahlungsart '...' aktiv
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -248,12 +247,12 @@ Eingestellter Lagerbestand
 
 .. container:: col-lg-10
 
-    ...
+    ...
 
 Versandart Einstellungen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Damit bei Angebotserstellung oder  Auftragsimport die korrekten Versandarten eingestellt werden und auch die entsprechenden Tracking Informationen an eBay übertragen werden müssen die Versandarten konfiguriert werden.
+Damit bei Angebotserstellung oder  Auftragsimport die korrekten Versandarten eingestellt werden und auch die entsprechenden Tracking Informationen an eBay übertragen werden müssen die Versandarten konfiguriert werden.
 
 eBay Versandart
 ^^^^^^^^^^^^^^^
@@ -283,9 +282,9 @@ Wenn Sie bei eBay Versandbedingungen definiert haben können Sie diese hier zuwe
 Artikel zu eBay übertragen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sie können Artikel entweder einzeln oder in Masse zu eBay übertragen. Klicken Sie entweder beim Produkt in der Eingabebox "eBay" die Schaltfläche "Stammartikel inkl. aller Varianten zu eBay übertragen" oder wählen Sie in der Produktliste mehrere Produkte und verwenden Sie die Massenaktion "Artikel zu eBay exportieren". Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plugin Einstellungen exportieren. Bitte beachten Sie dass der Cronjob für die Übertragung der Artikel zuständig ist, es kann also eine gewisse Zeit dauern bis die Artikel übertragen sind.
+Sie können Artikel entweder einzeln oder in Masse zu eBay übertragen. Klicken Sie entweder beim Produkt in der Eingabebox "eBay" die Schaltfläche "Stammartikel inkl. aller Varianten zu eBay übertragen" oder wählen Sie in der Produktliste mehrere Produkte und verwenden Sie die Massenaktion "Artikel zu eBay exportieren". Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plugin Einstellungen exportieren. Bitte beachten Sie dass der Cronjob für die Übertragung der Artikel zuständig ist, es kann also eine gewisse Zeit dauern bis die Artikel übertragen sind.
 
 Cronjobs einrichten
 ~~~~~~~~~~~~~~~~~~~
 
-Bitte richten Sie die jeweiligen Cronjobs ein die Ihnen in den Plugin Einstellungen angezeigt werden (Bestellimport und Artikelexport) - jenachdem wie Sie den Cronjob konfigurieren werden Artikel exportiert und Aufträge importiert.
+Bitte richten Sie die jeweiligen Cronjobs ein die Ihnen in den Plugin Einstellungen angezeigt werden (Bestellimport und Artikelexport) - jenachdem wie Sie den Cronjob konfigurieren werden Artikel exportiert und Aufträge importiert.

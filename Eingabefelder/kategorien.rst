@@ -69,7 +69,7 @@ Für jede Kategorie kann ein Icon (Miniaturbild) und ein Bild (Teaser o.Ä.) hin
 Extra Felder
 ~~~~~~~~~~~~
 
-Hier  sehen Sie die Fremdfelder die einer Kategorie zugeordnet werden können, diese stammen aus den Zusatzmodulen die in den Fremdsystemen vorhanden sind und können beliebig erweitert werden. Sehen Sie hierzu den Abschnitt Extra Felder.
+Hier  sehen Sie die Fremdfelder die einer Kategorie zugeordnet werden können, diese stammen aus den Zusatzmodulen die in den Fremdsystemen vorhanden sind und können beliebig erweitert werden. Sehen Sie hierzu den Abschnitt Extra Felder.
 
 Produkte
 ~~~~~~~~

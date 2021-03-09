@@ -92,7 +92,7 @@ Um zum Beispiel eine Liste mit Bestellnummern in der Variable *orders* zu erzeug
 ::
 
    {% for order in orders %}
-     {{ order.orderNumber }},
+     {{ order.orderNumber }},
    {% endfor %}
 
 Der *if* Tag kann verwendet werden um einen Ausdruck zu prüfen:
@@ -100,10 +100,10 @@ Der *if* Tag kann verwendet werden um einen Ausdruck zu prüfen:
 ::
 
    {% if orders|length > 0 %}
-     Folgende Bestellungen sind vorhanden:
-     {% for order in orders %}
-       {{ order.orderNumber }},
-     {% endfor %}
+     Folgende Bestellungen sind vorhanden:
+     {% for order in orders %}
+       {{ order.orderNumber }},
+     {% endfor %}
    {% endif %}
 
 Mehr Informationen zu den integrierten Twig Tags finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/tags/index.html>`__.

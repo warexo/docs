@@ -6,7 +6,7 @@ DATEV
 :slug: datev
 :status: published
 
-Warexo erlaubt Ihnen einen einfache Export aller Steuerrelevanten Buchungs- und Bewegungsdaten im DATEV pro Format. Bitte beachten Sie dass die Exporte für DATEV Pro und nicht für DATEV Unternehmen Online oder andere Softwarelösungen zugeschnitten sind.
+Warexo erlaubt Ihnen einen einfache Export aller Steuerrelevanten Buchungs- und Bewegungsdaten im DATEV pro Format. Bitte beachten Sie dass die Exporte für DATEV Pro und nicht für DATEV Unternehmen Online oder andere Softwarelösungen zugeschnitten sind.
 
 Plugin Einstellungen
 ~~~~~~~~~~~~~~~~~~~~
@@ -129,7 +129,7 @@ Verbindlichkeiten werden auch dann als Buchungsreihe ausgegeben wenn diese noch 
 Positionen bei den Verbindlichkeiten extra ausweisen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Für jede Position einer Verbindlichkeit wird eine Buchungsreihe ausgegeben
+Für jede Position einer Verbindlichkeit wird eine Buchungsreihe ausgegeben
 
 Kreditorennummern automatisch vergeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -216,16 +216,16 @@ Debitorenkonten festlegen
 
 Zu jeder Zahlungsart wird ein Debitorenkonto benötigt damit eine Buchungsreihe zu DATEV exportiert werden kann. Sie können für verschiedene Zahlungsarten das gleiche Debitorenkonto hinterlegen.
 
-Bearbeiten Sie hierzu die jeweilige Zahlungsart über "Einstellungen" => "Zahlungsarten" Im Bildschirm der Zahlungsart können Sie im Bereich "Extra Felder" das Konto in das Feld "Datev Konto (Debitorenkonto)" eintragen.
+Bearbeiten Sie hierzu die jeweilige Zahlungsart über "Einstellungen" => "Zahlungsarten" Im Bildschirm der Zahlungsart können Sie im Bereich "Extra Felder" das Konto in das Feld "Datev Konto (Debitorenkonto)" eintragen.
 
 Erlöskonten festlegen
 ~~~~~~~~~~~~~~~~~~~~~
 
-Jeder eingegangene Umsatz wird vom Exporter für Sie auf dem zugehörigen Erlöskonto vorkontiert. Da sich die einzelnen Konten im Normalfall auf den für den Artikel zugehörigen Steuersatz beziehen werden die Konten bei den Steuersätzen hinterlegt.
+Jeder eingegangene Umsatz wird vom Exporter für Sie auf dem zugehörigen Erlöskonto vorkontiert. Da sich die einzelnen Konten im Normalfall auf den für den Artikel zugehörigen Steuersatz beziehen werden die Konten bei den Steuersätzen hinterlegt.
 
-Öffnen Sie den Menüpunkt "Einstellungen" => "Steuersätze" - im Bereich "Datev" haben Sie die Möglichkeit die einzelnen notwendigen Erlöskonten für die verschiedenen Konstellationen einzutragen. Wir raten dazu Ihren Steuerberater zu diesen Einstellungen zu Rate zu ziehen damit die einzelnen Buchungen später auf den richtigen Konten landen.
+Öffnen Sie den Menüpunkt "Einstellungen" => "Steuersätze" - im Bereich "Datev" haben Sie die Möglichkeit die einzelnen notwendigen Erlöskonten für die verschiedenen Konstellationen einzutragen. Wir raten dazu Ihren Steuerberater zu diesen Einstellungen zu Rate zu ziehen damit die einzelnen Buchungen später auf den richtigen Konten landen.
 
-Artikelspezifische Konten
+Artikelspezifische Konten
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Falls bestimmte Artikel in Ihrem Sortiment nicht unter die oben stehenden Konten fallen können Sie diese für jeden Artikel speziell bestimmen. Die entsprechenden Einstellungen finden Sie im einzelnen Artikel im Menü "Produkte" => "Produktliste" im Bereich "Datev".
@@ -250,26 +250,26 @@ Sie erhalten ein .zip Archiv das verschiedene Dateien enthält. Je nach Einstell
 datev_artikel_XX.xml
 ^^^^^^^^^^^^^^^^^^^^
 
-Die für den DATEV ASCII Import vorbereiteten Artikeldaten für die Artikel die in der gewählten Periode gekauft wurden im XML Format.
+Die für den DATEV ASCII Import vorbereiteten Artikeldaten für die Artikel die in der gewählten Periode gekauft wurden im XML Format.
 
 datev_belege_XX.xml
 ^^^^^^^^^^^^^^^^^^^
 
-Die für den DATEV ASCII Import vorbereiteten Belege aus der gewählten Periode im XML Format.
+Die für den DATEV ASCII Import vorbereiteten Belege aus der gewählten Periode im XML Format.
 
 datev_kunden_XX.xml
 ^^^^^^^^^^^^^^^^^^^
 
-Die für den DATEV ASCII Import vorbereiteten Kundendaten für die Kunden die in der gewählten Periode Artikel gekauft haben im XML Format.
+Die für den DATEV ASCII Import vorbereiteten Kundendaten für die Kunden die in der gewählten Periode Artikel gekauft haben im XML Format.
 
 datev_belege_XX.csv
 ^^^^^^^^^^^^^^^^^^^
 
-Die für den DATEV ASCII Import vorbereiteten Belege aus der gewählten Periode im CSV Format.
+Die für den DATEV ASCII Import vorbereiteten Belege aus der gewählten Periode im CSV Format.
 
 datev_kunden_XX.csv
 ^^^^^^^^^^^^^^^^^^^
 
-Die für den DATEV ASCII Import vorbereiteten Kundendaten für die Kunden die in der gewählten Periode Artikel gekauft haben im CSV Format.
+Die für den DATEV ASCII Import vorbereiteten Kundendaten für die Kunden die in der gewählten Periode Artikel gekauft haben im CSV Format.
 
 [alert style="info"]DATEV bietet mit seinem ASCII Importer zwei verschiedene Importformate - das XML und das CSV Format. Besprechen Sie bitte mit Ihrem Steuerberater welches Datenformat er benötigt.[/alert]

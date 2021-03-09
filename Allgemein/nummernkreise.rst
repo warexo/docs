@@ -6,11 +6,11 @@ Nummernkreise
 :slug: nummernkreise
 :status: published
 
-Nummernkreise werden genutzt um z.B. Rechnungsnummern nach einem bestimmten Schema innerhalb der Warenwirtschaft zu generieren. Sämtliche Nummernkreise werden nach folgendem Schema aufgebaut - die Leerzeichen sind nur zur besseren Visualisierung eingefügt:
+Nummernkreise werden genutzt um z.B. Rechnungsnummern nach einem bestimmten Schema innerhalb der Warenwirtschaft zu generieren. Sämtliche Nummernkreise werden nach folgendem Schema aufgebaut - die Leerzeichen sind nur zur besseren Visualisierung eingefügt:
 
-Präfix %1$ Anzahlnummern d
+Präfix %1$ Anzahlnummern d
 
-Ein Beispiel für einen Kreis von 100000001 bis 100999999 wäre:
+Ein Beispiel für einen Kreis von 100000001 bis 100999999 wäre:
 
 100%1$06d
 

@@ -81,7 +81,7 @@ Vertriebskanäle
 
 Beschränkt diesen Rabatt auf bestimmte Vertriebskanäle.
 
- 
+
 
 Rabatte auf Artikel, Kategorien, Benutzer, Gruppen oder Länder beschränken
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,4 +93,4 @@ Rabatte exportieren
 
 Wenn Sie möchten dass Rabatte im Webshop verwendet werden können müssen die Rabatte exportiert werden. Klicken Sie im Bereich "Export" auf [wawibtn]In den Shop exportieren[/wawibtn] und warten Sie bis alle Daten übertragen wurden.
 
- 
+

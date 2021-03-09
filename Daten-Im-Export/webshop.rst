@@ -26,7 +26,7 @@ Gültiger Shop Admin Benutzer inkl. Passwort der für die Verbindung und Datenü
 FTP Server / Benutzer / Passwort
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Gültige FTP Zugangsdaten zum Server auf dem der Webshop abgelegt wurde. Wir raten dazu einen separaten Benutzer mit einem starken Passwort anzulegen. Der Benutzer sollte möglichst nur Zugriff zum Webshop Verzeichnis erhalten.
+Gültige FTP Zugangsdaten zum Server auf dem der Webshop abgelegt wurde. Wir raten dazu einen separaten Benutzer mit einem starken Passwort anzulegen. Der Benutzer sollte möglichst nur Zugriff zum Webshop Verzeichnis erhalten.
 
 FTP Pfad zum Shop
 ^^^^^^^^^^^^^^^^^
@@ -50,7 +50,7 @@ Wählen Sie welche Daten Sie importieren möchten, wir raten beim Erstimport daz
 Felder
 ^^^^^^
 
-Wenn Sie nur bestimmte Felder aus der Shop Datenbank importieren möchten tragen Sie diese hier ein. Komma separiert ohne Leerzeichen.
+Wenn Sie nur bestimmte Felder aus der Shop Datenbank importieren möchten tragen Sie diese hier ein. Komma separiert ohne Leerzeichen.
 
 Foreign IDs
 ^^^^^^^^^^^
@@ -72,7 +72,7 @@ Wählen Sie einfach im Bereich Export den Datentyp den Sie exportieren möchten 
 Datenstamm zurücksetzen
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Wenn beim Import der Webshop Daten ein Fehler aufgetreten ist, oder Sie aus irgendeinem anderen Grund alle Warexo Daten löschen möchten, wählen Sie einfach den entsprechenden Datentyp und starten Sie den Vorgang. \ **Diese Funktion löscht alle Daten die mit dem aktiven Mandanten zu tun haben, der Vorgang kann nur über ein Backup zurückgesetzt werden!**
+Wenn beim Import der Webshop Daten ein Fehler aufgetreten ist, oder Sie aus irgendeinem anderen Grund alle Warexo Daten löschen möchten, wählen Sie einfach den entsprechenden Datentyp und starten Sie den Vorgang. \ **Diese Funktion löscht alle Daten die mit dem aktiven Mandanten zu tun haben, der Vorgang kann nur über ein Backup zurückgesetzt werden!**
 
 Gelöschte Daten übernehmen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -12,7 +12,7 @@ Jedes Unternehmen hat individuelle Prozesse und Vorgehensweisen um sein Geschäf
 -  Bedingung(en)
 -  Aktion(en)
 
-Um einen neuen Workflow anzulegen klicken Sie auf "Einstellungen" => "Workflows" => [wawibtn type="primary"]Neuer Workflow[/wawibtn]
+Um einen neuen Workflow anzulegen klicken Sie auf "Einstellungen" => "Workflows" => [wawibtn type="primary"]Neuer Workflow[/wawibtn]
 
 Einstellungen
 ~~~~~~~~~~~~~
@@ -35,12 +35,12 @@ Innerhalb von Warexo können verschiedenste Ereignisse vorkommen, vom Eingang ei
 Bedingung
 ^^^^^^^^^
 
-Ob eine die Aktion eines Workflows ausgeführt wird kann über beliebige Bedingungen bestimmt werden. Klicken Sie auf [wawibtn type="success" icon="plus"]Hinzufügen[/wawibtn] um eine neue Bedingung hinzuzufügen. Wählen Sie die Bedingung und daneben (wenn nötig) den gewünschten Wert. Jede Bedingung wird "UND" verknüpft, beachten Sie dazu die Beispiele unten.
+Ob eine die Aktion eines Workflows ausgeführt wird kann über beliebige Bedingungen bestimmt werden. Klicken Sie auf [wawibtn type="success" icon="plus"]Hinzufügen[/wawibtn] um eine neue Bedingung hinzuzufügen. Wählen Sie die Bedingung und daneben (wenn nötig) den gewünschten Wert. Jede Bedingung wird "UND" verknüpft, beachten Sie dazu die Beispiele unten.
 
 Aktion
 ^^^^^^
 
-Wenn alle Bedingungen zu einem bestimmten Ereignis zutreffen werden alle definierten Aktionen ausgeführt. Die Aktionen werden immer von oben nach unten ausgeführt. Klicken Sie auf [wawibtn type="success" icon="plus"]Hinzufügen[/wawibtn] um eine neue Aktion hinzuzufügen. Füllen Sie anschließend die zugehörigen Felder der Aktion aus.
+Wenn alle Bedingungen zu einem bestimmten Ereignis zutreffen werden alle definierten Aktionen ausgeführt. Die Aktionen werden immer von oben nach unten ausgeführt. Klicken Sie auf [wawibtn type="success" icon="plus"]Hinzufügen[/wawibtn] um eine neue Aktion hinzuzufügen. Füllen Sie anschließend die zugehörigen Felder der Aktion aus.
 
 Beispiele
 ~~~~~~~~~
@@ -48,7 +48,7 @@ Beispiele
 Auftrag bearbeiten
 ^^^^^^^^^^^^^^^^^^
 
-Dieser spezielle Workflow wird immer angestoßen wenn die Schaltfläche "Auftrag bearbeiten" innerhalb des Auftrags gedrückt wird, dieses Beispiel druckt automatisch das DHL Label und die Rechnung, versendet eine digitale Kopie der Rechnung an den Kunden und markiert die Bestellung automatisch als versendet.
+Dieser spezielle Workflow wird immer angestoßen wenn die Schaltfläche "Auftrag bearbeiten" innerhalb des Auftrags gedrückt wird, dieses Beispiel druckt automatisch das DHL Label und die Rechnung, versendet eine digitale Kopie der Rechnung an den Kunden und markiert die Bestellung automatisch als versendet.
 
 .. _ereignis-1:
 
@@ -84,10 +84,10 @@ Dokument drucken
 
 *(Es wird ein bestimmtes Dokument ausgedruckt, die Daten des zugehörigen Objekts aus dem Ereignis werden übergeben)*
 
-Dokument per E-Mail senden
+Dokument per E-Mail senden
 
--  **Dokument** Rechnung
--  **E-Mail** {{entity.offer.billingEmail}}
+-  **Dokument** Rechnung
+-  **E-Mail** {{entity.offer.billingEmail}}
 -  **CC** *leer lassen*
 -  **In Sprache** Standardsprache
 -  **Textbaustein** *leer lassen*
@@ -103,7 +103,7 @@ Keine Einstellungen notwendig
 Hintergrund Kommissionierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Durch diesen Workflow wird Ware die sich nicht im Lager befindet automatisch eingebucht, anschließend werden die benötigten Picklisten automatisch erstellt und kommissioniert. Verwenden Sie diesen Workflow wenn Sie mit der Lagerhaltungsfunktion arbeiten möchten aber den Schritt der Kommissionierung überspringen möchten.
+Durch diesen Workflow wird Ware die sich nicht im Lager befindet automatisch eingebucht, anschließend werden die benötigten Picklisten automatisch erstellt und kommissioniert. Verwenden Sie diesen Workflow wenn Sie mit der Lagerhaltungsfunktion arbeiten möchten aber den Schritt der Kommissionierung überspringen möchten.
 
 .. _ereignis-2:
 
@@ -119,7 +119,7 @@ Bedingungen
 '''''''''''
 
 | Bestellung mit Lagerverwaltung - ja
-| *(Die Bestellung enthält mindestens einen Artikel bei dem die Option "Lagerverwaltung aktiv" aktiviert ist)*
+| *(Die Bestellung enthält mindestens einen Artikel bei dem die Option "Lagerverwaltung aktiv" aktiviert ist)*
 
 Bestellung ist kommissioniert - nein\ *
 (Die Bestellung wurde noch nicht kommissioniert)*
@@ -138,4 +138,4 @@ Pickliste(n) erstellen\ *
 | Pickliste im Hintergrund kommissionieren
 | *(Die Pickliste für die Bestellung wird automatisch im Hintergrund kommissioniert)*
 
- 
+

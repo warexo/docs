@@ -42,4 +42,4 @@ Wenn Sie diese Option aktivieren wird auf dem Label die Adresse die Sie darunter
 Versandlabels drucken
 ~~~~~~~~~~~~~~~~~~~~~
 
-Nachdem Sie die entsprechenden Einstellungen gemacht haben können Sie für Aufträge Versandscheine generieren. Öffnen Sie dazu den gewünschten Auftrag über "Auftragsverwaltung" => "Aufträge" und klicken Sie im oberen Menü auf [button size="small"]GLS[/button] und im Untermenü auf Beauftragen. Nachdem Sie einen Versandschein beauftragt haben und dieser erstellt wurde können Sie im oberen Menü  [button size="small"]GLS[/button] den Versandschein herunterladen oder direkt drucken.
+Nachdem Sie die entsprechenden Einstellungen gemacht haben können Sie für Aufträge Versandscheine generieren. Öffnen Sie dazu den gewünschten Auftrag über "Auftragsverwaltung" => "Aufträge" und klicken Sie im oberen Menü auf [button size="small"]GLS[/button] und im Untermenü auf Beauftragen. Nachdem Sie einen Versandschein beauftragt haben und dieser erstellt wurde können Sie im oberen Menü  [button size="small"]GLS[/button] den Versandschein herunterladen oder direkt drucken.

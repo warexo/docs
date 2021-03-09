@@ -6,7 +6,7 @@ Läden
 :slug: laeden
 :status: published
 
-Ein Laden bezeichnet ein einzelnes Ladengeschäft Ihres Unternehmens, in jedem Laden können beliebig viele Kassen angeschlossen und Mitarbeiter beschäftigt sein. Für den Betrieb des Point-of-Sale Systems ist mindestens ein Laden notwendig.
+Ein Laden bezeichnet ein einzelnes Ladengeschäft Ihres Unternehmens, in jedem Laden können beliebig viele Kassen angeschlossen und Mitarbeiter beschäftigt sein. Für den Betrieb des Point-of-Sale Systems ist mindestens ein Laden notwendig.
 
 Titel
 ^^^^^
@@ -35,7 +35,7 @@ Kontakt-Telefon oder Faxnummer
 
 **POS-Terminals**
 
-Geben Sie hier die Terminals die sich in diesem Ladengeschäft befinden an
+Geben Sie hier die Terminals die sich in diesem Ladengeschäft befinden an
 
 **Mandant**
 

@@ -5,11 +5,10 @@ Amazon
 :category: Plugins
 :slug: amazon
 :status: published
-:attachments: wp-content/uploads/2019/08/Logo-Amazon-Marketplace.png, wp-content/uploads/2019/11/Bg-Services-grey.png, wp-content/uploads/2019/11/Bg-Services-gelb.png
 
 *Im Laufe des zweiten Halbjahres 2019 wurde von Amazon eine neue Datenschutzrichtlinie zum Umgang mit Kundendaten (Personal Identifiable Information) eingeführt. Aufgrund dieser Änderung ist es aktuell nicht möglich Kundendaten über die Amazon Schnitstelle zu importieren. Ein Import ist aktuell nur mit bereits vorhandenen MWS Zugangsschlüsseln möglich. Diese Richtlinie wurde von Amazon festgelegt und verhindert aktuell den Auftragsimport. Amazon gibt aktuell keine konkreten Termine vor wann die Kundendaten wieder verfügbar sind.*
 
-Warexo erlaubt Ihnen einen einfache Export aller Produktrelevanten Daten zu Amazon zu Übertragen.
+Warexo erlaubt Ihnen einen einfache Export aller Produktrelevanten Daten zu Amazon zu Übertragen.
 
 Verkäuferkonto einrichten
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,7 +24,7 @@ Folgen Sie diesem Link und den Anweisungen von Amazon um ein Verkäuferkonto zu 
 
 https://developer.amazonservices.de/
 
-[STRIKEOUT:Wenn Sie gefragt werden geben Sie an dass Sie MWS für Ihr eigenes Amazon Verkäuferkonto freischalten möchten. Wenn der Vorgang abgeschlossen ist erhalten Sie die für das Plugin benötigten Amazon MWS Zugangsdaten.]
+[STRIKEOUT:Wenn Sie gefragt werden geben Sie an dass Sie MWS für Ihr eigenes Amazon Verkäuferkonto freischalten möchten. Wenn der Vorgang abgeschlossen ist erhalten Sie die für das Plugin benötigten Amazon MWS Zugangsdaten.]
 
 App Authorisieren
 ~~~~~~~~~~~~~~~~~
@@ -39,7 +38,7 @@ Melden Sie sich mit Ihrem Seller-Central Konto an und folgen Sie den Schritten z
 Plugin Einstellungen
 ~~~~~~~~~~~~~~~~~~~~
 
-Wählen Sie das Amazon Plugin in Warexo unter Systemverwaltung => Plugins
+Wählen Sie das Amazon Plugin in Warexo unter Systemverwaltung => Plugins
 
 Zugangsdaten
 ^^^^^^^^^^^^
@@ -101,7 +100,7 @@ Der Produkttitel wird an Amazon so übertragen:
 Artikel Suffix
 ^^^^^^^^^^^^^^
 
-Textangabe die an alle Produkttitel angehängt wird die bei Amazon gelistet werden
+Textangabe die an alle Produkttitel angehängt wird die bei Amazon gelistet werden
 
 Der Produkttitel wird an Amazon so übertragen:
 
@@ -132,10 +131,10 @@ Max. Anzahl der zugeordneten Produktoptionen
 
 Wie viele Optionen eines Produktes maximal mit übertragen werden sollen, hierbei geht es um die Anzahl der Auswahleinträge - es werden immer alle Optionen übertragen.
 
-Amazon Variation für XXX
+Amazon Variation für XXX
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Für jede Artikelvariation die sich in Ihrem System befindet können Sie hier bestimmen wie der Name der Auswahl in Amazon angezeigt wird. Diese Eingabefelder werden dynamisch anhand Ihrer Artikel berechnet und angezeigt.
+Für jede Artikelvariation die sich in Ihrem System befindet können Sie hier bestimmen wie der Name der Auswahl in Amazon angezeigt wird. Diese Eingabefelder werden dynamisch anhand Ihrer Artikel berechnet und angezeigt.
 
 Cron URL
 ^^^^^^^^
@@ -147,7 +146,7 @@ Artikeleinstellungen
 
 Damit ein Produkt zu Amazon exportiert werden kann müssen für den Artikel noch spezielle Einstellungen vorgenommen werden. Öffnen Sie den gewünschten Artikel über die Produktliste und springen Sie zur Eingabebox "Amazon".
 
-Nicht zu Amazon exportieren
+Nicht zu Amazon exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Der Artikel wird nie zu Amazon exportiert, weder einzeln noch im Massenexport.
@@ -155,14 +154,14 @@ Der Artikel wird nie zu Amazon exportiert, weder einzeln noch im Massenexport.
 Stammartikel nicht zu Amazon exportieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Es werden nur die untersten Varianten als einzelne Artikel zu Amazon gesendet, dadurch verlieren die Artikel Ihre Gruppierung unter dem Hauptartikel und erscheinen als einzelne Angebote bei Amazon.
+Es werden nur die untersten Varianten als einzelne Artikel zu Amazon gesendet, dadurch verlieren die Artikel Ihre Gruppierung unter dem Hauptartikel und erscheinen als einzelne Angebote bei Amazon.
 
 .. _artikel-präfix-1:
 
 Artikel Präfix
 ^^^^^^^^^^^^^^
 
-Textangabe die vor den Produkttitel bei Amazon gesetzt wird.
+Textangabe die vor den Produkttitel bei Amazon gesetzt wird.
 
 Der Produkttitel wird an Amazon so übertragen:
 
@@ -173,7 +172,7 @@ Der Produkttitel wird an Amazon so übertragen:
 Artikel Suffix
 ^^^^^^^^^^^^^^
 
-Textangabe die an den Produkttitel bei Amazon angehangen wird.
+Textangabe die an den Produkttitel bei Amazon angehangen wird.
 
 Der Produkttitel wird an Amazon so übertragen:
 
@@ -184,9 +183,9 @@ Der Produkttitel wird an Amazon so übertragen:
 Zusätzliche Artikelbeschreibung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Text der an die Artikelbeschreibung bei Amazon mit angehangen wird.
+Text der an die Artikelbeschreibung bei Amazon mit angehangen wird.
 
-Amazon Attribute (Bullet Points), max. 5 Zeilen 
+Amazon Attribute (Bullet Points), max. 5 Zeilen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Amazon Bullet Points werden in Amazon oben angezeigt. Maximal 5 Attribute die für alle Artikel mit übertragen werden, eines pro Zeile
@@ -226,9 +225,9 @@ Suchbegriffe die an Amazon mit übermittelt werden sollen, Kommasepariert.
 Amazon Binding Type
 ^^^^^^^^^^^^^^^^^^^
 
-Wie das Buch gebunden wurde - nur für Buchangebote notwendig.
+Wie das Buch gebunden wurde - nur für Buchangebote notwendig.
 
 Artikel zu Amazon übertragen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sie können Artikel entweder einzeln oder in Masse zu Amazon übertragen. Klicken Sie entweder beim Produkt in der Eingabebox "Amazon" die Schaltfläche "Stammartikel inkl. aller Varianten zu Amazon übertragen" oder wählen Sie in der Produktliste mehrere Produkte und verwenden Sie die Massenaktion "Artikel an Amazon exportieren". Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plugin Einstellungen exportieren.
+Sie können Artikel entweder einzeln oder in Masse zu Amazon übertragen. Klicken Sie entweder beim Produkt in der Eingabebox "Amazon" die Schaltfläche "Stammartikel inkl. aller Varianten zu Amazon übertragen" oder wählen Sie in der Produktliste mehrere Produkte und verwenden Sie die Massenaktion "Artikel an Amazon exportieren". Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plugin Einstellungen exportieren.

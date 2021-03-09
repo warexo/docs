@@ -5,7 +5,7 @@ Installation
 :category: Allgemein
 :slug: installation
 :status: published
-:attachments: _static/img/screenshots/ordnerstruktur.jpg
+:attachments: /_static/img/screenshots/ordnerstruktur.jpg
 
 [alert style="danger"]Bitte achten Sie genau darauf welche Teile von Warexo lesbar im Document Root ihres Servers liegen dürfen, wenn andere Ordner als der web Unterordner über das Internet aufrufbar sind ist das ein extremes Sicherheitsrisiko! Sollten Sie bedenken haben lässt sich Warexo natürlich auch auf einem Server in Ihrem Intranet ablegen.[/alert]
 
@@ -36,7 +36,7 @@ Es erscheint nun der Installationsassistent von Warexo - sollten Sie eine Fehler
 
 [alert style="danger"]Der Installationsassistent darf auf keinen Fall über http://www.ihredomain.de/web/install.php erreichbar sein, dies bedeutet dass andere Ordner als der Ordner web im Internet erreichbar sind![/alert]
 
-.. |image0| image:: _static/img/screenshots/ordnerstruktur.jpg
+.. |image0| image:: /_static/img/screenshots/ordnerstruktur.jpg
    :class: alignnone size-full wp-image-1878
    :width: 111px
    :height: 196px

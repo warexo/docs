@@ -36,7 +36,7 @@ Aufträge / Rechnungen
 -  {{order.warehouse}} - Versandlager
 -  {{order.saleschannel}} - Vertriebskanal
 -  {{order.clerk.username}} - Auftragsbearbeiter (Benutzername)
--  {{order.clerk.firstName}} {{order.clerk.lastName}} - Auftragsbearbeiter (Vorname und Nachname)
+-  {{order.clerk.firstName}} {{order.clerk.lastName}} - Auftragsbearbeiter (Vorname und Nachname)
 
 **Rechnungsadresse**
 

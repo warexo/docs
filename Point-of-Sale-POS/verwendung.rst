@@ -5,9 +5,9 @@ POS Bedienerhandbuch
 :category: Point of Sale (POS)
 :slug: verwendung
 :status: published
-:attachments: wp-content/uploads/2019/12/aggrowawi-pos.png, wp-content/uploads/2016/02/Bildschirmfoto-von-2020-06-15-11-35-26.png
+:attachments: /_static/img/screenshots/aggrowawi-pos.png, /_static/img/screenshots/Bildschirmfoto-von-2020-06-15-11-35-26.png
 
-.. figure:: https://www.warexo.de/wp-content/uploads/2019/12/aggrowawi-pos-1024x511.png
+.. figure:: /_static/img/screenshots/aggrowawi-pos.png
    :alt: 
    :figclass: wp-image-1805
 
@@ -26,7 +26,7 @@ Auf der linken Seite des Feldes befindet sich ein Zahlenblock der je nach Modus 
 Anzahl Modus "Anz"
 ~~~~~~~~~~~~~~~~~~
 
-Wenn eine Zahl im Zahlenblock gedrückt wird ändert sich die Menge des gewählten Artikels im Warenkorb Bereich. Durch drücken von "X" wird die letzte Stelle der aktuellen Anzahl entfernt, ist keine Stelle mehr übrig wird die Anzahl auf 0 gesetzt. Wird "X" bei Menge 0 nochmals gedrückt verschwindet der Artikel aus dem Warenkorb.
+Wenn eine Zahl im Zahlenblock gedrückt wird ändert sich die Menge des gewählten Artikels im Warenkorb Bereich. Durch drücken von "X" wird die letzte Stelle der aktuellen Anzahl entfernt, ist keine Stelle mehr übrig wird die Anzahl auf 0 gesetzt. Wird "X" bei Menge 0 nochmals gedrückt verschwindet der Artikel aus dem Warenkorb.
 
 Rabatt Modus "Rab"
 ~~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ Rabatt Modus "Rab"
 Preis Modus "Preis"
 ~~~~~~~~~~~~~~~~~~~
 
-Wenn eine Zahl im Zahlenblock gedrückt wird ändert sich der **Einzelpreis** des aktuellen Artikels im Warenkorb. Durch drücken von "X" wird die letzte Stelle des Einzelpreises entfernt, ist keine Stelle mehr übrig wird der Einzelpreis auf 0 gesetzt. Nochmaliges Drücken bei einem Preis von 0 hat keine Auswirkungen, verwenden Sie den "Anz" Modus um Artikel vollständig zu entfernen.
+Wenn eine Zahl im Zahlenblock gedrückt wird ändert sich der **Einzelpreis** des aktuellen Artikels im Warenkorb. Durch drücken von "X" wird die letzte Stelle des Einzelpreises entfernt, ist keine Stelle mehr übrig wird der Einzelpreis auf 0 gesetzt. Nochmaliges Drücken bei einem Preis von 0 hat keine Auswirkungen, verwenden Sie den "Anz" Modus um Artikel vollständig zu entfernen.
 
 Kunde
 ~~~~~
@@ -64,7 +64,7 @@ Enthält alle wichtigen Service Funktionen für die Kasse.
 Kassenbericht erstellen
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Exportiert die Bestellungen und öffnet das Kassenzählprotokoll - der Bediener muss nun die Kasse zählen und die Bestände eintragen. Dieser Vorgang ist in Deutschland gesetzlich vorgeschrieben und muss jeden Abend vor Kassenschluss durchgeführt werden.
+Exportiert die Bestellungen und öffnet das Kassenzählprotokoll - der Bediener muss nun die Kasse zählen und die Bestände eintragen. Dieser Vorgang ist in Deutschland gesetzlich vorgeschrieben und muss jeden Abend vor Kassenschluss durchgeführt werden.
 
 Druckfunktionen
 ^^^^^^^^^^^^^^^
@@ -86,18 +86,18 @@ Kassenbewegung
 Bons/Retouren
 ^^^^^^^^^^^^^
 
-Übersicht über alle Kassenbons die gedruckt wurden, wenn Sie eine Retoure buchen möchten suchen Sie hier den zugehörigen Bon anhand der Nummer. Klicken Sie den gewünschten Bon an, in der Bon Übersicht können Sie die einzelnen Artikel die retourniert werden sollen anklicken oder die gewünschten Artikel abscannen. Klicken Sie auf [wawibtn type="danger" icon="times"]Stornieren[/wawibtn] um den Stornobon zu drucken und die Buchung auszuführen.
+Übersicht über alle Kassenbons die gedruckt wurden, wenn Sie eine Retoure buchen möchten suchen Sie hier den zugehörigen Bon anhand der Nummer. Klicken Sie den gewünschten Bon an, in der Bon Übersicht können Sie die einzelnen Artikel die retourniert werden sollen anklicken oder die gewünschten Artikel abscannen. Klicken Sie auf [wawibtn type="danger" icon="times"]Stornieren[/wawibtn] um den Stornobon zu drucken und die Buchung auszuführen.
 
 Toolbar [circle]5[/circle]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die Toolbar erlaubt es Ihnen schnell zwischen verschiedenen Warenkörben umzuschalten - Sie können beliebig viele Warenkörbe gleichzeitig verwalten. Klicken Sie auf [wawibtn type="black" icon="plus"][/wawibtn] um einen neuen Warenkorb zu starten.
 
-Durch Klick auf eine beliebige Nummer [wawibtn type="black"]1[/wawibtn] [wawibtn type="black"]2[/wawibtn] [wawibtn type="black"]3[/wawibtn]  können Sie zwischen den Warenkörben hin und her springen.
+Durch Klick auf eine beliebige Nummer [wawibtn type="black"]1[/wawibtn] [wawibtn type="black"]2[/wawibtn] [wawibtn type="black"]3[/wawibtn]  können Sie zwischen den Warenkörben hin und her springen.
 
-Die Schaltfläche  [wawibtn type="black" icon="minus"][/wawibtn] entfernt den aktuellen Warenkorb aus der Liste, bitte beachten Sie das ein geschlossener Warenkorb nicht wiederhergestellt werden kann.
+Die Schaltfläche  [wawibtn type="black" icon="minus"][/wawibtn] entfernt den aktuellen Warenkorb aus der Liste, bitte beachten Sie das ein geschlossener Warenkorb nicht wiederhergestellt werden kann.
 
-Mit  [wawibtn type="black" icon="sync"][/wawibtn] werden die Produktdaten mit der Warenwirtschaft abgeglichen, bitte beachten Sie dass dieser Vorgang sehr lang dauern kann und nicht abgebrochen werden kann.
+Mit  [wawibtn type="black" icon="sync"][/wawibtn] werden die Produktdaten mit der Warenwirtschaft abgeglichen, bitte beachten Sie dass dieser Vorgang sehr lang dauern kann und nicht abgebrochen werden kann.
 
 [wawibtn type="black" icon="expand"][/wawibtn] wechselt in den Vollbildschirm Modus oder beendet diesen.
 
@@ -106,7 +106,7 @@ Mit  [wawibtn type="black" icon="sync"][/wawibtn] werden die Produktdaten mit d
 Navigation [circle]6[/circle]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Zeigt den aktuell gewählten Kategoriepfad im oberen Bereich, durch klick auf eine Kategorie wird diese geöffnet und die Artikel in der Übersicht angezeigt. Durch Klick auf [wawibtn type="black" icon="home"][/wawibtn] springen Sie zurück in den Hauptbereich. Im Bereich darunter befinden sich die Kategorien, drücken Sie eine Kategorie um die Artikel und Unterkategorien dieser Kategorie anzuzeigen.
+Zeigt den aktuell gewählten Kategoriepfad im oberen Bereich, durch klick auf eine Kategorie wird diese geöffnet und die Artikel in der Übersicht angezeigt. Durch Klick auf [wawibtn type="black" icon="home"][/wawibtn] springen Sie zurück in den Hauptbereich. Im Bereich darunter befinden sich die Kategorien, drücken Sie eine Kategorie um die Artikel und Unterkategorien dieser Kategorie anzuzeigen.
 
 Suchfeld [circle]7[/circle]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,8 +115,6 @@ Erlaubt das Suchen nach Artikeln per Texteingabe, wir empfehlen die Artikel wenn
 
 Zahlungen entgegennehmen
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
-|image0|
 
 Wenn alle Artikel aufgenommen wurden und alle eventuell vorhandenen Gutscheine angegeben wurden klicken Sie auf "Zahlung" im Bedienerfeld um den Zahlungsbildschirm zu öffnen
 
@@ -139,8 +137,3 @@ Buchen [circle]4[/circle]
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Klicken Sie auf Buchen um den Bon zu drucken und den Vorgang abzuschließen, die Kasse öffnet sich und Sie können dem Kunden sein mögliches Rückgeld übergeben.
-
-.. |image0| image:: https://www.warexo.de/wp-content/uploads/2016/02/Bildschirmfoto-von-2020-06-15-11-35-26-1024x544.png
-   :class: aligncenter wp-image-1961 size-large
-   :width: 1024px
-   :height: 544px

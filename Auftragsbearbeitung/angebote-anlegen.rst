@@ -118,17 +118,17 @@ Position löschen [wawibtn icon="times"][/wawibtn]
 
 Klicken um die Position zu entfernen
 
-Position verschieben [wawibtn icon="reorder"][/wawibtn]
+Position verschieben [wawibtn icon="reorder"][/wawibtn]
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Festhalten und Position nach oben/unten schieben um die Reihenfolge zu verändern
 
-Position aktualisieren  [wawibtn icon="refresh"][/wawibtn]
+Position aktualisieren  [wawibtn icon="refresh"][/wawibtn]
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 Aktualisiert die Preise etc. manuell
 
-Rabatt neu-berechnen  [wawibtn]Rab[/wawibtn]
+Rabatt neu-berechnen  [wawibtn]Rab[/wawibtn]
 ''''''''''''''''''''''''''''''''''''''''''''
 
 Berechnet die für den Kunden hinterlegten Preise neu - überschreibt eventuelle manuelle Änderungen
@@ -191,7 +191,7 @@ Zusätzliche Gebühren für die Verpackung die berechnet werden sollen.
 Grußkarte
 ^^^^^^^^^
 
-Zusatzkosten für eine eventuell Grußkarte.
+Zusatzkosten für eine eventuell Grußkarte.
 
 Skonto
 ^^^^^^
@@ -208,6 +208,6 @@ Angebote annehmen
 
 Wenn Sie einen Auftrag für dieses Angebot anlegen möchten klicken Sie die Schaltfläche [wawibtn]Auftrag anlegen[/wawibtn] - der zugehörige Auftrag wird angelegt und Sie werden automatisch zum `Auftragsbildschirm <https://docs.warexo.de/warenausgang/auftraege-bearbeiten/>`__ weiter geleitet.
 
- 
 
- 
+
+

@@ -128,4 +128,4 @@ Gutscheine per E-Mail versenden
 
 Im Bereich "Versenden" können Sie die Gutscheine oder die Gutscheinserie mit nur einem klick an eine bestimmte E-Mail Adresse senden. Wählen Sie einfach was versendet werden soll und geben Sie die E-Mail Adresse ein. Klicken Sie anschließend auf [wawibtn]Gutscheine versenden[/wawibtn].
 
- 
+

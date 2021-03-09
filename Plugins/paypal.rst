@@ -6,7 +6,7 @@ PayPal
 :slug: paypal
 :status: published
 
-Wenn Sie die Einstellungen für das PayPal Plugin hinterlegen können Sie über die Warenwirtschaft PayPal Zahlungen empfangen und diese auch wieder (teil-) stornieren. Der Payment Handler lautet **paypal**
+Wenn Sie die Einstellungen für das PayPal Plugin hinterlegen können Sie über die Warenwirtschaft PayPal Zahlungen empfangen und diese auch wieder (teil-) stornieren. Der Payment Handler lautet **paypal**
 
 Paypal E-Mail-Adresse
 ^^^^^^^^^^^^^^^^^^^^^
