@@ -6,7 +6,7 @@ Webshop
 :slug: webshop
 :status: published
 
-[alert type="info"]Bitte installieren Sie zunächst den entsprechenden Webshop Connector für Ihr System bevor Sie mit den folgenden Schritten fortfahren.[/alert]
+[alert type="info"]Bitte installieren Sie zunächst den entsprechenden Webshop Connector für Ihr System bevor Sie mit den folgenden Schritten fortfahren.
 
 Webshop Verbindung einrichten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,12 +33,12 @@ FTP Pfad zum Shop
 
 Pfad zum Hauptverzeichnis des Shop, ausgehend vom FTP Zielverzeichnis des oben eingegebenen Benutzers. Wenn das Zielverzeichnis des FTP Benutzers direkt auf den Webshop zeigt dann ein einfacher Slash /
 
-[alert]Speichern Sie die Einstellungen und verwenden Sie die Schaltfläche "Verbindung zum Shop prüfen" in der Aktionsleiste. Sie erhalten eine entsprechende Meldung ob die Verbindung erfolgen konnte[/alert]
+.. attention::Speichern Sie die Einstellungen und verwenden Sie die Schaltfläche "Verbindung zum Shop prüfen" in der Aktionsleiste. Sie erhalten eine entsprechende Meldung ob die Verbindung erfolgen konnte
 
 Webshop Daten importieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[alert]Warexo agiert immer als Master System, bitte beachten Sie dass Sie die Daten nur anfänglich importieren und nach dem Wechsel alle relevanten Daten über Warexo pflegen![/alert]
+.. attention::Warexo agiert immer als Master System, bitte beachten Sie dass Sie die Daten nur anfänglich importieren und nach dem Wechsel alle relevanten Daten über Warexo pflegen!
 
 Wenn Sie anfangen mit Warexo zu arbeiten können Sie die Daten aus Ihrem Shop zunächst importieren. Öffnen Sie den Bildschirm "Systemverwaltung" => "Webshop", im Bereich "Importieren" können Sie die Einstellungen treffen. Klicken Sie anschließend auf Import starten, der Import wird dann im Hintergrund ausgeführt. Aktualisieren Sie die Seite um den Fortschritt zu beobachten.
 

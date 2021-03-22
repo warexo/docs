@@ -6,7 +6,7 @@ Attribute
 :slug: attribute
 :status: published
 
-[alert]Einem Produkt können Attribute zugeordnet werden um dem Kunden die Einzelheiten eines Artikels anzuzeigen. In vielen Exportsystemen werden diese Attribute außerdem verwendet um dem Kunde eine bessere Filterfunktion zu bieten. Sie legen die möglichen Attribute einmal global an und weisen dann den einzelnen Artikeln einfach die jeweiligen Attribute mit deren Attributwerten zu.[/alert]
+.. attention::Einem Produkt können Attribute zugeordnet werden um dem Kunden die Einzelheiten eines Artikels anzuzeigen. In vielen Exportsystemen werden diese Attribute außerdem verwendet um dem Kunde eine bessere Filterfunktion zu bieten. Sie legen die möglichen Attribute einmal global an und weisen dann den einzelnen Artikeln einfach die jeweiligen Attribute mit deren Attributwerten zu.
 
 Titel
 ^^^^^

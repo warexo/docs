@@ -76,7 +76,7 @@ Barein- und Entnahmen buchen
 
 Wenn Barmittel aus der Kasse entnommen oder eingelegt werden muss dies über diese Funktion geschehen da die Kassenberichte und Zählprotokolle sonst nicht korrekt erstellt werden können.
 
-[alert]Beachten Sie dass die abendliche Geldentnahme vor der Erstellung des Kassenberichts erfolgen muss da diese sonst für den Folgetag gebucht wird und nicht im Kassenbericht auftaucht.[/alert]
+.. attention::Beachten Sie dass die abendliche Geldentnahme vor der Erstellung des Kassenberichts erfolgen muss da diese sonst für den Folgetag gebucht wird und nicht im Kassenbericht auftaucht.
 
 Kassenbewegung
 ^^^^^^^^^^^^^^

@@ -8,7 +8,7 @@ Einrichtung
 
 Für das POS System müssen bestimmte Software Bestandteile auf dem Terminal vorhanden sein.
 
-[alert style="info"]Bitte beachten Sie dass Lagerbestände im POS System nur aus dem Lager entnommen werden wenn es sich um ein Ausstellungs- oder Handelslager handelt.[/alert]
+.. Hint::Bitte beachten Sie dass Lagerbestände im POS System nur aus dem Lager entnommen werden wenn es sich um ein Ausstellungs- oder Handelslager handelt.
 
 Systemvoraussetzungen
 ~~~~~~~~~~~~~~~~~~~~~

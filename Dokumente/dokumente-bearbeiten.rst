@@ -13,7 +13,7 @@ Dokumentenvorlagen herunterladen
 
 Öffnen Sie den Bildschirm "Einstellungen" => "Dokumente" und wählen Sie das gewünschte Dokument aus. Wählen Sie in der Aktionsleiste die Schaltfläche "Vorlage herunterladen" und wählen Sie den gewünschten Mandanten oder die globale Vorlage. Wenn noch keine Vorlagen angepasst wurden können Sie nur die globale Vorlage für alle Mandanten herunterladen.
 
-[alert style="danger"]Sichern Sie sich immer eine separate Kopie der Datei bevor Sie sie anpassen, in manchen Fällen zerstören die Formatierungen von LibreOffice die Kompatibilität mit Warexo[/alert]
+.. DANGER:: Sichern Sie sich immer eine separate Kopie der Datei bevor Sie sie anpassen, in manchen Fällen zerstören die Formatierungen von LibreOffice die Kompatibilität mit Warexo
 
 Öffnen Sie die Datei mit LibreOffice, Ihnen stehen nun alle Formatierungsmöglichkeiten offen die LibreOffice bietet. Bitte achten Sie darauf beim Formatieren nicht aus versehen eine Twig Variable falsch abzuändern. Twig Variablen beginnen und enden immer mit doppelten geschweiften Klammern. Twig Funktionen beginnen und enden immer mit einem Prozentzeichen und einer geschweiften Klammer. Übersetzungen sind von doppelten eckigen Klammern eingeschlossen. Sondervariablen sind speziell für die Vorlagen vorformatierte Variablen, diese sind immer in doppelten Rautezeichen eingeschlossen.
 

@@ -6,7 +6,7 @@ Inventuren
 :slug: inventuren
 :status: published
 
-[alert style="info"]Um mit den vollen Lagerfunktionen von Warexo zu arbeiten muss der gesamte zu verwaltende Lagerbestand hinterlegt werden. Hierzu bietet Warexo eine Inventurfunktion um Massenweise Ihren derzeitigen Lagerbestand anzulegen, zusätzlich lässt sich hiermit auch die notwendige jährliche Inventur erledigen.[/alert]
+.. Hint::Um mit den vollen Lagerfunktionen von Warexo zu arbeiten muss der gesamte zu verwaltende Lagerbestand hinterlegt werden. Hierzu bietet Warexo eine Inventurfunktion um Massenweise Ihren derzeitigen Lagerbestand anzulegen, zusätzlich lässt sich hiermit auch die notwendige jährliche Inventur erledigen.
 
 Stichtaginventur
 ~~~~~~~~~~~~~~~~

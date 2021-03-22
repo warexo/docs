@@ -6,7 +6,7 @@ Lagerbuchungen
 :slug: lagerbuchungen
 :status: published
 
-[alert style="info"]Um eine genaue Übersicht darüber zu haben wo sich die Ware in Ihrem Lager befindet muss jede Warenbewegung erfasst werden. Warexo übernimmt einige der Buchungen voll automatisch für Sie - dazu zählt der Warenausgang bei Versand der Bestellung sowie die der Wareneingang bei Reklamationen. Sollten Sie jedoch ohne technische Hilfsmittel Ware in Ihr Lager auf-/entnehmen oder bewegen muss eine Buchung ausgeführt werden um dem System mitzuteilen wo die Ware sich nun befindet.[/alert]
+.. Hint::Um eine genaue Übersicht darüber zu haben wo sich die Ware in Ihrem Lager befindet muss jede Warenbewegung erfasst werden. Warexo übernimmt einige der Buchungen voll automatisch für Sie - dazu zählt der Warenausgang bei Versand der Bestellung sowie die der Wareneingang bei Reklamationen. Sollten Sie jedoch ohne technische Hilfsmittel Ware in Ihr Lager auf-/entnehmen oder bewegen muss eine Buchung ausgeführt werden um dem System mitzuteilen wo die Ware sich nun befindet.
 
 Um eine neue Buchungsreihe zu erzeugen öffnen Sie den Bildschirm "Wareneingang" => "Lagerbuchungen" und klicken Sie auf
 

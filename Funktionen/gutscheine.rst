@@ -106,7 +106,7 @@ Anzahl
 
 Wie viele Gutscheine mit diesem Aufruf erzeugt werden sollen.
 
-[alert]Klicken Sie im Anschluss auf [wawibtn]Generieren[/wawibtn] und warten Sie ab bis alle Gutscheine erstellt wurden.[/alert]
+.. attention::Klicken Sie im Anschluss auf [wawibtn]Generieren[/wawibtn] und warten Sie ab bis alle Gutscheine erstellt wurden.
 
 Gutscheinserien auf Artikel, Kategorien, Benutzer oder Gruppen beschränken
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

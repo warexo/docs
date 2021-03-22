@@ -272,4 +272,4 @@ datev_kunden_XX.csv
 
 Die für den DATEV ASCII Import vorbereiteten Kundendaten für die Kunden die in der gewählten Periode Artikel gekauft haben im CSV Format.
 
-[alert style="info"]DATEV bietet mit seinem ASCII Importer zwei verschiedene Importformate - das XML und das CSV Format. Besprechen Sie bitte mit Ihrem Steuerberater welches Datenformat er benötigt.[/alert]
+.. Hint::DATEV bietet mit seinem ASCII Importer zwei verschiedene Importformate - das XML und das CSV Format. Besprechen Sie bitte mit Ihrem Steuerberater welches Datenformat er benötigt.

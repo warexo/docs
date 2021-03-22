@@ -32,7 +32,7 @@ Wählen Sie PDF wenn Sie die Marke direkt drucken möchten, PNG Marken können i
 
    {{custom_function('imlabel',{order:order, width:250,height:250*0.46})|raw}}
 
-[alert]Bitte beachten Sie dass das Porto sofort berechnet wird wenn das jeweilige Dokument gedruckt wird, eine Erstattung oder Stornierung ist nicht möglich[/alert]
+.. attention::Bitte beachten Sie dass das Porto sofort berechnet wird wenn das jeweilige Dokument gedruckt wird, eine Erstattung oder Stornierung ist nicht möglich
 
 Internetmarke Produkt-Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

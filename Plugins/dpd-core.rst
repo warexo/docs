@@ -6,7 +6,7 @@ DPD
 :slug: dpd-core
 :status: published
 
-[alert type="error"]Bitte beachten Sie dass Warexo den **DPD Core Webservice** und den **DPD Cloud Webservice** unterstützt. Für die Nutzung des DPD Core Webservice müssen Sie MyDPD Pro Kunde sein. Kunden von MyDPD Business können diese Schnittstelle nicht verwenden.[/alert]
+[alert type="error"]Bitte beachten Sie dass Warexo den **DPD Core Webservice** und den **DPD Cloud Webservice** unterstützt. Für die Nutzung des DPD Core Webservice müssen Sie MyDPD Pro Kunde sein. Kunden von MyDPD Business können diese Schnittstelle nicht verwenden.
 
 Der DPD Core Webservice erlaubt es Ihnen Paketlabels direkt aus Warexo heraus zu erstellen. Die benötigten Zugangsdaten erhalten Sie von DPD direkt unter diesem Link https://esolutions.dpd.com/entwickler/dpd-cloud-webservice.aspx?allowcloud=true oder über Ihr jeweiliges DPD Depot. Der Shipping Handler lautet **dpd**
 

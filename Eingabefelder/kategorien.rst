@@ -6,7 +6,7 @@ Kategorien
 :slug: kategorien
 :status: published
 
-[alert]Alle Artikel sollten in einem fest definierten Kategoriebaum existieren. Kategorien können jeweils eine Oberkategorie und beliebig viele Unterkategorien haben.[/alert]
+.. attention::Alle Artikel sollten in einem fest definierten Kategoriebaum existieren. Kategorien können jeweils eine Oberkategorie und beliebig viele Unterkategorien haben.
 
 Aktiv
 ^^^^^

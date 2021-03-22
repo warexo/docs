@@ -93,3 +93,4 @@ master_doc = 'index'
 
 def setup(app):
     app.add_js_file('js/custom.js')
+    app.add_css_file('css/custom.css')

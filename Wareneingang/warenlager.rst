@@ -44,7 +44,7 @@ Erstellen des Lagers
 -  Hochregallager
 -  Kommisionierlager
 
-[alert style="info"]Bitte beachten Sie dass Lagerbestände im POS System nur aus dem Lager entnommen werden wenn es sich um ein Ausstellungs- oder Handelslager handelt.[/alert]
+.. Hint::Bitte beachten Sie dass Lagerbestände im POS System nur aus dem Lager entnommen werden wenn es sich um ein Ausstellungs- oder Handelslager handelt.
 
 **Adressdaten (Firma, Vor-/Nachname etc.):** Die Lieferadresse die bei Lieferungen an dieses Lager angegeben werden soll
 
@@ -71,8 +71,8 @@ Lagerplätze erstellen
 
 Fügen Sie nun die einzelnen physischen Lagerplätze hinzu, für jeden Lagerplatz sind folgende Angaben notwendig:
 
-| [alert]Die Sortierung bestimmt die Reihenfolge der Artikel auf der Pickliste,
-| stellen Sie sicher dass die am schnellsten erreichbaren Lagerplätze die niedrigste Sortierung erhalten.[/alert]
+| .. attention::Die Sortierung bestimmt die Reihenfolge der Artikel auf der Pickliste,
+| stellen Sie sicher dass die am schnellsten erreichbaren Lagerplätze die niedrigste Sortierung erhalten.
 
 **Sortierung:** Sollten 2 Lagerplätze mit der gleichen Ware gleich schnell erreichbar sein führt ein höherer Wert für Sortierung dazu dass dieser Platz bevorzugt wird
 

@@ -6,14 +6,14 @@ Optionen
 :slug: optionen
 :status: published
 
-[alert]Für manche Artikel ist es wünschenswert statt einer vollständigen Variante mit einer Option zu arbeiten. Optionen können den Preis je nach Auswahl prozentual oder absolut beeinflussen. Im Gegensatz zu Varianten haben Optionen jedoch keinen eigenen Artikeldatensatz, dies kann die Performance maßgeblich verbessern jedoch fallen alle Vorteile eines Artikels weg:
+.. attention::Für manche Artikel ist es wünschenswert statt einer vollständigen Variante mit einer Option zu arbeiten. Optionen können den Preis je nach Auswahl prozentual oder absolut beeinflussen. Im Gegensatz zu Varianten haben Optionen jedoch keinen eigenen Artikeldatensatz, dies kann die Performance maßgeblich verbessern jedoch fallen alle Vorteile eines Artikels weg:
 
 -  Eigene Bilder
 -  Lagerbestand
 -  Staffelpreise pro Auswahl
 -  etc.
 
-[/alert]
+
 
 Titel
 ^^^^^

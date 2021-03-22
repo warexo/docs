@@ -6,7 +6,7 @@ Lieferanten Bestellungen
 :slug: lieferanten-bestellungen
 :status: published
 
-[alert style="info"]Warexo ermöglicht es Ihnen Bestellungen bei Ihren Lieferanten direkt im System zu erfassen und an den Lieferanten weiterzugeben. Durch die integrierte Möglichkeit lässt sich die gelieferte Ware auf einfachste Weise in Ihr Lager übertragen.[/alert]
+.. Hint::Warexo ermöglicht es Ihnen Bestellungen bei Ihren Lieferanten direkt im System zu erfassen und an den Lieferanten weiterzugeben. Durch die integrierte Möglichkeit lässt sich die gelieferte Ware auf einfachste Weise in Ihr Lager übertragen.
 
 Um eine freie Bestellung bei Ihrem Lieferanten aufzugeben rufen Sie den Menüpunkt "Wareneingang" => "Lief. Bestellungen" auf und drücken Sie auf die Schaltfläche
 

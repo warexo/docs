@@ -6,7 +6,7 @@ Hersteller
 :slug: hersteller
 :status: published
 
-[alert]Um dem Kunden die Navigation innerhalb der Exportsysteme zu vereinfachen kann es sinnvoll sein die einzelnen Hersteller der Produkte zu hinterlegen.[/alert]
+.. attention::Um dem Kunden die Navigation innerhalb der Exportsysteme zu vereinfachen kann es sinnvoll sein die einzelnen Hersteller der Produkte zu hinterlegen.
 
 Aktiv
 ^^^^^

@@ -129,7 +129,7 @@ Felder definieren
 
 Die Felder bestimmen welche Daten aus Ihrer Import Datei in welches Feld der Datenbank geschrieben werden.
 
-[alert]Es müssen alle Schlüsselfelder (siehe oben) sowie alle Pflichtfelder (bei Neuanlage) definiert werden. Wenn eine dieser Angaben fehlt schlägt der Import fehl![/alert]
+.. attention::Es müssen alle Schlüsselfelder (siehe oben) sowie alle Pflichtfelder (bei Neuanlage) definiert werden. Wenn eine dieser Angaben fehlt schlägt der Import fehl!
 
 Sortierung
 ^^^^^^^^^^
@@ -224,4 +224,4 @@ Downloadjob Kommando
 
 Wenn der CSV-Import Bilder herunterladen soll muss dieser Cronjob laufen um die zugehörigen Bilder schrittweise auf Ihren Server herunterzuladen.
 
-[alert]Ohne diesen Cronjob können keine Bilder von entfernten Servern heruntergeladen werden. Bitte warten Sie mit weiteren Exporten der Daten bis alle Bilder heruntergeladen wurden![/alert]
+.. attention::Ohne diesen Cronjob können keine Bilder von entfernten Servern heruntergeladen werden. Bitte warten Sie mit weiteren Exporten der Daten bis alle Bilder heruntergeladen wurden!

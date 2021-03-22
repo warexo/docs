@@ -20,7 +20,7 @@ eBay Application erstellen
 
 Für den Einsatz der Schnittstelle müssen Sie ein sog. Keyset erstellen. Loggen Sie sich in Ihr Entwicklerkonto ein und klicken Sie auf "Create a keyset" um die benötigten Daten zu erhalten. Achten Sie darauf ein Keyset für die Production Umgebung anzulegen falls Sie mit dem Listen beginnen möchten. Für Tests erstellen Sie ein Sandbox Keyset und aktivieren Sie die Einstellung "Sandbox" in den Plugin Einstellungen.
 
-[alert]Bitte beachten Sie das ein normales Keyset nur 5000 Anfragen pro Tag erlaubt, Warexo benötigt um ein neues Angebot zu erstellen oder zu aktualisieren je 2 Anfragen. Für den Cronjob um Bestellungen abzufragen je eine Anfrage. Für Lagerbestandsabgleiche wird jeweils eine Anfrage pro Artikel verwendet. Wenn Sie ein hohes Aufkommen haben müssen Sie die Anwendung von eBay Zertifizieren lassen - wenden Sie sich in diesem Fall bitte direkt an eBay.[/alert]
+.. attention::Bitte beachten Sie das ein normales Keyset nur 5000 Anfragen pro Tag erlaubt, Warexo benötigt um ein neues Angebot zu erstellen oder zu aktualisieren je 2 Anfragen. Für den Cronjob um Bestellungen abzufragen je eine Anfrage. Für Lagerbestandsabgleiche wird jeweils eine Anfrage pro Artikel verwendet. Wenn Sie ein hohes Aufkommen haben müssen Sie die Anwendung von eBay Zertifizieren lassen - wenden Sie sich in diesem Fall bitte direkt an eBay.
 
 Plugin Einstellungen
 ~~~~~~~~~~~~~~~~~~~~
