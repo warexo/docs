@@ -48,7 +48,7 @@ Preise/Steuer
 -  {{product.uvp}} - UVP
 -  {{product.actpurchaseprice}} - Akt. EKP
 -  {{product.midpurchaseprice}} - Kalk. EKP
--  `{{appservice.getContainer().get('tax.service').getProductTaxRate(product)}}` - Steuersatz %
+-  {{appservice.getContainer().get('tax.service').getProductTaxRate(product)}} - Steuersatz %
 -  {{(product.price/product.unitQuantity)|m}}{{client().defaultcurrency.isocode}}/{{product.unitName}} - Grundpreis
 
 Staffelpreise
@@ -79,7 +79,7 @@ Produktbilder
 {% for picture in product.pictures %}...{% endfor %}
 
 -  {{picture.sort}} - Sortierung
--  `<wawi-url>/{{asset('uploads/' ~ product.getActiveClient().getIdent() ~ '/' ~ picture.getSubPath() ~ '/' ~ picture.getPictureName())}}` - Bild-URL
+-  <wawi-url>/{{asset('uploads/' ~ product.getActiveClient().getIdent() ~ '/' ~ picture.getSubPath() ~ '/' ~ picture.getPictureName())}} - Bild-URL
 -  
 
 Lager
