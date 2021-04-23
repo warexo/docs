@@ -4,6 +4,9 @@ Installation
 .. toctree::
    :caption: Inhalt
    :maxdepth: 2
-   :glob:
 
-   *
+   systemvoraussetzungen
+   installation
+   installationsassistent
+   connector
+   wawilistener

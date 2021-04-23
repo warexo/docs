@@ -5,7 +5,7 @@ Warenlager
 :category: Wareneingang
 :slug: warenlager
 :status: published
-:attachments: /_static/img/screenshots/lagerdimensionen.png, /_static/img/screenshots/lagerdimensionen-768x301-1.png
+:attachments: /_static/img/screenshots/lagerdimensionen.png
 
 Ein Neues Lager Erstellen
 -------------------------
@@ -95,7 +95,7 @@ Fügen Sie nun die einzelnen physischen Lagerplätze hinzu, für jeden Lagerplat
 
 **Kommentar:** Ein interner Kommentar wenn benötigt
 
-.. |image0| image::  /_static/img/screenshots/lagerdimensionen-768x301-1-300x118.png
+.. |image0| image::  /_static/img/screenshots/lagerdimensionen.png
    :class: alignnone wp-image-1905
    :width: 511px
    :height: 201px
