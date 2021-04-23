@@ -1,12 +1,7 @@
 Webshop
 #######
-:date: 2017-10-12 12:36
-:author: admin
-:category: Daten Im-/Export
-:slug: webshop
-:status: published
 
-[alert type="info"]Bitte installieren Sie zunächst den entsprechenden Webshop Connector für Ihr System bevor Sie mit den folgenden Schritten fortfahren.
+.. attention:: Bitte installieren Sie zunächst den entsprechenden Webshop Connector für Ihr System bevor Sie mit den folgenden Schritten fortfahren. Siehe :doc:`/Installation/connector`
 
 Webshop Verbindung einrichten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,7 +28,7 @@ FTP Pfad zum Shop
 
 Pfad zum Hauptverzeichnis des Shop, ausgehend vom FTP Zielverzeichnis des oben eingegebenen Benutzers. Wenn das Zielverzeichnis des FTP Benutzers direkt auf den Webshop zeigt dann ein einfacher Slash /
 
-.. attention::Speichern Sie die Einstellungen und verwenden Sie die Schaltfläche "Verbindung zum Shop prüfen" in der Aktionsleiste. Sie erhalten eine entsprechende Meldung ob die Verbindung erfolgen konnte
+.. attention:: Speichern Sie die Einstellungen und verwenden Sie die Schaltfläche "Verbindung zum Shop prüfen" in der Aktionsleiste. Sie erhalten eine entsprechende Meldung ob die Verbindung erfolgen konnte
 
 Webshop Daten importieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~
