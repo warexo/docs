@@ -67,3 +67,8 @@ Automatischer Bestellimport
 
 Unter :menuselection:`Systemverwaltung --> Schnittstellen --> Webshop --> Bestellimport` werden Ihnen die notwendigen
 Cron Befehle angezeigt. Legen Sie diese im gewünschten Intervall auf Ihrem Server an.
+
+Erstimport
+~~~~~~~~~~
+Führen Sie unter :menuselection:`Systemverwaltung --> Schnittstellen --> Webshop --> Import` nacheinander alle Importe
+einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Auswahlliste ein.
