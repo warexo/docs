@@ -50,6 +50,8 @@ FTP Server
     Zugangsdaten für eine FTP(S) Verbindung zum Shop, diese werden zur Dateiübertragung genutzt. Der Pfad ist relativ zu den
     für den Benutzer angegebenen Root Pfad und sollte mit einem Slash (/) enden.
 
+Weitere Informationen finden Sie im entsprechenden Handbucheintrag :doc:`/Daten-Im-Export/webshop`
+
 Verbindung testen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
