@@ -4,6 +4,9 @@ Daten Im-/Export
 .. toctree::
    :caption: Inhalt
    :maxdepth: 2
-   :glob:
 
-   *
+   extrafelder
+   webshop
+   csv-import
+   reporting
+   report-schemas
