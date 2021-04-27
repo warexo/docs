@@ -5,6 +5,27 @@ Installation
 
 Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter erfolgen, bitte beachten Sie `die Systemanforderungen </handbuch/systemvoraussetzungen>`__ bevor Sie mit der Arbeit beginnen. Sollten Sie sich unsicher sein treten Sie mit uns in Kontakt, wir helfen Ihnen gerne bei der Einrichtung. Die Warnungen in dieser Anleitung beziehen sich auf eine Installation auf einen im Internet erreichbaren Server, für Intranet Server empfehlen wir trotzdem unserer Anleitung zu folgen.
 
+.. Hint:: Sie können die Pakete mit folgenden Befehlen automatisch herunterladen und entpacken,
+    Ersetzen Sie die Version 2.0.43 mit der gewünschten Version, die neueste Versionsnummer finden Sie auf der Seite
+    des `Paketservers <https://packages.aggrowawi.de>`__
+
+.. code-block:: bash
+
+    wget "http://packages.aggrowawi.de/index.php?download=1&v1=2.0.43" -O wawi.zip
+    wget "http://packages.aggrowawi.de/index.php?download=1&v1=2.0.43&vendors=1" -O vendors.zip
+    unzip wawi.zip
+    unzip vendors.zip
+    rm wawi.zip
+    rm vendors.zip
+
+
+
+Daten herunterladen
+~~~~~~~~~~~~~~~~~~~
+
+Laden Sie die beiden Installationspakete von unserem `Paketserver <https://packages.aggrowawi.de>`__ herunter. Sie benötigen das Hauptpaket :guilabel:`Download Version` sowie
+die Drittanbieter Pakete :guilabel:`Vendor Packages`
+
 Daten entpacken
 ~~~~~~~~~~~~~~~
 
