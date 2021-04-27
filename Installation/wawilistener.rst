@@ -10,7 +10,7 @@ alle nötigen Kommunikationen zwischen dem Arbeitsrechner und der Warenwirtschaf
 Installation
 ~~~~~~~~~~~~
 
--  Installieren Sie Java SE (8 oder 9) (https://www.java.com/de/)
+-  Installieren Sie Open JDK (8 oder 9) (https://adoptopenjdk.net/)
 -  Installieren Sie LibreOffice 6.1 (https://de.libreoffice.org/)
 -  Installieren Sie Adobe Reader DC (https://get.adobe.com/de/reader/)
 -  Laden Sie den WAWIListener herunter, die aktuellste Version finden Sie in Ihrer Warenwirtschaft unter dem Punkt "Systemverwaltung" => "Systemaktualisierung" oben rechts
