@@ -42,56 +42,35 @@ Retourenmaßnahmen
 Folgende Retourenmaßnahmen stehen zur Verfügung.
 
 Ins Lager einbuchen, mit Gutschrift
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird zurück in das Lager gebucht, für den Kunden wird eine Gutschrift erzeugt.
+    Der Artikel wird zurück in das Lager gebucht, für den Kunden wird eine Gutschrift erzeugt.
 
 Ins Lager einbuchen, keine Gutschrift
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird zurück in das Lager gebucht, der Kunde erhält keine Gutschrift.
-
+    Der Artikel wird zurück in das Lager gebucht, der Kunde erhält keine Gutschrift.
 
 Gutschrift, keine Lagerbuchung
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird nicht in das Lager gebucht, der Kunde erhält eine Gutschrift.
-
+    Der Artikel wird nicht in das Lager gebucht, der Kunde erhält eine Gutschrift.
 
 Entsorgung, mit Gutschrift
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird nicht in das Lager gebucht, der Kunde erhält eine Gutschrift.
+    Der Artikel wird nicht in das Lager gebucht, der Kunde erhält eine Gutschrift.
 
 Entsorgung, keine Gutschrift
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird nicht in das Lager gebucht, der Kunde erhält keine Gutschrift.
+    Der Artikel wird nicht in das Lager gebucht, der Kunde erhält keine Gutschrift.
 
 Umtausch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird zurück in das Lager gebucht, der Kunde erhält einen anderen Artikel.
-Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
+    Der Artikel wird zurück in das Lager gebucht, der Kunde erhält einen anderen Artikel.
+    Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
 
 Entsorgung, verschobener Umtausch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird nicht in das Lager gebucht, es wird ein neuer Auftrag erzeugt. In diesem
-Auftrag werden alle Positionen und Kosten auf 0 gesetzt. Der Auftrag kann dann normal bearbeitet
-werden um den Umtausch zu regeln.
+    Der Artikel wird nicht in das Lager gebucht, es wird ein neuer Auftrag erzeugt. In diesem
+    Auftrag werden alle Positionen und Kosten auf 0 gesetzt. Der Auftrag kann dann normal bearbeitet
+    werden um den Umtausch zu regeln.
 
 Entsorgung, sofortiger Umtausch
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Der Artikel wird nicht in das Lager gebucht,  der Kunde erhält einen anderen Artikel.
-Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
+    Der Artikel wird nicht in das Lager gebucht,  der Kunde erhält einen anderen Artikel.
+    Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
 
 Service / Reparatur
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Diese Funktion ist experimentell, bitte verwenden Sie diese Funktion nicht ohne weitere Absprache mit uns.
-
+    Diese Funktion ist experimentell, bitte verwenden Sie diese Funktion nicht ohne weitere Absprache mit uns.
 
 Maßnahmentabelle
 ~~~~~~~~~~~~~~~~~~~~

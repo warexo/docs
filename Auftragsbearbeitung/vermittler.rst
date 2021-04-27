@@ -19,44 +19,36 @@ Provisionsmodell definieren
 Tragen Sie im Kundendatensatz unter |pencil-square| :menuselection:`Konditionen`, wenn benötigt, folgende Felder ein.
 
 Vermittlerprovision %
-^^^^^^^^^^^^^^^^^^^^^
-
-Eine prozentuale Vermittlerprovision anhand des Brutto Auftragswertes die als Provision ausgezahlt wird.
+    Eine prozentuale Vermittlerprovision anhand des Brutto Auftragswertes die als Provision ausgezahlt wird.
 
 Fix. Vermittlerprovision
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Eine absolute Vermittlerprovision in Euro. Diese wird auf die prozentuale Provision addiert falls diese zusätzlich eingetragen wird.
+    Eine absolute Vermittlerprovision in Euro. Diese wird auf die prozentuale Provision addiert falls diese zusätzlich eingetragen wird.
 
 Vermittlerprovision Formel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Sollten Sie die Vermittlerprovision dynamisch berechnen wollen können Sie hier einen :doc:`Twig Ausdruck </Dokumente/twig>` eintragen.
+    Der :doc:`Twig Ausdruck </Dokumente/twig>` überschreibt die prozentuale und fixe Provision vollständig.
 
-Sollten Sie die Vermittlerprovision dynamisch berechnen wollen können Sie hier einen :doc:`Twig Ausdruck </Dokumente/twig>` eintragen. 
-Der :doc:`Twig Ausdruck </Dokumente/twig>` überschreibt die prozentuale und fixe Provision vollständig. 
+    Folgende Variablen sind verfügbar:
 
-Folgende Variablen sind verfügbar:
-
--  **entity / order**
-   Das Bestellungs (Order) Objekt
--  **offer**
-   Das Angebots (Offer) Objekt
--  **agent**
-   Das Kunden (Customer) Objekt des Vermittlers
--  **appservice**
-   Eine Referenz auf das AppService Objekt
+    -  **entity / order**
+       Das Bestellungs (Order) Objekt
+    -  **offer**
+       Das Angebots (Offer) Objekt
+    -  **agent**
+       Das Kunden (Customer) Objekt des Vermittlers
+    -  **appservice**
+       Eine Referenz auf das AppService Objekt
 
 Vermittler URL-Parameter
-^^^^^^^^^^^^^^^^^^^^^^^^
+    Wenn Sie dem Vermittler eine sog. Affiliate URL zuweisen möchten geben Sie hier den vollständigen Ausdruck für seinen Parameter ein.
 
-Wenn Sie dem Vermittler eine sog. Affiliate URL zuweisen möchten geben Sie hier den vollständigen Ausdruck für seinen Parameter ein.
+    **Beispiel:**
 
-**Beispiel:**
+    .. code:: html
 
-.. code:: html
+       affiliate_id=25
 
-   affiliate_id=25
-
-Weitere Informationen finden Sie weiter unten unter :ref:`Automatische Zuweisung via Webshop`
+    Weitere Informationen finden Sie unter :ref:`Automatische Zuweisung via Webshop`
 
 Vermittler zuweisen
 -------------------
