@@ -18,8 +18,6 @@ Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter 
     rm wawi.zip
     rm vendors.zip
 
-
-
 Daten herunterladen
 ~~~~~~~~~~~~~~~~~~~
 
