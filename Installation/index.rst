@@ -10,3 +10,4 @@ Installation
    installationsassistent
    connector
    wawilistener
+   config

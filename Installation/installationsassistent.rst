@@ -27,7 +27,7 @@ Bitte achten Sie darauf eine korrekte E-Mail Adresse einzugeben und sich Benutze
 Config Anpassung
 ~~~~~~~~~~~~~~~~
 
-Öffnen Sie nach Abschluss der Installation die Datei app/config/parameters.yml und passen Sie die Einstellung
+Öffnen Sie nach Abschluss der Installation die Datei :guilabel:`app/config/parameters.yml` und passen Sie die Einstellung
 :guilabel:`wawi.url` an. Geben Sie hier die vollständige Webadresse der Installation ein z.B. :guilabel:`https://wawi.example.org`
 
 Leeren Sie anschließend den Systemcache über :menuselection:`Systemverwaltung --> Systemaktualisierung --> Cache leeren`
