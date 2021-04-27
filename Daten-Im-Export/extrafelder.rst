@@ -72,25 +72,25 @@ Einstellung ein sog. Mapping ein.
 $_aOtherProductFields
     Produktdaten Mapping Tabelle oxarticles
 
-$_sOtherOfferItemFields = '';
+$_sOtherOfferItemFields
     Bestellpositionen Mapping Tabelle oxorderarticles
 
-$_aOtherCategoryFields = array();
+$_aOtherCategoryFields
     Kategorie Mapping Tabelle oxcategories
 
 $_aOtherOrderFields
     Bestellungen Mapping Tabelle oxorder
 
-$_aOtherManufacturerFields = array();
+$_aOtherManufacturerFields
     Hersteller Mapping Tabelle oxmanufacturer
 
-$_aOtherCustomerFields = array();
+$_aOtherCustomerFields
     Kunden Mapping Tabelle oxuser
 
-$_aOtherAttributeFields = array();
+$_aOtherAttributeFields
     Attribute Mapping Tabelle oxattribute
 
-$_aOtherOptionFields = array();
+$_aOtherOptionFields
     Auswahllisten Mapping Tabelle oxselectlist
 
 Beispiel für ein Mapping des Extrafelds :guilabel:`mein_feld` auf das Datenbankfeld :guilabel:`oxmeinfeld`
