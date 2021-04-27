@@ -15,7 +15,7 @@ Tabelle
     Definiert die Stammtabelle/Entität zu der das Extrafeld hinzugefügt werden soll (Kategorie, Produkt etc.)
 
 Feld
-    Interner Name des Felds, darf keine Sonderzeichen enthalten, muss vollständig klein geschrieben sein z.B. :guilabel:`mein_feld` :guilabel:`extradaten` :guilabel:`langerfeldname`
+    Interner Name des Felds, darf keine Sonder- oder Leerzeichen enthalten, muss vollständig klein geschrieben sein z.B. :guilabel:`mein_feld` :guilabel:`extradaten` :guilabel:`langerfeldname`
 
 Anzeigename
     Titel des Feldes der in Warexo angezeigt wird, beliebig definierbar
@@ -70,28 +70,28 @@ Oxid eShop
 Einstellung ein sog. Mapping ein.
 
 $_aOtherProductFields
-    Produktdaten Mapping Tabelle oxarticles
+    Produktdaten Mapping Tabelle `oxarticle`
 
 $_sOtherOfferItemFields
-    Bestellpositionen Mapping Tabelle oxorderarticles
+    Bestellpositionen Mapping Tabelle `oxorderarticles`
 
 $_aOtherCategoryFields
-    Kategorie Mapping Tabelle oxcategories
+    Kategorie Mapping Tabelle `oxcategories`
 
 $_aOtherOrderFields
-    Bestellungen Mapping Tabelle oxorder
+    Bestellungen Mapping Tabelle `oxorder`
 
 $_aOtherManufacturerFields
-    Hersteller Mapping Tabelle oxmanufacturer
+    Hersteller Mapping Tabelle `oxmanufacturer`
 
 $_aOtherCustomerFields
-    Kunden Mapping Tabelle oxuser
+    Kunden Mapping Tabelle `oxuser`
 
 $_aOtherAttributeFields
-    Attribute Mapping Tabelle oxattribute
+    Attribute Mapping Tabelle `oxattribute`
 
 $_aOtherOptionFields
-    Auswahllisten Mapping Tabelle oxselectlist
+    Auswahllisten Mapping Tabelle `oxselectlist`
 
 Beispiel für ein Mapping des Extrafelds :guilabel:`mein_feld` auf das Datenbankfeld :guilabel:`oxmeinfeld`
 
