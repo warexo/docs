@@ -60,8 +60,7 @@ Vertragsdauer
     (optional, ausgehend von Vertragsdatum bzw. Abrechnung ab Datum)
 
 Abrechnung ab Datum
-    Wenn gesetzt werden Aufträge für diesen Vertrag erst ab diesem Datum generiert -
-    dieses Feld wird bei einer manuellen Generierung von Aufträgen ignoriert
+    Wenn gesetzt werden Aufträge für diesen Vertrag erst ab diesem Datum generiert
 
 Notiz
     Interne Notiz
@@ -116,7 +115,7 @@ Auftragstermine
     Dieses Feld steuert wann und wie oft Aufträge für diesen Vertrag generiert werden sollen. Siehe :ref:`Abonnements Auftragstermine definieren`.
 
 Auftragstermine gültig ab
-    Analog zum Feld :guilabel:`Abrechnung ab Datum` - dieses Feld wird jedoch auch bei einer manuellen Generierung von Aufträgen berücksichtigt.
+    Analog zum Feld :guilabel:`Abrechnung ab Datum` - dieses Feld wird bei einer manuellen Generierung von Aufträgen ignoriert.
 
 Benachrichtigung über bevorstehende Lieferung
     Definiert wann das Workflow Event `Abonnementvertrag: Benachrichtigung über bevorstehende Lieferung` ausgelöst werden soll.
