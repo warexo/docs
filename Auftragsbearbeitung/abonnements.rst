@@ -113,7 +113,7 @@ Zahlungsart
     Die Zahlungsart die für den Auftrag verwendet werden soll, eventuell Felder zu Zahlungsart erscheinend darunter.
 
 Auftragstermine
-    Dieses Feld steuert wann und wie oft Aufträge für diesen Vertrag generiert werden sollen. Siehe :ref`Auftragstermine definieren`.
+    Dieses Feld steuert wann und wie oft Aufträge für diesen Vertrag generiert werden sollen. Siehe :ref:`Abonnements Auftragstermine definieren`.
 
 Auftragstermine gültig ab
     Analog zum Feld :guilabel:`Abrechnung ab Datum` - dieses Feld wird jedoch auch bei einer manuellen Generierung von Aufträgen berücksichtigt.
@@ -153,6 +153,8 @@ Versandkosten
 
 Rabatt
     Prozentualer oder fixer Rabatt für generierte Aufträge, nutzen Sie hier bitte nur eines der Felder
+
+.. _Abonnements Auftragstermine definieren:
 
 Auftragstermine definieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
