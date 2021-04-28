@@ -1,10 +1,5 @@
 Twig Template Sprache
 #####################
-:date: 2017-10-25 11:16
-:author: admin
-:category: Dokumente
-:slug: twig
-:status: published
 
 Die Template Sprache Twig wird in vielen Bereichen von Warexo verwendet um Variable Daten in das System einzuspeisen.
 
@@ -15,14 +10,14 @@ Warexo übergibt je nach Kontext verschiedenste Variablen die verwendet werden k
 
 Sie können mit der Punkt Notation (.) oder mit der Subscript Syntax ([]) arbeiten, wir empfehlen aus Lesbarkeitsgründen die Punkt Notation zu verwenden:
 
-::
+.. code-block:: twig
 
    {{ foo.bar }}
    {{ foo['bar'] }}
 
 Wenn das Attribut ein Sonderzeichen verwendet können Sie die *attribute* Funktion verwenden:
 
-::
+.. code-block:: twig
 
    {# Equivalent für das nicht funktionierende foo.data-foo #}
    {{ attribute(foo, 'data-foo') }}
@@ -34,7 +29,7 @@ Variablen erzeugen und ändern
 
 Sie können Variablen einen Wert zuweisen, verwenden Sie hierzu den *set* Tag:
 
-::
+.. code-block:: twig
 
    {% set foo = 'foo' %}
    {% set foo = [1, 2] %}
@@ -47,19 +42,19 @@ Variablen können mit Filtern modifiziert werden. Filter werden von der Variable
 
 Dieses Beispiel entfernt alle HTML Tags aus der Variable *name* und schreibt den jeweils ersten Buchstaben groß:
 
-::
+.. code-block:: twig
 
    {{ name|striptags|title }}
 
 Filter mit Argumenten schließen die Argumente in Hochkommas ein. Dieses Beispiel verkettet alle Elemente in der Variable *list* mit einem Komma:
 
-::
+.. code-block:: twig
 
    {{ list|join(', ') }}
 
 Um einen Filter auf eine code Stelle anzuwenden schließen Sie diese in den *filter* Tag ein:
 
-::
+.. code-block:: twig
 
    {% filter upper %}
     Dieser Text wird in Großbuchstaben ausgegeben
@@ -74,7 +69,7 @@ Funktionen können aufgerufen werden um Inhalte zu generieren. Funktionen werden
 
 Die *range* Funktion zum Beispiel erzeugt eine Liste mit ganzzahligen Werten in einem Bereich
 
-::
+.. code-block:: twig
 
    {% for i in range(0, 3) %}
     {{ i }},
@@ -89,7 +84,7 @@ Eine Kontrollstruktur bezeichnet alles dass den Fluss eines Programms beeinfluss
 
 Um zum Beispiel eine Liste mit Bestellnummern in der Variable *orders* zu erzeugen, verwenden Sie den *for* Tag:
 
-::
+.. code-block:: twig
 
    {% for order in orders %}
      {{ order.orderNumber }},
@@ -97,7 +92,7 @@ Um zum Beispiel eine Liste mit Bestellnummern in der Variable *orders* zu erzeug
 
 Der *if* Tag kann verwendet werden um einen Ausdruck zu prüfen:
 
-::
+.. code-block:: twig
 
    {% if orders|length > 0 %}
      Folgende Bestellungen sind vorhanden:
