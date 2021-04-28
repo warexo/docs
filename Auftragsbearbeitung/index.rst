@@ -4,6 +4,12 @@ Auftragsbearbeitung
 .. toctree::
    :caption: Inhalt
    :maxdepth: 2
-   :glob:
 
-   *
+   angebote-anlegen
+   auftraege-bearbeiten
+   retouren
+   teillieferungen
+   rechnungen
+   rechnungskorrekturen
+   abonnements
+   vermittler
