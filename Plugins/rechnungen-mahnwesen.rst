@@ -59,4 +59,21 @@ Ereignis "Dritte Mahnung versenden"
 
 Ereignis "Inkasso"
 
+Dokumente anpassen
+~~~~~~~~~~~~~~~~~
+
+Dokument "Erste Mahnung"
+
+Dokument "Zweite Mahnung"
+
+Dokument "Dritte Mahnung"
+
+Textbausteine anpassen
+~~~~~~~~~~~~~~~~~
+
+Textbaustein "Erste Mahnung"
+
+Textbaustein  "Zweite Mahnung"
+
+Textbaustein  "Dritte Mahnung"
 
