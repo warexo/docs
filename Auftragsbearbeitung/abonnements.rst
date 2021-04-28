@@ -196,6 +196,13 @@ ungerade Woche: jeden zweiten Dienstag
 Aufträge generieren
 ---------------------
 
+.. attention:: Wenn ein Auftrag durch ein Abonnement generiert wird dann werden
+    **keine Bestellbestätigungs- oder Stornierungs E-Mails versendet**.
+
+    Wenn trotzdem Bestellbestätigungen versendet werden sollen nutzen Sie bitte das entsprechenden Workflow Event `Abonnementvertrag-Bestellung angelegt`.
+
+    Für Stornierungen nutzen Sie das Workflow Event `Bestellung storniert` mit der Bedingung `Bestellung aus einem Abonemmentvertrag`
+
 Die Aufträge werden entweder automatisch über den Cronjob (siehe :ref:`Abonnements Plugin Einstellungen`) oder manuell erzeugt.
 Die manuelle Erzeugung kann genutzt werden um Aufträge auch außerhalb des Abrechnung ab Datums zu erzeugen. Die manuelle
 Methode schlägt fehl wenn der Vertrag abgelaufen bzw. gekündigt ist oder der Auftragstermin nicht zum aktuellen Datum passt.
