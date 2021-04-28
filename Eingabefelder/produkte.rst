@@ -112,6 +112,12 @@ Staffelpreise
     Geben Sie einfach die gewünschten einschließlichen Mengen von bis an, welche Art Rabatt gewährt werden soll – 
     prozentual oder absolut und den Zielpreis oder die Prozent die abgezogen werden sollen.
 
+    Die Preise lassen sich wahlweise auch nur für bestimmte Kundengruppen, Mandanten oder Vertriebskanäle definieren.
+
+Preise
+    Der Grundpreis des Artikels kann anhand von Kundengruppe, Mandant oder Vertriebskanal angepasst werden. Sobald
+    ein spezieller Preis gilt wird der Wert im Feld Preis damit überschrieben.
+
 Lager
 ^^^^^^
 
