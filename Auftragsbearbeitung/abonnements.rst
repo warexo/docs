@@ -113,7 +113,7 @@ Zahlungsart
     Die Zahlungsart die für den Auftrag verwendet werden soll, eventuell Felder zu Zahlungsart erscheinend darunter.
 
 Auftragstermine
-    Dieses Feld steuert wann und wie oft Aufträge für diesen Vertrag generiert werden sollen. Siehe Auftragstermine definieren.
+    Dieses Feld steuert wann und wie oft Aufträge für diesen Vertrag generiert werden sollen. Siehe :ref`Auftragstermine definieren`.
 
 Auftragstermine gültig ab
     Analog zum Feld :guilabel:`Abrechnung ab Datum` - dieses Feld wird jedoch auch bei einer manuellen Generierung von Aufträgen berücksichtigt.
