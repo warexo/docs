@@ -3,6 +3,9 @@ Check24
 
 Diese Einstellungen beziehen sich auf die Darstellung innerhalb des `Check24 Marktplatz <https://merchantcenter.check24.de/>`__
 
+Einstellungen
+---------------
+
 An Check24 nicht exportieren
     Schließt diesen Artikel vom Check24 Export aus
 

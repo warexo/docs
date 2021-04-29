@@ -3,6 +3,9 @@ eBay
 
 Diese Einstellungen beziehen sich auf die Darstellung innerhalb von `Ebay <https://www.ebay.de/help/selling>`__
 
+Einstellungen
+---------------
+
 Kategorie
     Bis zu 2 eBay Kategorien in der dieser Artikel gelistet werden soll
 
@@ -110,5 +113,5 @@ Ebay Ended Time [Länderkürzel]
 Funktionen
 ---------------
 
-Stammdaten inkl. aller Varianten an Amazon senden
+Stammdaten inkl. aller Varianten an eBay senden
     Übeträgt den Artikel vollständig mit den aktuellen Einstellungen zu eBay
