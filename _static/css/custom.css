@@ -7,7 +7,7 @@
 .rst-content dl:not(.docutils) dt:first-child {
     margin-top: 0;
   }
-  .rst-content dl:not(.docutils) dt {
+.rst-content dl:not(.docutils) dt {
     display: table;
     margin: 6px 0;
     font-size: 90%;
@@ -17,4 +17,12 @@
     border-top: solid 3px #6ab0de;
     padding: 6px;
     position: relative;
-  }
+}
+@media (min-width: 1440px) {
+    .sidebar.floating {
+        position: absolute;
+        left: 1100px;
+        width: 340px;
+        margin: 0;
+    }
+}

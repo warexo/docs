@@ -31,6 +31,13 @@ Sortierung
 
 Auswahllistenwerte
     Wenn der Feldtyp :guilabel:`Auswahlliste` gewählt wird können hier die möglichen Werte eingetragen werden, ein Wert pro Zeile
+    Wenn Sie Wert und Anzeige trennen möchten verwenden Sie bitte folgendes Format:
+
+    .. code-block::
+
+        WERT|Anzeige Titel
+        MEIN_WERT|Anderer Titel
+        3|Titel mit numerischem Wert
 
 Read-Only
     Wenn gewählt ist das Feld nur lesbar, nützlich für programmatische Erweiterungen
