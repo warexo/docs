@@ -111,6 +111,9 @@ Amazon Variation für XXX
 Cron URL
     Damit die Bestellungen automatisch importiert und die Artikel exportiert werden müssen die beiden angezeigten Cron Jobs eingerichtet werden, bitte wenden Sie sich an Ihren Administrator wenn Sie Hilfe beim einrichten der Cron Jobs benötigen.
 
+.. Hint:: Derzeit werden die Bestelldaten ohne persönliche Kundendaten importiert, nutzen Sie die Funktion Bestellabgleich
+    im Amazon Plugin um die Daten anzureichern
+
 Artikeleinstellungen
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -126,3 +129,8 @@ Klicken Sie entweder beim Produkt in der Eingabebox "Amazon" die Schaltfläche "
 oder wählen Sie in der Produktliste mehrere Produkte und verwenden Sie die Massenaktion "Artikel an Amazon exportieren".
 
 Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plugin Einstellungen exportieren.
+
+Bestellabgleich
+~~~~~~~~~~~~~~~~
+
+...
