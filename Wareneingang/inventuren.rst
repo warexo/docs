@@ -37,7 +37,6 @@ IST-Bestand erfassen
     aller Artikel in diesem Lagerplatz auf die geprüfte Menge setzen. Der Lagerbestand wird dann automatisch korrigiert.
 
 Per CSV Inventurliste
-
     .. Attention:: Bearbeiten Sie die CSV Inventurliste bitte ausschließlich mit LibreOffice **nicht mit Microsoft Excel o.Ä.**
 
     Geben Sie im Bereich :guilabel:`Inventurliste` die benötigten Einstellungen an und klicken Sie auf
