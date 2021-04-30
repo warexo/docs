@@ -48,7 +48,7 @@ Vermittler URL-Parameter
 
        affiliate_id=25
 
-    Weitere Informationen finden Sie unter :ref:`Automatische Zuweisung via Webshop`
+    Weitere Informationen finden Sie unter `Automatische Zuweisung via Webshop`_
 
 Vermittler zuweisen
 -------------------

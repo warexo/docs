@@ -12,7 +12,7 @@ Um eine Inventur durchzuführen starten Sie :menuselection:`Wareneingang --> Bes
 
 Bitte beachten Sie dass eine Inventur nur dann durchgeführt werden kann wenn keine
 unkommissionierten Picklisten mehr für die gesperrten Lagerplätze vorliegen. Sie erhalten ansonsten beim Sperren eine entsprechende Hinweismeldung.
-Wenn Sie eine rollende Inventur verwenden möchten springen Sie bitte zu :ref:`Rollende Inventur`.
+Wenn Sie eine rollende Inventur verwenden möchten springen Sie bitte zu `Rollende Inventur`_.
 
 Stammdaten und Lagerplatz festlegen
     Vergeben Sie für die Inventur eine laufende Nummer, wählen Sie die gewünschten Lager und hinterlegen Sie wenn benötigt eine Notiz.
@@ -37,6 +37,9 @@ IST-Bestand erfassen
     aller Artikel in diesem Lagerplatz auf die geprüfte Menge setzen. Der Lagerbestand wird dann automatisch korrigiert.
 
 Per CSV Inventurliste
+
+    .. Attention:: Bearbeiten Sie die CSV Inventurliste bitte ausschließlich mit LibreOffice **nicht mit Microsoft Excel o.Ä.**
+
     Geben Sie im Bereich :guilabel:`Inventurliste` die benötigten Einstellungen an und klicken Sie auf
     :guilabel:`CSV Inventurliste herunterladen`. Füllen Sie die Spalte Lagerbestand für alle gewünschten Artikel aus und
     laden Sie die Liste via `CSV Inventurliste hochladen` wieder hoch.
