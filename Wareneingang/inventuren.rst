@@ -11,8 +11,8 @@ Stichtaginventur
 Um eine Inventur durchzuführen starten Sie :menuselection:`Wareneingang --> Bestand --> Inventur --> Neue Inventur`
 
 Bitte beachten Sie dass eine Inventur nur dann durchgeführt werden kann wenn keine
-unkommissionierten Picklisten mehr im System vorliegen. Sie erhalten ansonsten eine entsprechende Hinweismeldung.
-Wenn Sie eine rollende Inventur verwenden möchten springen Sie bitte zu "Rollende Inventur".
+unkommissionierten Picklisten mehr für die gesperrten Lagerplätze vorliegen. Sie erhalten ansonsten beim Sperren eine entsprechende Hinweismeldung.
+Wenn Sie eine rollende Inventur verwenden möchten springen Sie bitte zu :ref:`Rollende Inventur`.
 
 Stammdaten und Lagerplatz festlegen
     Vergeben Sie für die Inventur eine laufende Nummer, wählen Sie die gewünschten Lager und hinterlegen Sie wenn benötigt eine Notiz.
@@ -82,7 +82,7 @@ Per CSV Inventurliste
         Für einen Abgleich von Artikel-Stammdaten benutzen Sie die Funktion "CSV-Import".
 
 Rollende Inventur
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Wenn Sie die Artikelbestände im laufenden Betrieb, also Artikel für Artikel pflegen möchten können Sie die rollende Inventur nutzen. Hierfür gehen Sie wie folgt vor:
 
