@@ -18,6 +18,9 @@
     padding: 6px;
     position: relative;
 }
+.rst-content .guilabel {
+    white-space: nowrap;
+}
 @media (min-width: 1440px) {
     .sidebar.floating {
         position: absolute;
