@@ -50,6 +50,27 @@ MwSt.
 Alle neg. Nachlässe ignorieren
     Ignoriert im Webshop alle negativen Nachlässe (Rabatte etc.) für diesen Artikel
 
+
+.. sidebar:: Twig Kontext
+    :class: floating
+
+    .. list-table::
+       :widths: 50 50
+       :header-rows: 1
+
+       * - Variable
+         - Beschreibung
+       * - appservice
+         - AppService
+       * - em
+         - EntityManager
+       * - product
+         - Referenz zum Produkt
+       * - entity
+         - Analog zu `product`
+       * - scaleprice
+         - Staffelpreis
+
 Staffelpreise
     Die Artikel können über beliebige Mengenstaffelpreise verfügen,
     je nach Einstellung und Export System werden diese entweder an die Varianten vererbt oder nicht.
@@ -58,6 +79,8 @@ Staffelpreise
     prozentual oder absolut und den Zielpreis oder die Prozent die abgezogen werden sollen.
 
     Die Preise lassen sich wahlweise auch nur für bestimmte Kundengruppen, Mandanten oder Vertriebskanäle definieren.
+
+    Analog zur Preisformel für den VK Preis kann auch hier eine Preisformel verwendet werden.
 
 Preise
     Der Grundpreis des Artikels kann anhand von Kundengruppe, Mandant oder Vertriebskanal angepasst werden. Sobald

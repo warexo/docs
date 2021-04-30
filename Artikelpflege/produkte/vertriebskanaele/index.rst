@@ -8,7 +8,9 @@ genutzten Plugins und Vertriebskanälen nicht zwingend eingetragen werden.
    :caption: Inhalt
    :maxdepth: 1
 
+   vertriebskanaele
    amazon
    ebay
    otto
    check24
+   real

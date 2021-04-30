@@ -1,77 +1,125 @@
 Lieferanten
 ###########
-:date: 2015-03-19 14:29
-:author: admin
-:category: Wareneingang
-:slug: lieferanten-verwalten
-:status: published
 
-Warexo erlaubt das Verwalten von beliebig vielen Lieferanten für Ihre einzelnen Produkte, damit ein Produkt direkt über Warexo bestellt werden kann muss mindestens ein Lieferant zugeordnet sein.
+Warexo erlaubt das Verwalten von beliebig vielen Lieferanten für Ihre einzelnen Produkte,
+damit ein Produkt direkt über Warexo bestellt werden kann muss mindestens ein Lieferant zugeordnet sein.
 
 Lieferanten anlegen
 -------------------
 
-Wechseln Sie in den Bildschirm "Wareneingang" => "Lieferanten" und klicken Sie auf die Schaltfläche [wawibtn type="primary" icon="plus"]Neuer Lieferant[/wawibtn]
+Verwenden Sie die Funktion :menuselection:`Wareneingang --> Einstellungen --> Lieferanten --> Neuer Lieferant`
 
 Stammdaten
-----------
+~~~~~~~~~~~~
 
-**Aktiv:** Nur aktive Lieferanten werden für eventuelle Bestellungen berücksichtigt
+Aktiv
+    Nur aktive Lieferanten werden für eventuelle Bestellungen berücksichtigt
 
-**Titel:** Der Titel unter dem der Lieferant in Ihrem System angezeigt wird
+Titel
+    Der Titel unter dem der Lieferant in Ihrem System angezeigt wird
 
-**Lieferantennummer:** Die Nummer des Lieferanten die Sie frei festlegen können
+Lieferantennummer
+    Die Nummer des Lieferanten die Sie frei festlegen können
 
-**Kundennummer:** Ihre Kundennummer beim Lieferanten
+Kundennummer
+    Ihre Kundennummer beim Lieferanten
 
-**Icon:** Um den Lieferanten leichter zu erkennen können Sie ein Firmenicon hinterlegen
+Icon
+    Um den Lieferanten leichter zu erkennen können Sie ein Firmenicon hinterlegen
+
+Mandanten
+    In welchen Mandanten dieser Lieferant verfügbar ist
 
 Informationen
--------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Adressdaten:** Hinterlegen Sie hier die Adressdaten an die Bestellungungen später versendet werden sollen
+Geben Sie hier die Rechnungsdaten des Lieferanten an, die Adressfelder sind selbsterklärend
+und werden hier nicht separat aufgeführt.
 
-Status: Noch nicht verwendet
+Kreditorennummer
+    Datev Kreditorennummer wenn gewünscht
 
-**Kreditorennummer:** Datev Kreditorennummer wenn gewünscht
+Steuerfrei
+    An den Lieferanten gestellte Gutschriften werden hiermit steuerfrei erstellt (Kleinstunternehmer/Privatpersonenn)
 
-**Steuerfrei:** Bestellungen werden Mehrwertsteuerfrei ausgelöst
+In country shipping
+    Erzwingt dass bei Kreditorenrechnungen immer Mehrwertsteuern berechnet werden
 
-**Kontodaten:** Die Kontodaten des Lieferanten für Überweisungen von offenen Rechnungen
+Kontodaten
+    Kontodaten des Lieferanten für Rechnungsausgleich
 
-**Dropshipper:** Aktiviert diesen Lieferanten als Dropshipper
+Dropshipper
+    Markiert diesen Lieferanten als Dropshipper, dadurch wird bei generierten Lieferantenbestellungen aus Aufträgen
+    heraus automatisch die Lieferadresse des Kunden angegeben
 
-**Nicht für Einkaufsliste:** Bei Bestellungen über die Einkaufsliste wird dieser Lieferant nicht berücksicht - es können also nur manuelle Bestellungen ausgelöst werden
+Nicht für Einkaufsliste
+    Deaktiviert diesen Lieferanten für die Einkaufslisten Funktion. Bei Bestellungen über die Einkaufsliste wird dieser
+    Lieferant nicht berücksicht - es können also nur manuelle Bestellungen ausgelöst werden
+
+Sprache
+    Definiert in welcher Sprache dem Lieferanten die Dokumente zugesendet werden
+
+Konditionen
+~~~~~~~~~~~~~~
+
+Lieferzeit
+    Die gewöhnliche Lieferzeit in Tagen bis die Ware nach Bestellauslösung eintrifft
+
+Währung
+    Genutzte Währung für Bestellungen bei diesem Lieferant
+
+Zahlungsziel
+    Das vom Lieferanten gesetzte Zahlungsziel in Tagen
+
+Zahlungsart
+    Zahlungsart für Kreditorenrechnungen
+
+Skonto bis
+    Wie viele Tage lang bietet der Lieferant Skonto an
+
+Skonto in %
+    Wie viel Prozent Skonto bietet der Lieferant innerhalb der Skonto Zeit
+
+Mindestbestellwert
+    Wie hoch ist der minimale Bestellwert ohne das ein Aufschlag verlangt wird
+
+Mindermengenzuschlag
+    Falls der Mindestbestellwert unterschritten wird wird dieser Aufschlag hinzugerechnet
+
+Versandart
+    Welche Versandart dieser Versender nutzt
+
+Versandkostenfrei ab Bestellwert
+    Ab welchem Bestellwert werden keine Versandkosten vom Lieferanten mehr berechnet
+
+Versandkosten
+    Höhe der Versandkosten
+
+Beschreibung
+    Freifeld für Informationen zum Liferanten
+
+Interner Lieferant
+    Definiert bei welchem Mandanten interne Bestellungen von Lieferantenbestellungen ausgelöst werden
+
+Rabattart
+    Wird nicht verwendet
+
+Rabatte
+    Klicken Sie auf :guilabel:`hinzufügen` um beliebig viele Rabatte zu definieren.
+
+    ab Wert
+        Einkaufswert in Euro ab dem der Rabatt gilt
+
+    Rabatt
+        Rabatt der gewährt wird
 
 Kontakte
---------
+~~~~~~~~~~~~~~
 
 Sie können für die Kommunikation mit einem Lieferanten beliebige Kontakte hinterlegen, dies erleichtert die spätere Kontaktaufnahme für die Mitarbeiter im Einkauf
 
-Konditionen
------------
-
-**Lieferzeit:** Die gewöhnliche Lieferzeit in Tagen bis die Ware nach Bestellauslösung eintrifft
-
-**Zahlungsziel:** Das vom Lieferanten gesetzte Zahlungsziel in Tagen
-
-**Skonto bis:** Wie viele Tage lang bietet der Lieferant Skonto an
-
-**Skonto in %:** Wie viel Prozent Skonto bietet der Lieferant innerhalb der Skonto Zeit
-
-**Mindestbestellwert:** Wie hoch ist der minimale Bestellwert ohne das ein Aufschlag verlangt wird
-
-**Mindermengenzuschlag:** Falls der Mindestbestellwert unterschritten wird wird dieser Aufschlag hinzugerechnet
-
-**Frachtkosten:** Versandkosten pro Bestellung
-
-**Versandfrei ab:** Ab welchem Bestellwert werden keine Versandkosten mehr berechnet
-
-**Rabatte:** Definieren Sie Rabattstaffeln die Ihnen der Lieferant anbieten
 
 Lieferanten zu Produkten zuordnen
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nachdem Sie Ihre Lieferanten definiert haben ist es notwendig diese den einzelnen Produkten zuzuordnen und die Einkaufspreise zu definieren, wechseln Sie hierzu in den Bildschirm "Produkte" => "Produktliste" und bearbeiten Sie das gewünschte Produkt. Im Unterpunkt Lieferanten können Sie den Lieferanten und deren Konditionen bestimmen. Eine genaue Beschreibung der Felder finden Sie im Handbuch unter "Eingabefelder" => "Produkte" => "Lieferanten".
-
-[wawibtn type="primary" icon="external-link" url="http://docs.warexo.de/eingabefelder/produkte/#lieferanten"]Seite im Handbuch öffnen[/wawibtn]
+Verwenden Sie hierfür die entsprechende Funktion im Produkt, siehe :doc:`/Artikelpflege/produkte/preise` im Punkt Lieferanten.
