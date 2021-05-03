@@ -8,5 +8,6 @@ Daten Im-/Export
    extrafelder
    webshop
    csv-import
+   import-schemas
    reporting
    report-schemas
