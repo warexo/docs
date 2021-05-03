@@ -105,8 +105,36 @@ WAWI-Zuordnungsfeld
     So können Sie zum Beispiel den Hersteller anhand des Titels zuweisen oder eine Kategorie anhand der ID.
     Im Normalfall versucht der Importer die Zuweisung anhand des Titels vorzunehmen.
 
+.. sidebar:: Twig Kontext
+    :class: floating
+
+    .. list-table::
+       :widths: 50 50
+       :header-rows: 1
+
+       * - Variable
+         - Beschreibung
+       * - appservice
+         - AppService
+       * - em
+         - EntityManager
+       * - entity
+         - Gefundenes Objekt zur CSV Reihe
+       * - data
+         - Aktuelle CSV Reihe
+       * - value
+         - Wert der aktuellen CSV Zelle
+
 Benutzerdefinierter Wert
     Wenn Sie hier einen Wert eingetragen wird immer dieser Wert in das Feld geschrieben, egal welcher Wert in der Datei eingetragen ist.
+    Dieses Feld ist per Twig anpassbar.
+
+.. Hint:: Numerische Werte müssen einen Punkt als Dezimaltrenner verwenden, sollte Ihre CSV Spalte ein Komma enthalten können Sie folgenden
+    benutzerdefinierten Wert verwenden:
+
+    .. code-block:: twig
+
+        {{ value|replace(',','.') }}
 
 Sprache
     Die Sprache in der die Daten importiert werden sollen falls das Feld Mehrsprachig ist.
@@ -128,8 +156,29 @@ CSV-Feld für Variantentitel
 WAWI-Zuordnungsfeld
     Wenn Sie als WAWI-Feld eine Relation oder Collection wählen können Sie hier ein alternatives Feld für die Zuordnung verwenden. So können Sie zum Beispiel den Hersteller anhand des Titels zuweisen oder eine Kategorie anhand der ID. Im Normalfall versucht der Importer die Zuweisung anhand des Titels vorzunehmen.
 
+.. sidebar:: Twig Kontext
+    :class: floating
+
+    .. list-table::
+       :widths: 50 50
+       :header-rows: 1
+
+       * - Variable
+         - Beschreibung
+       * - appservice
+         - AppService
+       * - em
+         - EntityManager
+       * - entity
+         - Gefundenes Objekt zur CSV Reihe
+       * - data
+         - Aktuelle CSV Reihe
+       * - value
+         - Wert der aktuellen CSV Zelle
+
 Benutzerdefinierter Wert
     Wenn Sie hier einen Wert eingetragen wird immer dieser Wert in das Feld geschrieben, egal welcher Wert in der Datei eingetragen ist.
+    Dieser Wert kann Twig enthalten.
 
 Sprache
     Die Sprache in der die Daten importiert werden sollen falls das Feld Mehrsprachig ist.
