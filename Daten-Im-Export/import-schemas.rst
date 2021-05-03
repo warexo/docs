@@ -11,5 +11,5 @@ Attribute zuweisen
 Weist beliebigen Artikeln nach Artikelnummer bis zu 2 Attribute und deren Wert zu.
 
 :download:`CSV Import Schema herunterladen </_static/imports/attribute.json>`
-:download:`Beispiel CSV herunterladen </_static/imports/attribute.csv>`
 
+:download:`Beispiel CSV herunterladen </_static/imports/attribute.csv>`
