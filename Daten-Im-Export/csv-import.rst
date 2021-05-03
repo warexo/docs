@@ -97,9 +97,6 @@ CSV-Feld
 WAWI-Feld
     Das Feld innerhalb des Systems in das der Wert übertragen werden soll.
 
-Aktiv
-    Nur aktive Felder werden eingelesen.
-
 WAWI-Zuordnungsfeld
     Wenn Sie als WAWI-Feld eine Relation oder Collection wählen können Sie hier ein alternatives Feld für die Zuordnung verwenden.
     So können Sie zum Beispiel den Hersteller anhand des Titels zuweisen oder eine Kategorie anhand der ID.
