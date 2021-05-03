@@ -60,6 +60,11 @@ Umtausch
     Der Artikel wird zurück in das Lager gebucht, der Kunde erhält einen anderen Artikel.
     Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
 
+Verschobener Umtausch (neue Bestellung)
+    Der Artikel wird in das Lager gebucht, es wird ein neuer Auftrag erzeugt. In diesem
+    Auftrag werden alle Positionen und Kosten auf 0 gesetzt. Der Auftrag kann dann normal bearbeitet
+    werden um den Umtausch zu regeln.
+    
 Entsorgung, verschobener Umtausch
     Der Artikel wird nicht in das Lager gebucht, es wird ein neuer Auftrag erzeugt. In diesem
     Auftrag werden alle Positionen und Kosten auf 0 gesetzt. Der Auftrag kann dann normal bearbeitet
@@ -76,21 +81,23 @@ Maßnahmentabelle
 ~~~~~~~~~~~~~~~~~~~~
 
 +---------------------------------------+----------+------------+----------+-----------------+
-| Maßnahme                              |  Buchung | Gutschrift | Umtausch | Neue Bestellung |
+| Maßnahme                               |  Buchung | Gutschrift | Umtausch | Neue Bestellung |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Ins Lager einbuchen, mit Gutschrift   |  |check| |   |check|  | |remove| |     |remove|    |
+| Ins Lager einbuchen, mit Gutschrift    |  |check| |   |check|  | |remove| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Ins Lager einbuchen, keine Gutschrift |  |check| |  |remove|  | |remove| |     |remove|    |
+| Ins Lager einbuchen, keine Gutschrift  |  |check| |  |remove|  | |remove| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Gutschrift, keine Lagerbuchung        | |remove| |   |check|  | |remove| |     |remove|    |
+| Gutschrift, keine Lagerbuchung         | |remove| |   |check|  | |remove| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Entsorgung, mit Gutschrift            | |remove| |   |check|  | |remove| |     |remove|    |
+| Entsorgung, mit Gutschrift             | |remove| |   |check|  | |remove| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Entsorgung, keine Gutschrift          | |remove| |  |remove|  | |remove| |     |remove|    |
+| Entsorgung, keine Gutschrift           | |remove| |  |remove|  | |remove| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Umtausch                              |  |check| |  |remove|  |  |check| |     |remove|    |
+| Umtausch                               |  |check| |  |remove|  |  |check| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Entsorgung, verschobener Umtausch     | |remove| |  |remove|  | |remove| |     |check|     |
+| Verschobener Umtausch (neue Bestellung)|  |check| |  |remove|  |  |remove| |     |check|    |
 +---------------------------------------+----------+------------+----------+-----------------+
-| Entsorgung, sofortiger Umtausch       | |remove| |  |remove|  |  |check| |     |remove|    |
+| Entsorgung, verschobener Umtausch      | |remove| |  |remove|  | |remove| |     |check|     |
++---------------------------------------+----------+------------+----------+-----------------+
+| Entsorgung, sofortiger Umtausch        | |remove| |  |remove|  |  |check| |     |remove|    |
 +---------------------------------------+----------+------------+----------+-----------------+
