@@ -60,7 +60,7 @@ Umtausch
     Der Artikel wird zurück in das Lager gebucht, der Kunde erhält einen anderen Artikel.
     Wenn Sie diese Maßnahme wählen erscheint automatisch eine Wahlmöglichkeit für den Tauschartikel.
 
-Verschobener Umtausch (neue Bestellung)
+Verschobener Umtausch, neue Bestellung
     Der Artikel wird in das Lager gebucht, es wird ein neuer Auftrag erzeugt. In diesem
     Auftrag werden alle Positionen und Kosten auf 0 gesetzt. Der Auftrag kann dann normal bearbeitet
     werden um den Umtausch zu regeln.
@@ -95,7 +95,7 @@ Maßnahmentabelle
 +----------------------------------------+----------+------------+----------+-----------------+
 | Umtausch                               |  |check| |  |remove|  |  |check| |     |remove|    |
 +----------------------------------------+----------+------------+----------+-----------------+
-| Verschobener Umtausch (neue Bestellung)|  |check| |  |remove|  |  |remove| |     |check|    |
+| Verschobener Umtausch, neue Bestellung |  |check| |  |remove|  | |remove| |     |check|     |
 +----------------------------------------+----------+------------+----------+-----------------+
 | Entsorgung, verschobener Umtausch      | |remove| |  |remove|  | |remove| |     |check|     |
 +----------------------------------------+----------+------------+----------+-----------------+
