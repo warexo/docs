@@ -55,6 +55,10 @@ Sie können Ihre Bestände auch per CSV Import beeinflussen, erstellen Sie hierz
 
     EAN;Menge
 
+    Interne EAN;Menge
+
+    Seriennummer;Menge
+
     Artikelnummer;Menge
 
 Erstellen Sie eine CSV Datei nach diesem Format, der Spaltentrenner kann entweder Semikolon oder Komma sein.
