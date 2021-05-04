@@ -46,5 +46,5 @@ Hardware Empfehlungen
 - *RAM* 16 GB
 - *HDD* SSD wenn möglich
 
-Wir empfehlen einen eigenen dedizierten Server für den Betrieb von Warexo zu verwenden -
-statistische Auswertungen, Massenverarbeitungen und rechenintensive Operationen können schwache Systeme verlangsamen.
+.. Hint:: Wir empfehlen einen eigenen dedizierten Server für den Betrieb von Warexo zu verwenden -
+    statistische Auswertungen, Massenverarbeitungen und rechenintensive Operationen können schwache Systeme verlangsamen.

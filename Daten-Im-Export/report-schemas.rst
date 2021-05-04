@@ -13,3 +13,18 @@ der Verwendung entsprechend an.
 
 :download:`Report-Schema herunterladen </_static/reports/Lagerbestand-zu-bestimmtem-Datum.json>`
 
+Attributwerte
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Erstellt eine Liste der Attributwerte "Material" und "Lieferumfang" pro Artikel,
+passen Sie die Attributnamen nach Wunsch an.
+
+:download:`Report-Schema herunterladen </_static/reports/Attribute.json>`
+
+Bildpfade
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Erstellt eine Liste der URLs zu den Produktbildern aller Artikel
+
+:download:`Report-Schema herunterladen </_static/reports/Produktbilder.json>`
+

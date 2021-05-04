@@ -4,6 +4,8 @@ Wareneingang
 .. toctree::
    :caption: Inhalt
    :maxdepth: 2
-   :glob:
 
-   *
+   Einkauf/index
+   Bestand/index
+   Reservierungen/index
+   Einstellungen/index

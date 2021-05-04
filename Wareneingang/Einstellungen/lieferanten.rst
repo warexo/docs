@@ -4,10 +4,7 @@ Lieferanten
 Warexo erlaubt das Verwalten von beliebig vielen Lieferanten für Ihre einzelnen Produkte,
 damit ein Produkt direkt über Warexo bestellt werden kann muss mindestens ein Lieferant zugeordnet sein.
 
-Lieferanten anlegen
--------------------
-
-Verwenden Sie die Funktion :menuselection:`Wareneingang --> Einstellungen --> Lieferanten --> Neuer Lieferant`
+Neue Lieferanten erstellen Sie über :menuselection:`Wareneingang --> Einstellungen --> Lieferanten --> Neuer Lieferant`
 
 Stammdaten
 ~~~~~~~~~~~~
