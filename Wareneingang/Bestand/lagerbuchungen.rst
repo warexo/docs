@@ -58,7 +58,7 @@ Sie können Ihre Bestände auch per CSV Import beeinflussen, erstellen Sie hierz
     Artikelnummer;Menge
 
 Erstellen Sie eine CSV Datei nach diesem Format, der Spaltentrenner kann entweder Semikolon oder Komma sein.
-Die Spaltenköpfe müssen wie oben angegeben benannt sein. Die Menge kann negativ sein, in diesem Fall wird die Menge
+Die Spaltenköpfe sind optional. Die Menge kann negativ sein, in diesem Fall wird die Menge
 vom Bestand abgezogen.
 
 Laden Sie die Liste im Bereich "CSV-Datei verbuchen" hoch und wählen Sie für welchen Lagerplatz die Aktion angewendet werden soll.
