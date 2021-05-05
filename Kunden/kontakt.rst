@@ -122,3 +122,5 @@ Um die verbrauchten Zeiten abzurechnen können Sie mit dem erweiterten Filter
 :guilabel:`Tickets mit nicht abgerechneter Zeit` alle nicht abgerechneten Tickets
 anzeigen und über die Funktion :menuselection:`Ausgewählte Zeilen --> Zeit abrechnen`
 automatisch Angebote erstellen die die offenen Zeiten abrechnen.
+
+.. Hint:: Der pro Stunde veranschlagte Preis wird in den Benutzergruppen festgelegt.
