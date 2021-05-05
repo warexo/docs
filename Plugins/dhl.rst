@@ -54,6 +54,9 @@ Diese Adress- und Bankdaten verwenden anstatt den Daten aus den Mandanteneinstel
     Legen Sie fest welche Bankdaten abweichend zum Mandanten verwendet werden sollen.
     Es werden dann die hier eingetragenen Daten anstatt der im Mandanten hinterlegten Daten verwendet.
 
+Geplantes Versanddatum nicht an DHL übertragen
+    Überträgt immer das heutige Datum statt dem geplanten Versanddatum des Auftrags an DHL
+
 Versandarten konfigurieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

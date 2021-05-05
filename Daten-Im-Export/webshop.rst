@@ -6,7 +6,8 @@ Webshop
 Webshop Verbindung einrichten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bitte hinterlegen Sie zuerst die notwendigen Daten in den Mandanteneinstellungen, Sie finden die Einstellungen unter "Einstellungen" => "Mandanteneinstellungen" im Bereich Webshop.
+Bitte hinterlegen Sie zuerst die notwendigen Daten in den Mandanteneinstellungen,
+Sie finden die Einstellungen unter :menuselection:`Einstellungen --> Mandant --> Stamm --> Webshop`.
 
 Shop-URL
 ^^^^^^^^

@@ -33,11 +33,8 @@ E-Mails abrufen
 ~~~~~~~~~~~~~~~~
 
 Die Kundennachrichten können manuell über :menuselection:`Kunden --> Kontakt --> Nachrichten aktualisieren`
-oder über folgenden Cronjob abgerufen werden:
-
-.. code-block:: bash
-
-    @TODO: Eintrag folgt ...
+oder automatisch im Hintergrund über den unter :menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Ticketsystem / Kundenkontakt`
+angezeigten Cronjob abgerufen werden.
 
 Auf Nachrichten antworten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
