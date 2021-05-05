@@ -8,3 +8,4 @@ System
    systemaktualisierung
    mandanten
    versandarten
+   zahlungsarten
