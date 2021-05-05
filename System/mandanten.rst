@@ -142,4 +142,4 @@ Zuweisungen
 ~~~~~~~~~~~~
 
 Innerhalb der Listen haben Sie die Möglichkeit komfortabel Produkte, Kategorien etc.
-von anderen Mandanten zu diesem Mandanten
+von anderen Mandanten zu diesem Mandanten zuzuweisen.
