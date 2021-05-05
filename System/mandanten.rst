@@ -42,14 +42,16 @@ Standardlieferstatus
     Lieferstatus der für Artikel exportiert wenn kein Lieferstatus gesetzt wurde
 
 Lagerbestand aus Materialbestand berechnen
-    Wenn aktiviert werden Lagerbestände von Artikeln die aus Materialien bestehen aus dem Bestand der Materialien errechnet.
-    Hierbei wird der Bestand des Materials mit dem niedrigsten Lagerbestand verwendet
+    Wenn aktiviert wird der Bestand aller Artikel aktualisiert die aus diesem Material bestehen sobald das Material eingebucht
+    wird. Kann zu Performance Problemen führen wenn ein Material sehr vielen Artikeln zugewiesen wurde.
 
 Einfache Lagerhaltung
     Deaktiviert Lagerbuchungen vollständig, die Bestände werden händisch in das Lagerbestandsfeld eingetragen und beim versenden einfach abgezogen.
+    **Diese Funktion wird nicht mehr unterstützt und in zukünftigen Versionen entfernt**.
 
 Negative Buchungen erlauben
-    Erlaubt es dem Lagerbestand negativ zu werden
+    Wenn aktiviert werden Buchungen die über den Lagerbestand hinaus gehen mit registriert. Diese negativ Buchungen werden
+    in der Warenbewegungsliste Rot angezeigt und können über den Filter :guilabel:`Minus Buchungen` angezeigt werden.
 
 Niedrigste Seriennummer zur Pickliste hinzufügen
     Beim Picking von Seriennummern Artikeln wird dann immer die niedrigste Seriennummer abgeholt
@@ -119,14 +121,32 @@ Auftragseingang statt Tagesumsatz in der Statistik anzeigen
 Bestellungen gruppieren nach
     Bestimmt ob Bestellungen in der Statistik nach Bestell- oder Rechnungsdatum gruppiert werden
 
-Dashboard statistics total dql
-    Alternative DQL Anweisung um Summen in den Dashboard Statistiken zu berechnen
+.. sidebar:: Twig Kontext
+    :class: floating
+
+    .. list-table::
+       :widths: 50 50
+       :header-rows: 1
+
+       * - Variable
+         - Beschreibung
+       * - o
+         - Angebot / Offer
+       * - ord
+         - Bestellung / Order
+
+DQL-Ausdruck für "Tagesumsatz (gesamt)" im Dashboard
+    Alternative DQL Anweisung um Summen in den Dashboard Statistiken zu berechnen. Twig konfigurierbar. Für Netto anzeige z.B.
+
+    .. code-block:: twig
+
+        o.total/(1+{{client().defaultVat}}/100)
 
 Zus. DQL-Bedingung für Dashboard-Diagramm
-    Zusätzliches DQL für die Anzeige des Dashboard Diagramms
+    Zusätzliches DQL für die Anzeige des Dashboard Diagramms. Twig konfigurierbar.
 
 Produktsuche: zus. Felder
-    Zusätzliche Felder die für die Produktsuche berücksichtigt werden sollen
+    Zusätzliche Felder die für die Produktsuche berücksichtigt werden sollen. Twig konfigurierbar
 
 Systempfade
     Vollständige Pfade zu notwendigen Programmen auf dem Server, Warexo versucht
