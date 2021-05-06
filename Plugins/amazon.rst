@@ -133,4 +133,26 @@ Sie können auch alle konfigurierten Artikel über die Schaltfläche in den Plug
 Bestellabgleich
 ~~~~~~~~~~~~~~~~
 
-...
+Durch die aktuelle Regulierung von Amazon werden Bestellungen ohne persönliche Daten (PII) der Kunden angelegt.
+Um die Bestellungen trotzdem wie gewohnt abzuarbeiten ist es notwendig vor der Bearbeitung der Bestellungen eine
+entsprechende Report Datei bei Amazon anzufordern und hochzuladen.
+
+Merchant Fulfilled Network (MFN)
+-------------------------------------
+
+Loggen Sie sich in Ihr Seller-Central Konto ein, erstellen Sie den Bestellbericht für den entsprechenden Datumsbereich
+den Sie importieren möchten. Den Bericht können Sie unter :menuselection:`Bestellungen --> Bestellbericht` anfordern.
+
+Versand durch Amazon (FBA)
+-------------------------------------
+
+Loggen Sie sich in Ihr Seller-Central Konto ein, erstellen Sie den Steuerabrechnungsbericht für den entsprechenden Datumsbereich
+den Sie importieren möchten. Den Bericht können Sie unter
+:menuselection:`Berichte --> Versand durch Amazon --> Von Amazon versandte Sendungen --> Steuerabrechnung` anfordern.
+
+Report importieren
+-------------------------------------
+
+Laden Sie die entsprechende Datei in Warexo unter
+:menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Amazon --> Bestellungen abgleichen` hoch.
+Alle in der Datei enthaltenen Bestellungen werden mit den Kundendaten angereichert.
