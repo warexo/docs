@@ -12,7 +12,7 @@ Plugin Einstellungen
 Sie finden die zugehörigen Plugin Einstellungen unter :menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Abonnement`
 
 Vertragsnummernkreis
-    :doc:`Nummernkreis </Allgemein/nummernkreise>` für Vertragsnummern
+    :doc:`Nummernkreis </System/nummernkreise>` für Vertragsnummern
 
 Max. Anzahl der Erinnerungen bei Nichtzahlung
     Wie oft das Workflow Event `Zahlungsverzug des Abonnementvertrags (Erinnerung)`
@@ -43,7 +43,7 @@ Titel
 Nummer
     Fortlaufende Nummer den Vertrags (automatisch vorausgefüllt)
 
-Vetragsgruppe
+Vertragsgruppe
     Wenn gewünscht kann der Vertrag einer Gruppe zugewiesen werden
 
 Status

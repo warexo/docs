@@ -8,7 +8,7 @@ Warexo erlaubt die Verwaltung des Mindesthaltbarkeitsdatums der Artikel in Ihrem
 Artikel mit MHD einbuchen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Geben Sie bei der :doc:`Lagerbuchung </Wareneingang/lagerbuchungen>` beim Einbuchen des Artikels das Feld
+Geben Sie bei der :doc:`Lagerbuchung </Wareneingang/Bestand/lagerbuchungen>` beim Einbuchen des Artikels das Feld
 MHD mit an. Der eingebuchte Artikel wird ab diesem Zeitpunkt als MHD Artikel geführt. Wenn gewünscht können
 Sie zusätzlich im Feld Seriennummer die Chargennummer des Artikels angeben.
 

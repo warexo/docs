@@ -9,3 +9,5 @@ System
    mandanten
    versandarten
    zahlungsarten
+   benutzerverwaltung
+   nummernkreise

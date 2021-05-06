@@ -100,7 +100,7 @@ Amazon Keywords
     Suchbegriffe die für alle Artikel zusätzlich mit übertragen werden
 
 Bestellnummernkreis
-    Wenn gewünscht spezieller Bestellnummernkreis für die Aufträge die über Amazon importiert werden (siehe :doc:`Nummernkreise </Allgemein/nummernkreise>`)
+    Wenn gewünscht spezieller Bestellnummernkreis für die Aufträge die über Amazon importiert werden (siehe :doc:`Nummernkreise </System/nummernkreise>`)
 
 Max. Anzahl der zugeordneten Produktoptionen
     Wie viele Optionen eines Produktes maximal mit übertragen werden sollen, hierbei geht es um die Anzahl der Auswahleinträge - es werden immer alle Optionen übertragen.

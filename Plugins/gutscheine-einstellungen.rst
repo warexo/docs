@@ -1,12 +1,8 @@
 Gutscheine
 ##########
-:date: 2017-10-13 09:25
-:author: admin
-:category: Plugins
-:slug: gutscheine-einstellungen
-:status: published
 
-Für weitere Informationen wie Gutscheinserien und Gutscheine erstellt werden springen Sie bitte zum Handbucheintrag für Gutscheinserien\ `. <https://docs.warexo.de/funktionen/gutscheine/>`__
+Für weitere Informationen wie Gutscheinserien und Gutscheine erstellt werden springen Sie bitte zum Handbucheintrag
+für Gutscheinserien `. <https://docs.warexo.de/funktionen/gutscheine/>`__
 
 Einstellungen
 ~~~~~~~~~~~~~

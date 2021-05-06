@@ -104,7 +104,7 @@ Mindestalter
     Mindestartikel für FSK-18 Artikel
 
 Seriennummern / MHD Pflicht
-    Wenn aktiviert muss eine Seriennummer / MHD beim :doc:`Einbuchen </Wareneingang/lagerbuchungen>` des Artikels eingeben werden
+    Wenn aktiviert muss eine Seriennummer / MHD beim :doc:`Einbuchen </Wareneingang/Bestand/lagerbuchungen>` des Artikels eingeben werden
 
 MHD Karenzzeit
     Geben Sie hier eine Karenzzeit für das MHD in Tagen an. Artikel die innerhalb der Karenzzeit ablaufen werden können

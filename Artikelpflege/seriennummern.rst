@@ -9,7 +9,7 @@ Warexo erlaubt die Verwaltung der Seriennummern der Artikel in Ihrem Lager.
 Artikel mit Seriennummer einbuchen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Geben Sie bei der :doc:`Lagerbuchung </Wareneingang/lagerbuchungen>` beim Einbuchen des Artikels das Feld
+Geben Sie bei der :doc:`Lagerbuchung </Wareneingang/Bestand/lagerbuchungen>` beim Einbuchen des Artikels das Feld
 Seriennummer mit an. Der eingebuchte Artikel wird ab diesem Zeitpunkt als Seriennummer Artikel geführt.
 
 .. attention:: Es müssen alle im Lager befindlichen Artikel eines Typs wahlweise mit oder ohne Seriennummer geführt werden.
