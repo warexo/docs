@@ -1,50 +1,52 @@
 Internetmarke
 #############
-:date: 2017-12-05 15:50
-:author: admin
-:category: Plugins
-:slug: internetmarke
-:status: published
 
-Mit den Services der Internetmarke der deutschen Post können Sie bequem E-Porto aus Warexo heraus buchen. Alles was Sie hierzu benötigen ist eine sog. Portokasse.Die benötigten Zugangsdaten erhalten Sie von DPD direkt unter diesem Link `https://portokasse.deutschepost.de/portokasse/ <https://portokasse.deutschepost.de/portokasse/#!/>`__. Der Shipping Handler lautet **internetmarke**
+Mit den Services der Internetmarke der deutschen Post können Sie bequem E-Porto aus Warexo heraus buchen.
+Alles was Sie hierzu benötigen ist eine sog. Portokasse.
+Die benötigten Zugangsdaten erhalten Sie von DPD direkt unter `diesem Link <https://portokasse.deutschepost.de/portokasse/>`__
+
+Plugin Einstellungen
+~~~~~~~~~~~~~~~~~~~~~~
 
 Live Modus
-^^^^^^^^^^
-
-Aktivieren Sie diese Option wenn Sie mit einer regulären Portokasse arbeiten, falls Sie einen Testaccount verwenden möchten deaktivieren Sie diese Option.
+    Aktivieren Sie diese Option wenn Sie mit einer regulären Portokasse arbeiten, falls Sie einen Testaccount verwenden möchten deaktivieren Sie diese Option.
 
 Benutzername / Passwort
-^^^^^^^^^^^^^^^^^^^^^^^
+    Die Zugangsdaten für Ihre Portokasse (siehe Link oben).
 
-Die Zugangsdaten für Ihre Portokasse (siehe Link oben).
+Versandart Einstellungen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Versandart einrichten
-~~~~~~~~~~~~~~~~~~~~~
+.. Hint:: Der :doc:`Handler </System/versandarten>` lautet **internetmarke**
 
-Erstellen Sie eine neue Versandart oder bearbeiten Sie eine bestehende. Setzen Sie das Feld Handler auf **internetmarke**
+Folgende Einstellungen können für die :doc:`Versandart </System/versandarten>` getroffen werden.
 
-Internetmarke Labeltyp
-^^^^^^^^^^^^^^^^^^^^^^
+Labeltyp
+    Ob das Label als PDF oder PNG Datei erstellt werden soll
 
-Wählen Sie PDF wenn Sie die Marke direkt drucken möchten, PNG Marken können in andere Dokumente eingebettet werden. Um die Marke einzubetten verwenden Sie bitte folgendes Snippet:
+    .. Hint:: PNG Marken können in andere Dokumente eingebettet werden. Um die Marke einzubetten verwenden Sie bitte folgendes Snippet:
 
-::
+        ``{{custom_function('imlabel',{order:order, width:250,height:250*0.46})|raw}}``
 
-   {{custom_function('imlabel',{order:order, width:250,height:250*0.46})|raw}}
-
-.. attention::Bitte beachten Sie dass das Porto sofort berechnet wird wenn das jeweilige Dokument gedruckt wird, eine Erstattung oder Stornierung ist nicht möglich
-
-Internetmarke Produkt-Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Das Produkt dass für das Porto gebucht werden soll.
+Produkt-Code
+    Gewünschtes Produkt
 
 Art der Internetmarke
-^^^^^^^^^^^^^^^^^^^^^
+    Ob die Marke mit oder ohne Adresse generiert werden soll
 
-Die Internetmarke kann mit oder ohne Adressat gedruckt werden.
+Druckformat
+    Druckformat der Marke
 
-Internetmarke Druckformat
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Preis (Cent)
+    Portohöhe in Euro Cent
 
-Wählen Sie ein von der Internetmarke vorgegebenes Druckformat für die Marke.
+
+Internetmarke drucken
+~~~~~~~~~~~~~~~~~~~~~
+
+Nachdem Sie die entsprechenden Einstellungen gemacht haben können Sie für Aufträge Porto generieren.
+Öffnen Sie dazu den gewünschten Auftrag über :menuselection:`Auftragsverwaltung --> Aufträge`
+und klicken Sie im oberen Menü auf :menuselection:`Internetmarke` und im Untermenü auf Beauftragen.
+
+Nachdem Sie das Porto beauftragt haben und es erstellt wurde können Sie im oberen Menü
+:menuselection:`Internetmarke` die Marke herunterladen oder direkt drucken.

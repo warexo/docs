@@ -154,5 +154,7 @@ Report importieren
 -------------------------------------
 
 Laden Sie die entsprechende Datei in Warexo unter
-:menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Amazon --> Bestellungen abgleichen` hoch.
+:menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Amazon --> Bestellungen abgleichen` oder
+:menuselection:`Auftragsverwaltung --> Aufträge --> Bestellungen abgleichen` hoch.
+
 Alle in der Datei enthaltenen Bestellungen werden mit den Kundendaten angereichert.
