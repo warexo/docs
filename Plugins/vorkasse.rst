@@ -19,8 +19,6 @@ Plugin Einstellungen
          - Beschreibung
        * - appservice
          - AppService
-       * - em
-         - EntityManager
        * - order
          - Referenz zur Bestellung
 
@@ -51,8 +49,6 @@ Zahlungserinnerungen nur ab angegebenem Datum versenden
          - Beschreibung
        * - appservice
          - AppService
-       * - em
-         - EntityManager
        * - order
          - Referenz zur Bestellung
 

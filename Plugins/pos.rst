@@ -53,6 +53,7 @@ Bestellungen jede x Minuten in WAWI exportieren
     Gibt den Zeitabstand in Minuten an in dem die generierten Belege an die Warenwirtschaft gesendet werden
 
 Varianten nicht zusammen mit Stammartikel in POS exportieren
+    ...
 
 Optionen in POS exportieren
     Exportiert :doc:`Artikeloptionen </Artikelpflege/optionen>` in die Kassen
