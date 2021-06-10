@@ -42,7 +42,7 @@ Führen Sie folgende Schritte durch um einen Artikel in die Buchung aufzunehmen:
 -  Wählen Sie das Produkt über die Produkt wählen Eingabebox **oder** setzen Sie den Cursor in das EAN Scan Feld und scannen Sie die EAN Nummer des gewünschten Artikels.
 -  Falls Sie das Produkt über die Eingabebox gewählt haben drücken Sie auf die Schaltfläche hinzufügen, bei EAN Scan wird der Artikel automatisch in die Liste übernommen
 
-Wiederholen Sie diese Schritte für alle Artikel die verbucht werden sollen. Klicken Sie anschließend auf :menuselection:`Buchung ausführen` um die Buchung durchzuführen.
+Wiederholen Sie diese Schritte für alle Artikel die verbucht werden sollen. Klicken Sie anschließend auf :menuselection:`Daten prüfen` um die Lagerplätze zuzuweisen (chaotische Lagerverwaltung) und :menuselection:`Einbuchen` um die Buchung auszuführen. Sie können auch die Buchung direkt über :menuselection:`Einbuchen ohne Prüfung` ausführen.
 
 Lagerbuchung per CSV Liste
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
