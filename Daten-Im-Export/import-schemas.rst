@@ -5,6 +5,15 @@ Hier finden Sie vorgefertigte CSV Import Schemas die Sie herunterladen und über
 Funktion :menuselection:`Systemverwaltung --> Im-/Export --> CSV Import --> CSV Import Schema importieren`
 direkt in Ihre Installation übernehmen können.
 
+Artikel Import mit Varianten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Importiert Artikel mit Unter-Varianten
+
+:download:`CSV Import Schema herunterladen </_static/imports/artikel-mit-varianten.json>`
+
+:download:`Beispiel CSV herunterladen </_static/imports/artikel-mit-varianten.csv>`
+
 Attribute zuweisen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
