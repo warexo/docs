@@ -217,13 +217,15 @@ Im Feld Textbaustein geben Sie bitte folgendes ein:
     foreach ($clients as $client)
     {
     if ($client->getBlocked())
-    continue;
+        continue;
     if ($client->getDefaultVat() < 0.0001)
-    continue;
-
-    $helper = $this->appservice->getContainer()->get('webshop.helper');
-    $helper->configure('oxid',$client->getShopUrl(),$client->getShopUser(),$client->getShopPassword(),$client);
-    $helper->getData('activate_oss');
+        continue;
+    if ($client->getFtpServer() && $client->getFtpUserName() && $client->getFtpPassword())
+    {
+        $helper = $this->appservice->getContainer()->get('webshop.helper');
+        $helper->configure('oxid',$client->getShopUrl(),$client->getShopUser(),$client->getShopPassword(),$client);
+        $helper->getData('activate_oss');
+    }
     }
 
 Speichern Sie das PHP Script anschließend.
