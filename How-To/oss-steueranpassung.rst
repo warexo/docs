@@ -44,7 +44,7 @@ Im Feld Textbaustein geben Sie bitte folgendes ein:
 
     $em = $this->em;
     $conn = $em->getConnection();
-    $conn->exec("update country set useVatOfThisShippingCountryFromAll=1, useVatOfThisShippingCountryFromDate='2021-07-01' where isInEurope=1 AND isoCode2 != '".$this->appservice->getActiveClient()->getCountry()->getIsoCode2()."'");
+    $conn->exec("update country set useVatOfThisShippingCountryFromAll=1, useVatOfThisShippingCountryFromDate='2021-07-01' where isInEurope=1 AND useVatOfThisShippingCountryFromDate IS NULL AND isoCode2 != '".$this->appservice->getActiveClient()->getCountry()->getIsoCode2()."'");
     $countries = $em->getRepository('AggrosoftWAWIBundle:Country')->findBy(['isInEurope'=>true]);
     $taxValues = [
             'BE' => 21,
@@ -217,13 +217,15 @@ Im Feld Textbaustein geben Sie bitte folgendes ein:
     foreach ($clients as $client)
     {
     if ($client->getBlocked())
-    continue;
+        continue;
     if ($client->getDefaultVat() < 0.0001)
-    continue;
-
-    $helper = $this->appservice->getContainer()->get('webshop.helper');
-    $helper->configure('oxid',$client->getShopUrl(),$client->getShopUser(),$client->getShopPassword(),$client);
-    $helper->getData('activate_oss');
+        continue;
+    if ($client->getFtpServer() && $client->getFtpUserName() && $client->getFtpPassword())
+    {
+        $helper = $this->appservice->getContainer()->get('webshop.helper');
+        $helper->configure('oxid',$client->getShopUrl(),$client->getShopUser(),$client->getShopPassword(),$client);
+        $helper->getData('activate_oss');
+    }
     }
 
 Speichern Sie das PHP Script anschließend.
