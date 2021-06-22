@@ -3,6 +3,8 @@ Twig Template Sprache
 
 Die Template Sprache Twig wird in vielen Bereichen von Warexo verwendet um Variable Daten in das System einzuspeisen.
 
+.. attention:: Warexo unterstützt aktuell Twig in Version 1.24
+
 Variablen
 ~~~~~~~~~
 
