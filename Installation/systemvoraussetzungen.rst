@@ -16,6 +16,8 @@ Systemvoraussetzungen
    Eine Übertragung via SFTP ist aus performance Gründen nicht ratsam, wir arbeiten an einer optionalen Unterstützung.
 -  SSL-Zertifikat auf dem Server (z.B. Lets Encrypt).
 
+.. attention:: LibreOffice kann auf Hetzner Managed Servern über eine Hetzner Support Ticket Anfrage installiert werden
+
 Empfohlene Einstellungen
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
