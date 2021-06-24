@@ -233,6 +233,8 @@ Speichern Sie das PHP Script anschließend.
 Führen Sie das Script anschließend über :guilabel:`Ausführen` aus, die OSS Einstellungen werden automatisch für alle
 Mandanten vorgenommen.
 
+Aktivieren Sie die Einstellung "OSS-Verfahren aktiv" im Oxid-Modul "AggroWAWI Extension"
+
 DATEV Kontierung
 --------------------
 Sie können nun für alle neu erstellten Steuersätze ein separates Erlöskonto vergeben, Informationen hierzu finden
