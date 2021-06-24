@@ -233,7 +233,7 @@ Speichern Sie das PHP Script anschließend.
 Führen Sie das Script anschließend über :guilabel:`Ausführen` aus, die OSS Einstellungen werden automatisch für alle
 Mandanten vorgenommen.
 
-.. WICHTIG:: Aktivieren Sie die Option "OSS-Verfahren aktiv" im Oxid-Modul "AggroWAWI Extension"
+.. WICHTIG:: Aktivieren Sie die Option "OSS-Verfahren aktiv" im Oxid-Modul "AggroWAWI Extension" (ab Oxid 6.2)
 
 
 DATEV Kontierung
