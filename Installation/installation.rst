@@ -12,7 +12,7 @@ Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter 
 .. code-block:: bash
 
     wget "http://packages.aggrowawi.de/index.php?download=1&v1=latest" -O wawi.zip
-    wget "http://packages.aggrowawi.de/index.php?download=1&v1=2.0.43&vendors=1" -O vendors.zip
+    wget "http://packages.aggrowawi.de/index.php?download=1&v1=latest&vendors=1" -O vendors.zip
     unzip vendors.zip
     unzip wawi.zip
     rm wawi.zip
