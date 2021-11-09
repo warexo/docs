@@ -17,30 +17,6 @@ Den Titel können Sie frei wählen, prägen Sie sich diesen Titel für die weite
 Im Feld Textbaustein geben Sie bitte folgendes ein:
 
 .. code-block:: php
-    
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://dev.aggrowawi.de/EUShipperInvoiceService.txt');
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS,$sFields);
-    $response = curl_exec($ch);
-    if ($response && strpos($response, "onGetInvoiceAdditionalInfo") !== FALSE)
-    {
-    file_put_contents(__DIR__.'/EUShipperInvoiceService.php', $response);
-    }
-
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://dev.aggrowawi.de/CashJournalService.txt');
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS,$sFields);
-    $response = curl_exec($ch);
-    if ($response && strpos($response, "getTSETransactions") !== FALSE)
-    {
-    file_put_contents(__DIR__.'/CashJournalService.php', $response);
-    }
 
     $em = $this->em;
     $conn = $em->getConnection();
@@ -232,6 +208,9 @@ Speichern Sie das PHP Script anschließend.
 
 Führen Sie das Script anschließend über :guilabel:`Ausführen` aus, die OSS Einstellungen werden automatisch für alle
 Mandanten vorgenommen.
+
+.. WICHTIG:: Aktivieren Sie die Option "OSS-Verfahren aktiv" im Oxid-Modul "AggroWAWI Extension" (ab Oxid 6.2)
+
 
 DATEV Kontierung
 --------------------
