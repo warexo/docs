@@ -5,9 +5,7 @@ Installation
 
 Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter erfolgen, bitte beachten Sie `die Systemanforderungen </handbuch/systemvoraussetzungen>`__ bevor Sie mit der Arbeit beginnen. Sollten Sie sich unsicher sein treten Sie mit uns in Kontakt, wir helfen Ihnen gerne bei der Einrichtung. Die Warnungen in dieser Anleitung beziehen sich auf eine Installation auf einen im Internet erreichbaren Server, für Intranet Server empfehlen wir trotzdem unserer Anleitung zu folgen.
 
-.. Hint:: Sie können die Pakete mit folgenden Befehlen automatisch herunterladen und entpacken,
-    Ersetzen Sie die Version 2.0.43 mit der gewünschten Version, die neueste Versionsnummer finden Sie auf der Seite
-    des `Paketservers <https://packages.aggrowawi.de>`__
+.. Hint:: Sie können die Pakete mit folgenden Befehlen automatisch herunterladen und entpacken
 
 .. code-block:: bash
 
