@@ -22,3 +22,12 @@ Weist beliebigen Artikeln nach Artikelnummer bis zu 2 Attribute und deren Wert z
 :download:`CSV Import Schema herunterladen </_static/imports/attribute.json>`
 
 :download:`Beispiel CSV herunterladen </_static/imports/attribute.csv>`
+
+Lagerplätze anlegen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Erstellt Lagerplätze für ein bestimmtes Lager
+
+:download:`CSV Import Schema herunterladen </_static/imports/lagerplaetze.json>`
+
+:download:`Beispiel CSV herunterladen </_static/imports/lagerplaetze.csv>`
