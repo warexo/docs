@@ -13,3 +13,4 @@ Auftragsbearbeitung
    rechnungskorrekturen
    abonnements
    vermittler
+   kommissionierungsarten

@@ -8,7 +8,10 @@ Die Auftragsbearbeitung erfolgt in 4 einfachen Schritten, Sie können entweder e
 Artikel aus dem Lager holen (Picking)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. Hint:: Damit eine Pickliste erstellt werden kann muss mindestens ein Artikel aus dem Auftrag mit aktivierter Lagerhaltung vorhanden sein. Wenn Sie die Lagerhaltung nicht verwenden möchten verwenden Sie bitte das Dokument Packliste und überspringen die Kommissionierung.
+.. Hint:: Damit eine Pickliste erstellt werden kann muss mindestens ein Artikel aus dem Auftrag mit aktivierter Lagerhaltung vorhanden sein.
+          Wenn Sie die Lagerhaltung nicht verwenden möchten verwenden Sie bitte das Dokument Packliste und überspringen die Kommissionierung.
+
+          Weitere Informationen zu den Kommissionierungsarten finden Sie unter  :doc:`Kommissionierungsarten </Auftragsbearbeitung/kommissionierungsarten>`
 
 Einzelkommissionierung
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -41,14 +44,23 @@ Die Pickliste(n) werden nun ausgedruckt, auf der Pickliste befinden sich folgend
 
 Nehmen Sie nun die Pickliste(n) und holen Sie nacheinander alle Artikel aus dem Lager
 
+Rollende Kommissionierung
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Analog zur Sammelkommissionierung, jedoch muss darauf geachtet werden dass die Artikel in die Packbox die auf der Pickliste
+angegeben ist eingelegt werden.
+
+.. Hint:: Warexo ordnet Bestellungen nicht automatisch zu einer Packbox zu. Sie müssen einen Workflow erstellen der die Zuordnung vornimmt (z.B. Event: Pickliste erstellt, Aktion: Packbox zuweisen)
+
+
 Kommissionierung
 ~~~~~~~~~~~~~~~~
 
 Sie können die abgeholte Ware nun Auftrag für Auftrag abarbeiten oder die Ware zuerst verpacken, 
 wie Sie den Prozess gestalten ist abhängig von Ihren Präferenzen.
 
-Ware vorverpacken
-^^^^^^^^^^^^^^^^^
+Sammelkommissionierung
+^^^^^^^^^^^^^^^^^^^^^^
 
 Scannen Sie den Barcode auf der Pickliste oder rufen Sie die Pickliste über den Menüpunkt :menuselection:`Auftragsverwaltung --> Picklisten` 
 auf und klicken auf die Schaltfläche :guilabel:`Kommissionierung`
@@ -66,7 +78,16 @@ Wenn Sie alle Artikel abgearbeitet haben erscheint eine Meldung und Sie können 
 Wenn Ihnen kein Barcode Scanner zur Verfügung steht können Sie die einzelnen Artikel auch über die Schaltfläche "hinzufügen"
 zuordnen.
 
-Einzelaufträge verpacken
+Rollende Kommissionierung
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. Hint:: Es muss mindestens ein Lagerplatz als Boxenplatz deklariert sein um mit der rollenden Kommissionierung zu arbeiten.
+
+Analog zur Sammelkommissionierung, beim scannen wird jedoch angezeigt in welche Packbox der Artikel gelegt werden soll.
+Sollten Sie keinen Workflow angelegt haben um die Packboxen im vorhinein zuzuweisen wird automatisch versucht eine Box
+pro Bestellung zuzuweisen.
+
+Einzelkommissionierung
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Öffnen Sie den gewünschten Auftrag über die Auftragsliste, klicken Sie auf die Schaltfläche :guilabel:`Kommissionierung`
