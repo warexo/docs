@@ -13,6 +13,7 @@ Aufträge / Rechnungen
 
 -  {{order.orderNumber}}
 -  {{order.created|d}} oder ##ORDER_DATE## - Bestelldatum
+-  {{order.offer.estimatedShippingDate|d}} - geplantes Versanddatum
 -  {{order.offer.shippingDate|d}} oder ##SHIPPING_DATE## - Versanddatum
 -  {{order.offer.paidDate|date('d.m.Y H:i:s')}} oder ##PAID_DATE## - Bezahldatum
 -  {{order.invoiceNumber}} - Rechnungsnummer
