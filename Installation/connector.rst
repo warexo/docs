@@ -77,7 +77,7 @@ einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Au
 
 Verfügbare Parameter für config.inc.php
 ~~~~~~~~~~
-1. wawiExportOrdersOnlyFromDate: Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
+1. wawiExportOrdersOnlyFromDate (str): Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
 
 2. wawiNotReplaceVariantIds (bool): oxid der Artikelvarianten nicht überschreiben
 
@@ -89,4 +89,19 @@ Verfügbare Parameter für config.inc.php
 
 6. wawiNotExportProductGroupsIfGroupNotExists (bool): Artikel-Artikelgruppe-Zuweisung nicht exportieren, wenn die Kundengruppe im Shop nicht existiert
 
+7. warexoUseShopId (str): Shop-Id für den aktuellen Subshop (nur für Oxid EE!)
+
+8. bWAWINotReplaceOrderItems (bool): Bestellpositionen beim Bestellexport(abgleich) nicht überschreiben
+
+9. aWAWIDisabledFunctions (arr): Benutzerdef. Array von gesperrten Funktionen (sieh. modules/aggrowawi/extensions/views/aggrowawi_oxshopcontrol.php)
+
+10. wawiIgnoreCategoryGroups (bool): Zugewiesene Kategoriegruppen ignorieren und die Kategorie für alle Kunden anzeigen
+
+11. wawiNotOverrideIsVisible (bool): oxarticles::isVisible nicht überschreiben (für einige Oxid-Module relevant)
+
+12. wawiNotHideArticleWithGroups (bool): Zugewiesene Artikelgruppen ignorieren und den Artikel für alle Kunden anzeigen (der Artikel wird dann nicht kaufbar)
+
+13. sWAWISepaCreditorNumber (str): SEPA Gläubiger-Identifikationsnummer (für die Thankyou-Seite)
+
+14. sWAWIClientIdent (str): WAWI-Mandant Ident (für die Thankyou-Seite)
 
