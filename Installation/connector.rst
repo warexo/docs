@@ -77,7 +77,9 @@ einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Au
 
 Verfügbare Parameter für config.inc.php
 ~~~~~~~~~~
-1. wawiExportOrdersOnlyFromDate (str): Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
+
+wawiExportOrdersOnlyFromDate (str): 
+    Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
 
 2. wawiNotReplaceVariantIds (bool): oxid der Artikelvarianten nicht überschreiben
 
