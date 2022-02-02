@@ -74,3 +74,7 @@ Erstimport
 ~~~~~~~~~~
 Führen Sie unter :menuselection:`Systemverwaltung --> Schnittstellen --> Webshop --> Import` nacheinander alle Importe
 einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Auswahlliste ein.
+
+Verfügbare Parameter für config.inc.php
+1. wawiExportOrdersOnlyFromDate - Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
+2. wawiNotReplaceVariantIds - oxid der Artikelvarianten nicht überschreiben (z.B $this->wawiNotReplaceVariantIds = 1;)
