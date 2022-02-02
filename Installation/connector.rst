@@ -77,6 +77,16 @@ einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Au
 
 Verfügbare Parameter für config.inc.php
 ~~~~~~~~~~
-1. wawiExportOrdersOnlyFromDate - Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
+1. wawiExportOrdersOnlyFromDate: Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
 
-2. wawiNotReplaceVariantIds - oxid der Artikelvarianten nicht überschreiben (z.B $this->wawiNotReplaceVariantIds = 1;)
+2. wawiNotReplaceVariantIds (bool): oxid der Artikelvarianten nicht überschreiben
+
+3. bWAWINotAssignAttributesToCategories (bool): Keine Attribute beim Artikelexport den Kategorien zuweisen 
+
+4. aWAWIExcludedAttributesToCategories (arr): Attribute beim Artikelexport den Kategorien nicht zuweisen (Liste der oxattribute.oxid)
+
+5. wawiUseExtranetMetaDescription (bool): Das Feld "Extranet -> Beschreibungstext für Meta-Tags" als oxid-Metadescription exportieren
+
+6. wawiNotExportProductGroupsIfGroupNotExists (bool): Artikel-Artikelgruppe-Zuweisung nicht exportieren, wenn die Kundengruppe im Shop nicht existiert
+
+
