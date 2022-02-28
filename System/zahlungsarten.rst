@@ -28,7 +28,7 @@ Zuordnungsschlüssel
     Kann verwendet werden um Zahlungsarten beim Import aus Fremdsystemen zuzuweisen
 
 Kreditoren-Zahlungsart
-    Zahlungsart ist für Kreditorenrechnungen verfügbar
+    Zahlungsart ist nur für Kreditorenrechnungen verfügbar
 
 Ist Verrechnung
     Wenn aktiviert wird bei Verbindlichkeiten die Zahlung zwischen Kreditoren und Debitorenkonto ausgeglichen
