@@ -102,8 +102,33 @@ Spaltentitel
 Feld
     Bestimmt das Feld aus dem der Wert ausgelesen wird. Siehe Felder auswählen.
 
+.. sidebar:: Twig Kontext
+    :class: floating
+
+    .. list-table::
+       :widths: 50 50
+       :header-rows: 1
+
+       * - Variable
+         - Beschreibung
+       * - appservice
+         - AppService
+       * - em
+         - EntityManager
+       * - entity
+         - Gefundenes Objekt zur Zeile
+       * - column
+         - Aktuelle Spalte
+       * - report
+         - Referenz auf den Report
+       * - value
+         - Wert der aktuellen Spalte
+       * - item
+         - Collection Eintrag (wenn es sich um eine Collection handelt)
+
 Benutzerdefinierter Wert
-    Überschreibt den Feldwert mit dem Inhalt dieses Eingabefelds.
+    Wenn Sie hier einen Wert eingetragen wird immer dieser Wert in das Feld geschrieben, egal welcher Wert in der Spalte eingetragen ist.
+    Dieses Feld ist per Twig anpassbar.
 
 Gruppierung
     Sie können Collections mit einer Aggregats oder Gruppenfunktion auswerten.
