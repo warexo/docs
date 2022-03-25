@@ -28,3 +28,13 @@ Erstellt eine Liste der URLs zu den Produktbildern aller Artikel
 
 :download:`Report-Schema herunterladen </_static/reports/Produktbilder.json>`
 
+Hermes HSI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exportiert CSV Daten die im Hermes HSI importiert werden können.
+
+:download:`Report-Schema herunterladen </_static/reports/Hermes-Export.json>`
+
+.. note::
+    Wählen Sie in der Auftragsliste die gewünschten Aufträge aus und klicken Sie auf
+    "Ausgewählte Zeilen" => "Reports" => "Reports als CSV" => "Hermes Export" um die Datei zu erstellen.

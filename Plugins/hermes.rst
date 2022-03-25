@@ -1,6 +1,11 @@
 Hermes
 ######
 
+.. Attention:: Hermes erlaubt derzeit keine direkte Anbindung von Warexo an die neue HSI Schnittstelle.
+    Dadurch ist es aktuell nicht möglich Versandscheine direkt aus Warexo heraus zu erzeugen. Nutzen
+    Sie bitte hierfür aktuell den :doc:`vorgefertigten Report </Daten-Im-Export/report-schemas>` um die Daten
+    per CSV Format in das Hermes Backend zu übertragen.
+
 Der Hermes Webservice erlaubt es Ihnen Paketlabels direkt aus Warexo heraus zu erstellen.
 Die benötigten Zugangsdaten erhalten Sie von Hermes direkt unter `diesem Link <https://developerportal.hlg.de>`__ oder über
 Ihren jeweiligen Hermes Vertriebsmitarbeiter.
