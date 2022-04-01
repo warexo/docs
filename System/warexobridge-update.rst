@@ -15,7 +15,16 @@ Bridge Manuelle aktualisieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Öffnen Sie :menuselection:`Systemverwaltung --> Systemaktualisierung`
 
-Wenn ein Update zur Verfügung steht erscheint die Meldung :guilabel:`WAWI Listener (version)`
+Wenn ein Update zur Verfügung steht können sie sich auch manuell die neueste version der warexobridge downloaden :guilabel:`WAWI Listener (version)`
+
+.. figure:: /_static/img/screenshots/bridge-update-manuell.png
+   :figclass: sticky-right
+   :alt: Warexo Bridge Update
+
+1. Laden Sie das Archiv Herrunter.
+2. entpacken sie das Archiv.
+3. ersetzten Sie alle files in Ihrem Warexo Bridge(wawilistener) Ordner auf Ihrem Rechner.
+4. Starten Sie die Bridge neu, nun sollte die aktuellste version in Ihre Warexo Bridge angezeigt werden.
 
 .. Hint:: Informieren Sie alle Mitarbeiter über die bevorstehende Downtime, alle Benutzer sollten während des Updates nicht in der Software arbeiten. 
           Dies gilt auch für POS Terminals.
