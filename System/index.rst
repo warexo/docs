@@ -6,6 +6,7 @@ System
    :maxdepth: 2
 
    systemaktualisierung
+   warexobridge-update
    mandanten
    versandarten
    zahlungsarten
