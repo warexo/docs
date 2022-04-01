@@ -7,6 +7,9 @@ zeitnah wie möglich einzuspielen.
 .. Hint:: Wenn ein neues Update zur Verfügung steht werden Sie darüber nach dem Login im Dashboard informiert. 
           Klicken Sie auf Ja um den Updateprozess zu starten
 
+.. figure:: /_static/img/screenshots/bridge-update-dashborad.png
+   :figclass: sticky-right
+   :alt: Warexo POS Oberfläche
 
 Bridge Manuelle aktualisieren
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
