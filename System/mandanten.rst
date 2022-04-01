@@ -19,7 +19,13 @@ Ident.
     Eindeutige Identifikation, zur programmatischen Abgrenzung des Mandanten
 
 .. Attention:: Die Ident. darf keine Sonder- oder Leerzeichen enthalten, wir raten zu einer 4 stelligen
-    Ident. die aus reinen Großbuchstaben besteht z.B. :guilabel:`CPBD` oder :guilabel:`SLDO`
+               Ident. die aus reinen Großbuchstaben besteht z.B. :guilabel:`CPBD` oder :guilabel:`SLDO`
+ 
+Logo
+    Firmenlogo / Mandant Icon
+
+.. Attention:: das Logo sollte eine größe von 475px * 155px haben. 
+               Dieses wird auch wenn nicht anders in den Dokumenten angeben auf diesen auch verwendet.
 
 Adressdaten
     Rechnungsadresse des Mandanten
