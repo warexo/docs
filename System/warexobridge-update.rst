@@ -1,6 +1,8 @@
-Warexo Bridge (wawilistener) automatische aktualisierung
+Warexo Bridge Update
 ########################################################
 
+Warexo Bridge (wawilistener) automatische aktualisierung
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Warexo beinhaltet eine integrierte Möglichkeit die warexo bridge zu aktualisieren, wir raten dazu an jedes Update so
 zeitnah wie möglich einzuspielen.
 
