@@ -26,6 +26,10 @@ Wenn ein Update zur Verfügung steht können sie sich auch manuell die neueste v
 3. ersetzten Sie alle files in Ihrem Warexo Bridge(wawilistener) Ordner auf Ihrem Rechner.
 4. Starten Sie die Bridge neu, nun sollte die aktuellste version in Ihre Warexo Bridge angezeigt werden.
 
+.. figure:: /_static/img/screenshots/bridge-version.png
+   :figclass: sticky-right
+   :alt: Warexo Bridge Update
+
 .. Hint:: Informieren Sie alle Mitarbeiter über die bevorstehende Downtime, alle Benutzer sollten während des Updates nicht in der Software arbeiten. 
           Dies gilt auch für POS Terminals.
 
