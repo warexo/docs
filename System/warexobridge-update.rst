@@ -1,5 +1,5 @@
-warexobridge automatische aktualisierung
-########################################
+Warexo Bridge (wawilistener) automatische aktualisierung
+########################################################
 
 Warexo beinhaltet eine integrierte Möglichkeit die warexo bridge zu aktualisieren, wir raten dazu an jedes Update so
 zeitnah wie möglich einzuspielen.
@@ -11,8 +11,8 @@ zeitnah wie möglich einzuspielen.
    :figclass: sticky-right
    :alt: Warexo Bridge Update
 
-Bridge Manuelle aktualisieren
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bridge Manuelle (wawilistener) aktualisieren
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Öffnen Sie :menuselection:`Systemverwaltung --> Systemaktualisierung`
 
 Wenn ein Update zur Verfügung steht können sie sich auch manuell die neueste version der warexobridge downloaden :guilabel:`WAWI Listener (version)`
