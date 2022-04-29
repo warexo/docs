@@ -42,6 +42,13 @@ Exportiert CSV Daten die im OnTheSpot importiert werden können.
 
 :download:`Report-Schema herunterladen </_static/reports/onthespot_export.json>`
 
+Facebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exportiert CSV Daten die im Facebook importiert werden können.
+
+:download:`Report-Schema herunterladen </_static/reports/facebook.json>`
+
 .. note::
     Wählen Sie in der Auftragsliste die gewünschten Aufträge aus und klicken Sie auf
     "Ausgewählte Zeilen" => "Reports" => "Reports als CSV" => "Hermes Export" um die Datei zu erstellen.
