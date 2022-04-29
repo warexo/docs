@@ -35,6 +35,13 @@ Exportiert CSV Daten die im Hermes HSI importiert werden können.
 
 :download:`Report-Schema herunterladen </_static/reports/Hermes-Export.json>`
 
+OnTheSpot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exportiert CSV Daten die im OnTheSpot importiert werden können.
+
+:download:`Report-Schema herunterladen </_static/reports/onthespot_export.json>`
+
 .. note::
     Wählen Sie in der Auftragsliste die gewünschten Aufträge aus und klicken Sie auf
     "Ausgewählte Zeilen" => "Reports" => "Reports als CSV" => "Hermes Export" um die Datei zu erstellen.
