@@ -24,3 +24,13 @@ Kaufgutscheine auch bei folgenden Mandanten einlösbar
 
 POS: Gutscheine für gekauften Gutscheinartikel erstellen
     Aktivieren Sie diese Option wenn Sie möchten dass ein Gutschein der über das Kassensystem gekauft wird, automatisch als Gutscheinserie erzeugt wird.
+    
+Gutscheinvorlagen
+~~~~~~~~~~~~~~~~~~~~~~
+
+Dokument "Gutschein".
+Verfügbare Variablen:
+{{entity}} - Gutschein
+{{receiver}} - Gutscheinempfänger (Vorname + Nachname)
+{{sender}} - Gutscheinsender (Vorname + Nachname)
+{{message}} - Nachricht
