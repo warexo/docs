@@ -28,9 +28,14 @@ POS: Gutscheine für gekauften Gutscheinartikel erstellen
 Gutscheinvorlagen
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Dokument "Gutschein".
+Dokument "Gutschein"
+
 Verfügbare Variablen:
+
 {{entity}} - Gutschein
+
 {{receiver}} - Gutscheinempfänger (Vorname + Nachname)
+
 {{sender}} - Gutscheinsender (Vorname + Nachname)
+
 {{message}} - Nachricht
