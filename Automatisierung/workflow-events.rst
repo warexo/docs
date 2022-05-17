@@ -75,20 +75,24 @@ Bestellimport aus dem Shop
 
     - Neue Bestellung: Event "Shop-Bestellung eingegangen" (new.order.imported)
     - Vorher importierte Bestellung: Event "Shop-Bestellung aktualisiert" (existed.order.imported)
+    - Neue Bestellung: Event "Lagerbestand aktualisiert" für jeden Artikel (update.stock)
     
 Bestellimport aus Amazon, eBay, Kaufland, check24 und allen anderen Vertriebskanälen außer POS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+    - Event "Lagerbestand aktualisiert" für jeden Artikel (update.stock)
     - Neue Bestellung: Event "WAWI-Bestellung eingegangen" (place.order)
 
 Manuelle Bestellungen
 ^^^^^^^^^^^^^^^^^^^^^
 
+    - Event "Lagerbestand aktualisiert" für jeden Artikel (update.stock)
     - Neue Bestellung: Event "WAWI-Bestellung eingegangen" (place.order)
     
 Belegimport (POS)
 ^^^^^^^^^^^^^^^^^
 
+    - Event "Lagerbestand aktualisiert" für jeden Artikel (update.stock)
     - Event "pos.order.imported"
 
 Bestellung versenden
