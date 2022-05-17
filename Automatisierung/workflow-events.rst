@@ -66,3 +66,12 @@ Wenn Sie einen beliebigen Textbaustein per Mail an einen Kunden per Klick schick
 
 Anschließend erscheint in den Aufträgen unter Aktionen ein neuer Punkt der so heißt wie das Workflow Event.
 Bei Klick wird eine Mail an den Kunden gesendet.
+
+Standard Workflow Events
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Bestellung versenden
+    1. Event "Prüfung vor dem Versenden" (check.order.can.send)
+    2. Event "Vor dem Versenden" (before.send.order)
+    3. Optionell: Event "Alle Teillieferungen versendet" (all.partial.orders.shipped)
+    4. Event "Bestellung versendet" (send.order)
