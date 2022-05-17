@@ -77,3 +77,9 @@ Bestellung versenden
     - Event "Vor dem Versenden" (before.send.order)
     - Optionell: Event "Alle Teillieferungen versendet" (all.partial.orders.shipped)
     - Event "Bestellung versendet" (send.order)
+    
+Bestellung bezahlen
+--------
+
+    - Event "Bestellung bezahlt"
+    
