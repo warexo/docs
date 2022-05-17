@@ -71,7 +71,8 @@ Standard Workflow Events
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bestellung versenden
-    1. Event "Prüfung vor dem Versenden" (check.order.can.send)
-    2. Event "Vor dem Versenden" (before.send.order)
-    3. Optionell: Event "Alle Teillieferungen versendet" (all.partial.orders.shipped)
-    4. Event "Bestellung versendet" (send.order)
+
+    - Event "Prüfung vor dem Versenden" (check.order.can.send)
+    - Event "Vor dem Versenden" (before.send.order)
+    - Optionell: Event "Alle Teillieferungen versendet" (all.partial.orders.shipped)
+    - Event "Bestellung versendet" (send.order)
