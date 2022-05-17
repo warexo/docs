@@ -71,6 +71,7 @@ Standard Workflow Events
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bestellung versenden
+--------
 
     - Event "Prüfung vor dem Versenden" (check.order.can.send)
     - Event "Vor dem Versenden" (before.send.order)
