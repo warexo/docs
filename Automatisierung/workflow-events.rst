@@ -83,3 +83,9 @@ Bestellung bezahlen
 
     - Event "Bestellung bezahlt"
     
+Kommissionierung
+^^^^^^^^^^^^^^^^
+
+    - Optionell: Event "Lieferung verschoben" (shipping.on.hold)
+    - Optionell: Event "Kommissionierung: Artikel defekt" (picking.product.defect)
+    - Event "Kommissionierung abgeschlossen" (orders.picking.finished)
