@@ -89,3 +89,16 @@ Kommissionierung
     - Optionell: Event "Lieferung verschoben" (shipping.on.hold)
     - Optionell: Event "Kommissionierung: Artikel defekt" (picking.product.defect)
     - Event "Kommissionierung abgeschlossen" (orders.picking.finished)
+
+Retoure
+^^^^^^^
+
+    - Event "order.return.started"
+    - Event "get.product.price.for.swap" (Artikelpreise für Umtauschartikel)
+    - Optionell: Event "Teilstornierung" (storno.order)
+    - Optionell: Event "Bestellung storniert" (storno.order.item)
+    - Optionell: Event "Teilgutschrift erstellt" (credit.order.item)
+    - Optionell: Event "WAWI-Bestellung eingegangen" für Umtausch-Bestellungen und Service-Aufträge
+    - Event "Lagerbestand aktualisiert" für jeden retournierten Artikel (update.stock)
+    - Event "Retoure gebucht" (order.returned)
+    
