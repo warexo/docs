@@ -70,6 +70,27 @@ Bei Klick wird eine Mail an den Kunden gesendet.
 Standard Workflow Events
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+Bestellimport aus dem Shop
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    - Neue Bestellung: Event "Shop-Bestellung eingegangen" (new.order.imported)
+    - Vorher importierte Bestellung: Event "Shop-Bestellung aktualisiert" (existed.order.imported)
+    
+Bestellimport aus Amazon, eBay, Kaufland, check24 und allen anderen Vertriebskanälen außer POS
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    - Neue Bestellung: Event "WAWI-Bestellung eingegangen" (place.order)
+
+Manuelle Bestellungen
+^^^^^^^^^^^^^^^^^^^^^
+
+    - Neue Bestellung: Event "WAWI-Bestellung eingegangen" (place.order)
+    
+Belegimport (POS)
+^^^^^^^^^^^^^^^^^
+
+    - Event "pos.order.imported"
+
 Bestellung versenden
 ^^^^^^^^^^^^^^^^^^^^
 
