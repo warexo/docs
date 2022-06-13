@@ -12,7 +12,7 @@ Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter 
     wget "http://packages.aggrowawi.de/index.php?download=1&v1=latest" -O wawi.zip
     wget "http://packages.aggrowawi.de/index.php?download=1&v1=latest&vendors=1" -O vendors.zip
     unzip vendors.zip
-    unzip wawi.zip
+    unzip wawi.zip (replace vendor/twig/twig/lib/Twig/Lexer.php? [y]es, [n]o, [A]ll, [N]one, [r]ename: y eingeben)
     rm wawi.zip
     rm vendors.zip
 
