@@ -120,3 +120,48 @@ sWAWISepaCreditorNumber (str)
 sWAWIClientIdent (str)
     WAWI-Mandant Ident (für die Thankyou-Seite)
 
+Verfügbare Events
+~~~~~~~~~~
+
+beforeSetProductOptions($data)
+    $data - Assoc. Array
+
+afterSetProductOptions($data)
+    $data - Assoc. Array
+
+beforeAddProductOption($data)
+    $data - Assoc. Array
+
+afterAddProductOption($data, $oSelectList)
+    $data - Assoc. Array
+    $oSelectList - oxselectlist-Objekt
+
+beforeSetProducts($data)
+    $data - Assoc. Array
+
+afterSetProducts($data)
+    $data - Assoc. Array
+
+beforeAddProduct($data)
+    $data - Assoc. Array
+
+afterAddProduct($data, $oArticle)
+    $data - Assoc. Array
+    $oArticle - oxarticle-Objekt
+
+beforProductStockUpdated($data)
+    $data - Assoc. Array
+
+afterProductStockUpdated($data, $oArticle)
+    $data - Assoc. Array
+    $oArticle - oxarticle-Objekt
+
+afterAddCustomer($data, $oUser)
+    $data - Assoc. Array
+    $oUser - oxuser-Objekt
+    
+beforePrepareUploadedPictures($type, $pictures, $data)
+
+afterSetProductPictures($oArticle, $data)
+    $data - Assoc. Array
+    $oArticle - oxarticle-Objekt
