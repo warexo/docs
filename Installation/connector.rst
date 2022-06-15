@@ -134,6 +134,7 @@ beforeAddProductOption($data)
 
 afterAddProductOption($data, $oSelectList)
     $data - Assoc. Array mit den WAWI-Feldern
+    
     $oSelectList - oxselectlist-Objekt
 
 beforeSetProducts($data)
@@ -147,6 +148,7 @@ beforeAddProduct($data)
 
 afterAddProduct($data, $oArticle)
     $data - Assoc. Array mit den WAWI-Feldern
+    
     $oArticle - oxarticle-Objekt
 
 beforProductStockUpdated($data)
@@ -154,17 +156,22 @@ beforProductStockUpdated($data)
 
 afterProductStockUpdated($data, $oArticle)
     $data - Assoc. Array mit den WAWI-Feldern
+    
     $oArticle - oxarticle-Objekt
 
 afterAddCustomer($data, $oUser)
     $data - Assoc. Array mit den WAWI-Feldern
+    
     $oUser - oxuser-Objekt
     
 beforePrepareUploadedPictures($type, $pictures, $data)
     $type - product, category, manufacturer, productoption
+    
     $pictures - array von {sort, pictureName}
+    
     $data - Assoc. Array mit den WAWI-Feldern
 
 afterSetProductPictures($oArticle, $data)
     $data - Assoc. Array mit den WAWI-Feldern
+    
     $oArticle - oxarticle-Objekt
