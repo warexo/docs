@@ -124,44 +124,44 @@ Verfügbare Events
 ~~~~~~~~~~
 
 beforeSetProductOptions($data)
-    $data - Assoc. Array
+    $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 afterSetProductOptions($data)
-    $data - Assoc. Array
+    $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 beforeAddProductOption($data)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
 
 afterAddProductOption($data, $oSelectList)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
     $oSelectList - oxselectlist-Objekt
 
 beforeSetProducts($data)
-    $data - Assoc. Array
+    $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 afterSetProducts($data)
-    $data - Assoc. Array
+    $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 beforeAddProduct($data)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
 
 afterAddProduct($data, $oArticle)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
     $oArticle - oxarticle-Objekt
 
 beforProductStockUpdated($data)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
 
 afterProductStockUpdated($data, $oArticle)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
     $oArticle - oxarticle-Objekt
 
 afterAddCustomer($data, $oUser)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
     $oUser - oxuser-Objekt
     
 beforePrepareUploadedPictures($type, $pictures, $data)
 
 afterSetProductPictures($oArticle, $data)
-    $data - Assoc. Array
+    $data - Assoc. Array mit den WAWI-Feldern
     $oArticle - oxarticle-Objekt
