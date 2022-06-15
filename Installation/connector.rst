@@ -124,47 +124,47 @@ Verfügbare Events
 ~~~~~~~~~~
 
 beforeSetProductOptions($data)
-    $data - Array von assoc. Arrays mit den WAWI-Feldern
+    * $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 afterSetProductOptions($data)
-    $data - Array von assoc. Arrays mit den WAWI-Feldern
+    * $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 beforeAddProductOption($data)
-    $data - Assoc. Array mit den WAWI-Feldern
+    * $data - Assoc. Array mit den WAWI-Feldern
 
 afterAddProductOption($data, $oSelectList)
     * $data - Assoc. Array mit den WAWI-Feldern
     * $oSelectList - oxselectlist-Objekt
 
 beforeSetProducts($data)
-    $data - Array von assoc. Arrays mit den WAWI-Feldern
+    * $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 afterSetProducts($data)
-    $data - Array von assoc. Arrays mit den WAWI-Feldern
+    * $data - Array von assoc. Arrays mit den WAWI-Feldern
 
 beforeAddProduct($data)
-    $data - Assoc. Array mit den WAWI-Feldern
+    * $data - Assoc. Array mit den WAWI-Feldern
 
 afterAddProduct($data, $oArticle)
-    $data - Assoc. Array mit den WAWI-Feldern
-    $oArticle - oxarticle-Objekt
+    * $data - Assoc. Array mit den WAWI-Feldern
+    * $oArticle - oxarticle-Objekt
 
 beforProductStockUpdated($data)
-    $data - Assoc. Array mit den WAWI-Feldern
+    * $data - Assoc. Array mit den WAWI-Feldern
 
 afterProductStockUpdated($data, $oArticle)
-    $data - Assoc. Array mit den WAWI-Feldern
-    $oArticle - oxarticle-Objekt
+    * $data - Assoc. Array mit den WAWI-Feldern
+    * $oArticle - oxarticle-Objekt
 
 afterAddCustomer($data, $oUser)
-    $data - Assoc. Array mit den WAWI-Feldern
-    $oUser - oxuser-Objekt
+    * $data - Assoc. Array mit den WAWI-Feldern
+    * $oUser - oxuser-Objekt
     
 beforePrepareUploadedPictures($type, $pictures, $data)
-    $type - product, category, manufacturer, productoption
-    $pictures - array von {sort, pictureName}
-    $data - Assoc. Array mit den WAWI-Feldern
+    * $type - product, category, manufacturer, productoption
+    * $pictures - array von {sort, pictureName}
+    * $data - Assoc. Array mit den WAWI-Feldern
 
 afterSetProductPictures($oArticle, $data)
-    $data - Assoc. Array mit den WAWI-Feldern
-    $oArticle - oxarticle-Objekt
+    * $data - Assoc. Array mit den WAWI-Feldern
+    * $oArticle - oxarticle-Objekt
