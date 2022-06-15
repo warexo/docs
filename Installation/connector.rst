@@ -133,8 +133,8 @@ beforeAddProductOption($data)
     $data - Assoc. Array mit den WAWI-Feldern
 
 afterAddProductOption($data, $oSelectList)
-    $data - Assoc. Array mit den WAWI-Feldern
-    $oSelectList - oxselectlist-Objekt
+    * $data - Assoc. Array mit den WAWI-Feldern
+    * $oSelectList - oxselectlist-Objekt
 
 beforeSetProducts($data)
     $data - Array von assoc. Arrays mit den WAWI-Feldern
