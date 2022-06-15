@@ -161,6 +161,9 @@ afterAddCustomer($data, $oUser)
     $oUser - oxuser-Objekt
     
 beforePrepareUploadedPictures($type, $pictures, $data)
+    $type - product, category, manufacturer, productoption
+    $pictures - array von {sort, pictureName}
+    $data - Assoc. Array mit den WAWI-Feldern
 
 afterSetProductPictures($oArticle, $data)
     $data - Assoc. Array mit den WAWI-Feldern
