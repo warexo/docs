@@ -20,160 +20,162 @@ Den Titel können Sie frei wählen, prägen Sie sich diesen Titel für die weite
 Im Feld Textbaustein geben Sie bitte folgendes ein:
 
 .. code-block:: php
-    
-    $dt = new \DateTime;
-    $julydt = new \DateTime('2020-07-01 00:00:00');
-    $jandt = new \DateTime('2021-01-01 00:00:00');
-    if ($dt < $julydt)
-        return;
-    
-    $em = $this->em;
-    $taxes = $em->getRepository('AggrosoftWAWIBundle:Tax')->findAll();
-    $tax19 = null;
-    $tax7 = null;
-    $tax16 = null;
-    $tax5 = null;
-    foreach ($taxes as $tax)
-    {
-        if ($tax->getShipperCountry())
-            continue;
-        if (abs($tax->getValue() - 16) < 0.0001)
-            $tax16 = $tax;
-        if (abs($tax->getValue() - 5) < 0.0001)
-            $tax5 = $tax;
-        if ($tax->getValue() != 19 && $tax->getValue() != 7)
-            continue;
-        if (abs($tax->getValue() - 19) < 0.0001)
-            $tax19 = $tax;
-        if (abs($tax->getValue() - 7) < 0.0001)
-            $tax7 = $tax;
-        
-    }
-    if (!$tax16)
-    {
-        $tax16 = new \Aggrosoft\WAWIBundle\Entity\Tax();
-        $tax16->setTitle("16%");
-        $tax16->setValue(16);
-        $em->persist($tax16);
-        $em->flush();
-        $em->refresh($tax16);
-    }
-    if (!$tax5)
-    {
-        $tax5 = new \Aggrosoft\WAWIBundle\Entity\Tax();
-        $tax5->setTitle("5%");
-        $tax5->setValue(5);
-        $em->persist($tax5);
-        $em->flush();
-        $em->refresh($tax5);
-    }
-    $conn = $em->getConnection();
-    if ($dt < $jandt)
-    {
-        $conn->exec("update category set tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR));
-        $conn->exec("update product set tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR));
-        $conn->exec("update category set tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR));
-        $conn->exec("update product set tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR));
-        $clients = $em->getRepository('AggrosoftWAWIBundle:Client')->findAll();
-        foreach ($clients as $client)
-        {
-            if (intval($client->getDefaultVat()) == 19)
-            {
-                $client->setDefaultVat(16);
-                $em->persist($client);
-            }
-            else if (intval($client->getDefaultVat()) == 7)
-            {
-                $client->setDefaultVat(5);
-                $em->persist($client);
-            }
-        }
-    }
-    else
-    {
-        $conn->exec("update category set tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR));
-        $conn->exec("update product set tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR));
-        $conn->exec("update category set tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR));
-        $conn->exec("update product set tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR));
-        $clients = $em->getRepository('AggrosoftWAWIBundle:Client')->findAll();
-        foreach ($clients as $client)
-        {
-            if (intval($client->getDefaultVat()) == 16)
-            {
-                $client->setDefaultVat(19);
-                $em->persist($client);
-            }
-            else if (intval($client->getDefaultVat()) == 5)
-            {
-                $client->setDefaultVat(7);
-                $em->persist($client);
-            }
-        }
-    }
-    $curClient = $this->appservice->getActiveClient();
-    
-    foreach ($clients as $client)
-    {
-        $this->appservice->switchClient($client);
-        $clientShemes = $em->getRepository('AggrosoftWAWIBundle:ClientSheme')->findByClient($client);
-        foreach ($clientShemes as $clientSheme)
-        {
-                if ($clientSheme->getTable()->getTitle() == 'tax')
-                {
-                    if (!$this->appservice->getMetaFieldValue($tax16, $clientSheme->getField()))
-                    {
-                        $this->appservice->setMetaFieldValue($tax16, $clientSheme->getField(), $this->appservice->getMetaFieldValue($tax19, $clientSheme->getField()), false);
-                    }
-                    if (!$this->appservice->getMetaFieldValue($tax5, $clientSheme->getField()))
-                    {
-                        $this->appservice->setMetaFieldValue($tax5, $clientSheme->getField(), $this->appservice->getMetaFieldValue($tax7, $clientSheme->getField()), false);
-                    }
-                }
-        }
 
-    }
-    $this->appservice->switchClient($curClient);
-    $em->flush();
-    $oxidCode = '<?php class Tax16Module {'."\n";
-    $oxidCode .= 'public function change_all_taxes() {'."\n";
-    $oxidCode .= '$oConf = agConfig::getInstance();';
-    if ($dt < $jandt)
-    {
-        $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=16 where oxvat=19");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=5 where oxvat=7");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=16 where oxvat=19");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=5 where oxvat=7");'."\n";
-        
-        $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 19) $oConf->saveShopConfVar("num", "dDefaultVAT", 16);'."\n";
-        $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 7) $oConf->saveShopConfVar("num", "dDefaultVAT", 5);'."\n";
-    }
-    else
-    {
-        $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=19 where oxvat=16");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=7 where oxvat=5");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=19 where oxvat=16");'."\n";
-        $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=7 where oxvat=5");'."\n";
-        $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 16) $oConf->saveShopConfVar("num", "dDefaultVAT", 19);'."\n";
-        $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 5) $oConf->saveShopConfVar("num", "dDefaultVAT", 7);'."\n";
-    }
-    $oxidCode .= '}'."\n";
-    $oxidCode .= '} ModuleManager::getInstance()->registerModule( new Tax16Module );'."\n";
-    file_put_contents($this->appservice->getContainer()->get('kernel')->getCacheDir()."/tax16_module.php", $oxidCode);
-    $webshophelper = $this->appservice->getContainer()->get('webshop.helper');
-    foreach ($clients as $client)
-    {
-        if (!$client->getFtpServer() || !$client->getShopUrl())
-            continue;
-        $conn_id = ftp_ssl_connect($client->getFtpServer());
-        if ($client->getFtpPassive()){
-            ftp_pasv($conn_id, true);
+    <?php
+
+        $dt = new \DateTime;
+        $julydt = new \DateTime('2020-07-01 00:00:00');
+        $jandt = new \DateTime('2021-01-01 00:00:00');
+        if ($dt < $julydt)
+            return;
+
+        $em = $this->em;
+        $taxes = $em->getRepository('AggrosoftWAWIBundle:Tax')->findAll();
+        $tax19 = null;
+        $tax7 = null;
+        $tax16 = null;
+        $tax5 = null;
+        foreach ($taxes as $tax)
+        {
+            if ($tax->getShipperCountry())
+                continue;
+            if (abs($tax->getValue() - 16) < 0.0001)
+                $tax16 = $tax;
+            if (abs($tax->getValue() - 5) < 0.0001)
+                $tax5 = $tax;
+            if ($tax->getValue() != 19 && $tax->getValue() != 7)
+                continue;
+            if (abs($tax->getValue() - 19) < 0.0001)
+                $tax19 = $tax;
+            if (abs($tax->getValue() - 7) < 0.0001)
+                $tax7 = $tax;
+
         }
-        ftp_login($conn_id, $client->getFtpUserName(), $client->getFtpPassword());
-        ftp_put($conn_id, $client->getFtpPath()."wawi/tax16_module.php", $this->appservice->getContainer()->get('kernel')->getCacheDir()."/tax16_module.php", FTP_BINARY);
-        $webshophelper->configure('oxid', $client->getShopUrl(), $client->getShopUser(), $client->getShopPassword(), $client, $conn_id);
-        $webshophelper->getData('change_all_taxes');
-        ftp_close($conn_id);
-    }
+        if (!$tax16)
+        {
+            $tax16 = new \Aggrosoft\WAWIBundle\Entity\Tax();
+            $tax16->setTitle("16%");
+            $tax16->setValue(16);
+            $em->persist($tax16);
+            $em->flush();
+            $em->refresh($tax16);
+        }
+        if (!$tax5)
+        {
+            $tax5 = new \Aggrosoft\WAWIBundle\Entity\Tax();
+            $tax5->setTitle("5%");
+            $tax5->setValue(5);
+            $em->persist($tax5);
+            $em->flush();
+            $em->refresh($tax5);
+        }
+        $conn = $em->getConnection();
+        if ($dt < $jandt)
+        {
+            $conn->exec("update category set tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR));
+            $conn->exec("update product set tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR));
+            $conn->exec("update category set tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR));
+            $conn->exec("update product set tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR));
+            $clients = $em->getRepository('AggrosoftWAWIBundle:Client')->findAll();
+            foreach ($clients as $client)
+            {
+                if (intval($client->getDefaultVat()) == 19)
+                {
+                    $client->setDefaultVat(16);
+                    $em->persist($client);
+                }
+                else if (intval($client->getDefaultVat()) == 7)
+                {
+                    $client->setDefaultVat(5);
+                    $em->persist($client);
+                }
+            }
+        }
+        else
+        {
+            $conn->exec("update category set tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR));
+            $conn->exec("update product set tax_id=".$conn->quote($tax19->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax16->getId(),\PDO::PARAM_STR));
+            $conn->exec("update category set tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR));
+            $conn->exec("update product set tax_id=".$conn->quote($tax7->getId(),\PDO::PARAM_STR)." where tax_id=".$conn->quote($tax5->getId(),\PDO::PARAM_STR));
+            $clients = $em->getRepository('AggrosoftWAWIBundle:Client')->findAll();
+            foreach ($clients as $client)
+            {
+                if (intval($client->getDefaultVat()) == 16)
+                {
+                    $client->setDefaultVat(19);
+                    $em->persist($client);
+                }
+                else if (intval($client->getDefaultVat()) == 5)
+                {
+                    $client->setDefaultVat(7);
+                    $em->persist($client);
+                }
+            }
+        }
+        $curClient = $this->appservice->getActiveClient();
+
+        foreach ($clients as $client)
+        {
+            $this->appservice->switchClient($client);
+            $clientShemes = $em->getRepository('AggrosoftWAWIBundle:ClientSheme')->findByClient($client);
+            foreach ($clientShemes as $clientSheme)
+            {
+                    if ($clientSheme->getTable()->getTitle() == 'tax')
+                    {
+                        if (!$this->appservice->getMetaFieldValue($tax16, $clientSheme->getField()))
+                        {
+                            $this->appservice->setMetaFieldValue($tax16, $clientSheme->getField(), $this->appservice->getMetaFieldValue($tax19, $clientSheme->getField()), false);
+                        }
+                        if (!$this->appservice->getMetaFieldValue($tax5, $clientSheme->getField()))
+                        {
+                            $this->appservice->setMetaFieldValue($tax5, $clientSheme->getField(), $this->appservice->getMetaFieldValue($tax7, $clientSheme->getField()), false);
+                        }
+                    }
+            }
+
+        }
+        $this->appservice->switchClient($curClient);
+        $em->flush();
+        $oxidCode = '<?php class Tax16Module {'."\n";
+        $oxidCode .= 'public function change_all_taxes() {'."\n";
+        $oxidCode .= '$oConf = agConfig::getInstance();';
+        if ($dt < $jandt)
+        {
+            $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=16 where oxvat=19");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=5 where oxvat=7");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=16 where oxvat=19");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=5 where oxvat=7");'."\n";
+
+            $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 19) $oConf->saveShopConfVar("num", "dDefaultVAT", 16);'."\n";
+            $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 7) $oConf->saveShopConfVar("num", "dDefaultVAT", 5);'."\n";
+        }
+        else
+        {
+            $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=19 where oxvat=16");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxcategories set oxvat=7 where oxvat=5");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=19 where oxvat=16");'."\n";
+            $oxidCode .= 'oxDb::getDb()->execute("update oxarticles set oxvat=7 where oxvat=5");'."\n";
+            $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 16) $oConf->saveShopConfVar("num", "dDefaultVAT", 19);'."\n";
+            $oxidCode .= 'if ($oConf->getShopConfVar("dDefaultVat") == 5) $oConf->saveShopConfVar("num", "dDefaultVAT", 7);'."\n";
+        }
+        $oxidCode .= '}'."\n";
+        $oxidCode .= '} ModuleManager::getInstance()->registerModule( new Tax16Module );'."\n";
+        file_put_contents($this->appservice->getContainer()->get('kernel')->getCacheDir()."/tax16_module.php", $oxidCode);
+        $webshophelper = $this->appservice->getContainer()->get('webshop.helper');
+        foreach ($clients as $client)
+        {
+            if (!$client->getFtpServer() || !$client->getShopUrl())
+                continue;
+            $conn_id = ftp_ssl_connect($client->getFtpServer());
+            if ($client->getFtpPassive()){
+                ftp_pasv($conn_id, true);
+            }
+            ftp_login($conn_id, $client->getFtpUserName(), $client->getFtpPassword());
+            ftp_put($conn_id, $client->getFtpPath()."wawi/tax16_module.php", $this->appservice->getContainer()->get('kernel')->getCacheDir()."/tax16_module.php", FTP_BINARY);
+            $webshophelper->configure('oxid', $client->getShopUrl(), $client->getShopUser(), $client->getShopPassword(), $client, $conn_id);
+            $webshophelper->getData('change_all_taxes');
+            ftp_close($conn_id);
+        }
 
 Speichern Sie das PHP Script anschließend.
 

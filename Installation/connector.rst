@@ -76,7 +76,7 @@ Führen Sie unter :menuselection:`Systemverwaltung --> Schnittstellen --> Websho
 einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Auswahlliste ein.
 
 Verfügbare Parameter für config.inc.php
-~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 wawiExportOrdersOnlyFromDate (str)
     Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
@@ -120,8 +120,55 @@ sWAWISepaCreditorNumber (str)
 sWAWIClientIdent (str)
     WAWI-Mandant Ident (für die Thankyou-Seite)
 
+Connector erweitern
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Die Datenübertragung des Connectors lässt sich mit einem einfachen Modulsystem erweitern. Hierzu muss eine Datei mit
+der Benennung :guilabel:`*_module.php` entweder direkt im Unterordner :guilabel:`wawi` oder in einem beliebigen Modul unter :guilabel:`modules/[MODULENAME]/warexo`
+existieren.
+
+Ein Beispiel wäre ein Modul unter dem Pfad :guilabel:`wawi/custom_module.php` wie folgt:
+
+.. code-block:: php
+
+    <?php
+
+        class CustomModule{
+
+            /* Used for custom function being called from warexo */
+            public function my_custom_function($param)
+            {
+                // custom function, can be called from warexo
+                return 'some_fancy_result';
+            }
+            /* Used to add or map custom data when sending data from oxid to warexo */
+            public function get_additional_fields($table, $data, $entity=null)
+            {
+              if ($table === 'oxorder' && $entity && $entity->oxorder__somecustomfield->value) {
+                $data['someCustomField'] = $entity->oxorder__somecustomfield->value;
+              }
+              return $data;
+            }
+            /* Used to add custom field names, same format as used in OxidFieldsContainerAdditional */
+            public function get_additional_field_names($table)
+            {
+              if ($table === 'oxorder') {
+                return ['oxid_field_1' => 'warexoExtraField1' , 'oxid_field_2' => 'warexoExtraField2'];
+              }
+              return [];
+            }
+            /* Event handler for any of the events, can be used to modify import/export data or react to some events */
+            public function onAfterSetProducts($data){
+                // Modify $data here or call any function you like
+            }
+        }
+
+        $customModule = new CustomModule;
+        ModuleManager::getInstance()->registerModule( $customModule );
+        ModuleManager::getInstance()->addEventListener( WAWIConnectorEvents::AFTER_SET_PRODUCTS, $customModule, 'onAfterSetProducts' );
+
 Verfügbare Events
-~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 beforeSetProductOptions($data)
     * $data - Array von assoc. Arrays mit den WAWI-Feldern

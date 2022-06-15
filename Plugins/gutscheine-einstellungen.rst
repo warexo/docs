@@ -2,7 +2,7 @@ Gutscheine
 ##########
 
 Für weitere Informationen wie Gutscheinserien und Gutscheine erstellt werden springen Sie bitte zum Handbucheintrag
-für :doc:`Gutscheinserien </Funktionen/gutscheine>`
+für :doc:`Gutscheinserien </Disktone/gutscheine>`
 
 Plugin Einstellungen
 ~~~~~~~~~~~~~~~~~~~~~~

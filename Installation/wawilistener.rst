@@ -18,7 +18,7 @@ Installation
 -  Starten Sie die Datei :program:`WAWIListener.jar` per Doppelklick - das Programm muss immer laufen wenn Sie mit Warexo arbeiten.
 -  **Nur für Kunden von DomainFactory:** Entfernen Sie in der Datei ``web/.htaccess`` die Rautenzeichen im Code
 
-.. code-block:: htaccess
+.. code-block::
 
    # RewriteCond %{HTTP:Authorization} ^(.+)$
    # RewriteRule .\* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
