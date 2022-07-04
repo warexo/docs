@@ -215,3 +215,13 @@ beforePrepareUploadedPictures($type, $pictures, $data)
 afterSetProductPictures($oArticle, $data)
     * $data - Assoc. Array mit den WAWI-Feldern
     * $oArticle - oxarticle-Objekt
+
+
+Extranet
+~~~~~~~~~~~~~~~~~~~~
+
+* Legen Sie eine Subdomain (z.B. extranet.meinshop.de) an. Die Domain soll mit dem Verzeichnis wawi/web verknüpft sein.
+* Richten Sie ein SSL-Zertifikat ein
+* Legen Sie die Webseite unter Einstellung->Extranet->Websites an. 
+* Tragen Sie die Extranet-URL (https://<domain) in Oxid Admin->Erweiterungen->Module->AggroWAWI Extension->Einstell. ein
+* Aktivieren Sie die Optionen "Extranet Aktiv", "Extranet Bestellungen Aktiv" usw
