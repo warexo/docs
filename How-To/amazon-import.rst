@@ -7,6 +7,9 @@ Amazon Bestellungen importieren
 CSV Import anlegen
 ------------------
 
+.. Attention:: Um die Amazon Bestelldatei zu importieren ist ein Hotfix in Ihrem System notwendig, sprechen Sie uns an
+    und wir installieren diesen Hotfix für Sie.
+
 Wir bieten ein CSV-Import Schema an mit dem der Import vollautomatisch angelegt wird, laden Sie die Schema Datei hier herunter:
 
 :download:`CSV Import Schema herunterladen </_static/imports/amazon.json>`
