@@ -43,7 +43,7 @@ Navigieren Sie innerhalb von Warexo zum Menüpunkt :menuselection:`Systemverwalt
 wählen Sie beim Import "Amazon Bestellungen" im Aktionsmenü die Aktion "Bearbeiten" oder klicken Sie auf die
 entsprechende Zeile um den Import zu öffnen.
 
-Laden Sie den Amazon Bestellbericht im Feld "Datei" hoch und speichern Sie den Import.
+Laden Sie den Amazon Bestellbericht im Feld "CSV-Datei" hoch und speichern Sie den Import.
 
 Klicken Sie im Bereich "Import" auf "Import jetzt starten" und warten Sie bis der Import abgeschlossen ist.
 
