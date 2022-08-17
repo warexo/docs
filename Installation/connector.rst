@@ -113,7 +113,10 @@ wawiNotOverrideIsVisible (bool)
 
 wawiNotHideArticleWithGroups (bool)
     Zugewiesene Artikelgruppen ignorieren und den Artikel für alle Kunden anzeigen (der Artikel wird dann nicht kaufbar)
-
+    
+wawiUseSortFieldForCustomerPrices (bool)
+    Kundengruppenpreise nach oxsort statt oxprice aufsteigend sortieren
+     
 sWAWISepaCreditorNumber (str)
     SEPA Gläubiger-Identifikationsnummer (für die Thankyou-Seite)
 
