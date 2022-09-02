@@ -52,4 +52,11 @@ Exportiert CSV Daten die im Facebook importiert werden können.
 .. note::
     Wählen Sie in der Auftragsliste die gewünschten Aufträge aus und klicken Sie auf
     "Ausgewählte Zeilen" => "Reports" => "Reports als CSV" => "Hermes Export" um die Datei zu erstellen.
+    
+Newsletter-Abonnenten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exportiert alle Newsletter-Abonnenten aus dem Oxid-Shop (Double-Opt-In)
+
+:download:`Report-Schema herunterladen </_static/reports/Newsletterabonnenten-nach-Anmeldung.json>`    
 
