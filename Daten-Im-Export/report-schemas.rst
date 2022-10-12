@@ -63,5 +63,27 @@ Exportiert alle Newsletter-Abonnenten aus dem Oxid-Shop (Double-Opt-In)
 L-Shop Bestellung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:download:`Report-Schema herunterladen </_static/reports/L-Shop-Bestellung.json>`   
+:download:`Report-Schema herunterladen </_static/reports/L-Shop-Bestellung.json>`  
+
+.. note::
+    Legen Sie auch das Workflow-Event "Lieferantenbestellung versenden" an. 
+    Dann legen Sie einen Workflow für dieses Event mit folgenden Aktionen an:
+    1. Lieferantenbestellungen sofort exportieren (in einer CSV-Datei)
+       Report: L-Shop-Bestellung
+       Dateiname: {{entity.orderNumber}}.xml
+       Die Datei auf dem FTP-Server speichern (FTP-Host): Die Zugangsdaten bekommen Sie vom L-Shop
+       FTP-Benutzer: Die Zugangsdaten bekommen Sie vom L-Shop
+       FTP-Passwort: Die Zugangsdaten bekommen Sie vom L-Shop
+       FTP-Ordner: /
+       Passiver Modus: nein
+       Einträge einzeln exportieren: ja
+       
+       Bedingungen:
+       Lieferant ist L-Shop
+       Benutzerdef. Bedingung: {{not entity.exportDate}}
+    
+    2. EDI-Exportdatum setzen
+       
+       
+    "Ausgewählte Zeilen" => "Reports" => "Reports als CSV" => "Hermes Export" um die Datei zu erstellen.
 
