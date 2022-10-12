@@ -58,5 +58,10 @@ Newsletter-Abonnenten
 
 Exportiert alle Newsletter-Abonnenten aus dem Oxid-Shop (Double-Opt-In)
 
-:download:`Report-Schema herunterladen </_static/reports/Newsletterabonnenten-nach-Anmeldung.json>`    
+:download:`Report-Schema herunterladen </_static/reports/Newsletterabonnenten-nach-Anmeldung.json>`
+
+L-Shop Bestellung
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`Report-Schema herunterladen </_static/reports/L-Shop-Bestellung.json>`   
 
