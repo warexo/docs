@@ -40,3 +40,8 @@ Legt Angebote an aus einem Amazon Bestellbericht.
 :download:`CSV Import Schema herunterladen </_static/imports/amazon.json>`
 
 Weitere Informationen hierzu finden Sie im :doc:`zugehörigen Handbucheintrag </How-To/amazon-import>`
+
+L-Shop Bestandsimport
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`CSV Import Schema herunterladen </_static/imports/L-Shop-Lagerbestaende.json>`
