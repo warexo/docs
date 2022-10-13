@@ -26,7 +26,7 @@ Twig Funktionen beginnen und enden immer mit einem Prozentzeichen und einer gesc
 Übersetzungen sind von doppelten eckigen Klammern eingeschlossen.
 Sondervariablen sind speziell für die Vorlagen vorformatierte Variablen, diese sind immer in doppelten Rautezeichen eingeschlossen.
 
-.. DANGER:: Fügen Sie keine weichen Zeilenumbrüche hinzu! Wenn Sie einen Text mit dem twig-Code editieren, löschen Sie anschließend die Formatierung des geänderten Texts und wenden Sie die Formatierung nochmals an!
+.. DANGER:: Fügen Sie keine weichen Zeilenumbrüche hinzu! Wenn Sie einen twig-Code editieren, löschen Sie anschließend die Formatierung des geänderten Texts und wenden Sie die Formatierung nochmals an!
 
 
 Twig Variable
