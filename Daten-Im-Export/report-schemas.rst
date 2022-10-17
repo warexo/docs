@@ -60,6 +60,11 @@ Exportiert alle Newsletter-Abonnenten aus dem Oxid-Shop (Double-Opt-In)
 
 :download:`Report-Schema herunterladen </_static/reports/Newsletterabonnenten-nach-Anmeldung.json>`
 
+Artikelexport für Webgains
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`Report-Schema herunterladen </_static/reports/Webgains.json>`
+
 L-Shop Bestellung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
