@@ -95,9 +95,6 @@ Bestandsbewertung
 Kundennummern Maske
     ...
 
-HBCI Konto
-    ...
-
 Bestellmails nicht automatisch senden
     Deaktiviert den automatischen Versand von Versand- und Auftragsbestätigung
 
