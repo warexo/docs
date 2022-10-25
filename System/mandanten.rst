@@ -156,9 +156,10 @@ Produktsuche: zus. Felder
     
 Globale Suche: Feld-Schema (php-Array)
     Akt. Schema für globale Suche:
+    
     .. code-block:: php
     
-    array( 
+        array( 
     	'Order' => array(
             'fields' => array('orderNumber','off.billingFirstName','off.billingLastName','invoiceNumber','creditNoteNumber','trackingCode',
             'returnTrackingCode', 'off.paymentTransactionId','prevtrack.trackingCode','customDeliveryNoteNumber'),
@@ -201,8 +202,7 @@ Globale Suche: Feld-Schema (php-Array)
             'joins' => array('off' => 'e.offer','ord'=>'off.order'),
             'customType' => 'order'
         ),
-    );
-    ```
+        );
 
 Systempfade
     Vollständige Pfade zu notwendigen Programmen auf dem Server, Warexo versucht
