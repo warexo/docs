@@ -153,6 +153,54 @@ Zus. DQL-Bedingung für Dashboard-Diagramm
 
 Produktsuche: zus. Felder
     Zusätzliche Felder die für die Produktsuche berücksichtigt werden sollen. Twig konfigurierbar
+    
+Globale Suche: Feld-Schema (php-Array)
+    Akt. Schema für globale Suche:
+    ```php
+    array( 
+    	'Order' => array(
+            'fields' => array('orderNumber', 'off.billingFirstName',,'off.billingLastName','invoiceNumber','creditNoteNumber','trackingCode','returnTrackingCode','off.paymentTransactionId','prevtrack.trackingCode','customDeliveryNoteNumber'),
+            'route' => 'order_edit',
+            'joins' => array('off' => 'e.offer'),
+            'leftjoins' => array('prevtrack' => 'e.previousTrackingInfos')
+        ),
+        'Product' => array(
+            'fields' => array('productFullTitle','sku','ean'),
+            'route' => 'product_edit',
+            //'where' => 'e.parent is null'
+        ), 
+        'Customer' => array(
+            'fields' => array('firstName', 'lastName','email'),
+            'route' => 'customer_edit'
+        ), 
+        'Contact' => array(
+            'fields' => array('subject'),
+            'route' => 'contact_edit'
+        ),
+        'Category' => array(
+            'fields' => array('title'),
+            'route' => 'category_edit'
+        ),
+        'VendorOrder' => array(
+            'fields' => array('orderNumber'),
+            'prefix' => 'VO',
+            'route' => 'vendororder_edit'
+        ),        
+        'Offer' => array(
+            'fields' => array('offerNumber', 'billingFirstName', 'billingLastName'),
+            'route' => 'offer_edit'
+        ),
+        'DHLReturn' => array(
+            'fields' => array('idc'),
+            'displayFields' => array('ord.orderNumber','off.billingFirstName','off.billingLastName','ord.invoiceNumber'),
+            'route' => 'order_edit',
+            'routeEntityField' => 'ord.id AS ordid',
+            'routeEntityFieldAlias' => 'ordid',
+            'joins' => array('off' => 'e.offer','ord'=>'off.order'),
+            'customType' => 'order'
+        ),
+    );
+    ```
 
 Systempfade
     Vollständige Pfade zu notwendigen Programmen auf dem Server, Warexo versucht
