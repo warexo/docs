@@ -156,10 +156,12 @@ Produktsuche: zus. Felder
     
 Globale Suche: Feld-Schema (php-Array)
     Akt. Schema für globale Suche:
-    ```php
+    .. code-block:: php
+    
     array( 
     	'Order' => array(
-            'fields' => array('orderNumber', 'off.billingFirstName','off.billingLastName','invoiceNumber','creditNoteNumber','trackingCode','returnTrackingCode','off.paymentTransactionId','prevtrack.trackingCode','customDeliveryNoteNumber'),
+            'fields' => array('orderNumber','off.billingFirstName','off.billingLastName','invoiceNumber','creditNoteNumber','trackingCode',
+            'returnTrackingCode', 'off.paymentTransactionId','prevtrack.trackingCode','customDeliveryNoteNumber'),
             'route' => 'order_edit',
             'joins' => array('off' => 'e.offer'),
             'leftjoins' => array('prevtrack' => 'e.previousTrackingInfos')
