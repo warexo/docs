@@ -38,6 +38,7 @@ Aufträge / Rechnungen
 -  {{order.saleschannel}} - Vertriebskanal
 -  {{order.clerk.username}} - Auftragsbearbeiter (Benutzername)
 -  {{order.clerk.firstName}} {{order.clerk.lastName}} - Auftragsbearbeiter (Vorname und Nachname)
+-  {{order.lastRemindWithRemindCosts.remindcosts|m}} - Mahngebühren
 
 **Rechnungsadresse**
 
