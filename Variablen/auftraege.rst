@@ -39,6 +39,12 @@ Aufträge / Rechnungen
 -  {{order.clerk.username}} - Auftragsbearbeiter (Benutzername)
 -  {{order.clerk.firstName}} {{order.clerk.lastName}} - Auftragsbearbeiter (Vorname und Nachname)
 -  {{order.lastRemindWithRemindCosts.remindcosts|m}} - Mahngebühren
+-  {{order.remind1.timestamp}} - Erste Mahnung: Datum
+-  {{order.remind1.paymentTermDate}} - Erste Mahnung: Zahlungsziel
+-  {{order.remind2.timestamp}} - Zweite Mahnung: Datum
+-  {{order.remind2.paymentTermDate}} - Zweite Mahnung: Zahlungsziel
+-  {{order.remind3.timestamp}} - Dritte Mahnung: Datum
+-  {{order.remind3.paymentTermDate}} - Dritte Mahnung: Zahlungsziel
 
 **Rechnungsadresse**
 
