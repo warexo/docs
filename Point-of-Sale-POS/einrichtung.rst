@@ -54,7 +54,7 @@ Einrichting der TSE
 
    1. Seriennummer: z.B. kasse1
    
-   2. Hauptlaufwerk: Hautplaufwerk des TSE-Stick
+   2. Hauptlaufwerk: Hautplaufwerk des TSE-Stick, z.B. E
    
    3. PIN: 12345
    
@@ -65,4 +65,4 @@ Einrichting der TSE
 -  Starten Sie den WAWIListener neu
 -  Aktualisieren Sie die Seite an der Kasse. Die TSE wird im WAWIListener automatisch konfiguriert.
 -  Buchen Sie einen Testbeleg und prüfen Sie ob die TSE-Signatur auf dem Beleg steht
--  Stornieren Sie den Testbelege
+-  Stornieren Sie den Testbeleg
