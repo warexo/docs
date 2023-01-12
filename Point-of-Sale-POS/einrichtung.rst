@@ -51,6 +51,7 @@ Einrichting der TSE
 -  Kopieren Sie die Dateien <WAWIListener-Ordner>\tsesdk\64bit\WormAPI.dll und <WAWIListener-Ordner>\tsesdk\64bit\WormAPIJni.dll ins Verzeichnis <WAWIListener-Ordner>
 -  Stecken Sie den TSE-Stick in den festen USB-Anschluss ein (keine USB-Hubs verwenden!)
 -  Tragen Sie die Seriennummer, Hauptlaufwerk, PIN, PUK und Time-Admin-PIN  in WAWIListener->POS->Einstellungen ein
+
    1. Seriennummer: z.B. kasse1
    
    2. Hauptlaufwerk: Hautplaufwerk des TSE-Stick
