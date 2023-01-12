@@ -52,9 +52,13 @@ Einrichting der TSE
 -  Stecken Sie den TSE-Stick in den festen USB-Anschluss ein (keine USB-Hubs verwenden!)
 -  Tragen Sie die Seriennummer, Hauptlaufwerk, PIN, PUK und Time-Admin-PIN  in WAWIListener->POS->Einstellungen ein
    1. Seriennummer: z.B. kasse1
+   
    2. Hauptlaufwerk: Hautplaufwerk des TSE-Stick
+   
    3. PIN: 12345
+   
    4. PUK: 123456
+   
    5. Time-Admin-PIN: 98765
    
 -  Starten Sie den WAWIListener neu
