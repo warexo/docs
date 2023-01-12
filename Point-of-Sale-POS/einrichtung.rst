@@ -48,8 +48,8 @@ Klicken Sie auf den Button :guilabel:`POS` und geben Sie die Bedienernummer und 
 Einrichting der TSE
 ~~~~~~~~~
 
--  Kopieren Sie die Dateien <WAWIListener-Ordner>\tsesdk\64bit\WormAPI.dll und <WAWIListener-Ordner>\tsesdk\64bit\WormAPIJni.dll ins Verzeichnis <WAWIListener-Ordner>
--  Stecken Sie den TSE-Stick in den festen USB-Anschluss ein (keine USB-Hubs verwenden!)
+-  Kopieren Sie die Dateien <WAWIListener-Ordner>\tsesdk\64bit\WormAPI.dll und <WAWIListener-Ordner>\tsesdk\64bit\WormAPIJni.dll ins Verzeichnis <WAWIListener-Ordner> (oder <WAWIListener-Ordner>\tsesdk\32bit\WormAPI.dll und <WAWIListener-Ordner>\tsesdk\32bit\WormAPIJni.dll falls die Kasse aufhängt)
+-  Stecken Sie den TSE-Stick in eine USB-Anschluss ein (keine USB-Hubs verwenden!)
 -  Tragen Sie die Seriennummer, Hauptlaufwerk, PIN, PUK und Time-Admin-PIN  in WAWIListener->POS->Einstellungen ein
 
    1. Seriennummer: z.B. kasse1
@@ -63,4 +63,6 @@ Einrichting der TSE
    5. Time-Admin-PIN: 98765
    
 -  Starten Sie den WAWIListener neu
--  Aktualisieren Sie die Seite an der Kasse
+-  Aktualisieren Sie die Seite an der Kasse. Die TSE wird im WAWIListener automatisch konfiguriert.
+-  Buchen Sie einen Testbeleg und prüfen Sie ob die TSE-Signatur auf dem Beleg steht
+-  Stornieren Sie den Testbelege
