@@ -31,6 +31,45 @@ oder Drittanbieter Module. Wenn Sie eines dieser Module verwenden kopieren Sie b
 Unterordners des Extra Moduls in Ihren Webshop Ordner. Für z.B. Amazon Payments kopieren Sie
 die Inhalte von :guilabel:`extramodules/amazonpayments/copy_this/` in den Shop Ordner.
 
+Shopware 6
+^^^^^^^^^^
+.. Hint:: Die Shopware Integration befindet sich in der Beta Phase, bei Fragen wenden Sie sich bitte an unseren Support.
+
+Laden Sie die aktuellste Shopware Erweiterung auf der `Download Seite <https://github.com/warexo/shopware-plugin/releases>`_ herunter.
+
+Installieren Sie die Erweiterung wie gewohnt über das Shopware Admin Backend unter :menuselection:`Erweiterungen --> Meine Erweiterungen --> Erweiterung hochladen`.
+
+Shopware Plugin konfigurieren
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Für die Verbindung zwischen Shopware und Warexo ist eine sog. Integration notwendig. Diese können Sie über das Shopware Backend
+unter :menuselection:`Einstellungen --> System --> Integrationen --> Intergration anlegen` erstellen. Die Integration muss vom Typ Administrator sein.
+
+Notieren Sie sich Zugangs-ID und Sicherheitsschlüssel.
+
+Konfigurieren Sie das Warexo Plugin innerhalb von Warexo unter
+:menuselection:`Systemverwaltung --> Schnittstellen --> Plugins --> Shopware`
+
+Zugangs-ID / Sicherheitschlüssel
+    Die Zugangsdaten der Shopware Integration
+
+Username / Passwort
+    Legen Sie einen separaten Shopware Admin Benutzer für Warexo an und geben Sie hier die Zugangsdaten an.
+
+Shop URL
+    Die vollständige URL des Shopware Shops (e.g. https://www.meinshop.de)
+
+Sales Channel ID
+    Obsolet, nicht mehr verwenden
+
+Bestellstatus "In Bearbeitung"
+    Sobald ein Warexo Auftrag in diesen Status übergeht wird der Shopware Bestellstatus auf "In Bearbeitung" gesetzt.
+
+Bestellstatus "Abgeschlossen"
+    Sobald ein Warexo Auftrag in diesen Status übergeht wird der Shopware Bestellstatus auf "Abgeschlossen" gesetzt.
+
+Mapping
+    Wird noch dokumentiert, aktuell bitte nicht ohne Nachfrage verwenden
+
 Mandanten konfigurieren
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -77,6 +116,7 @@ einmalig durch. Bitte halten Sie hierbei die Reihenfolge der Einträge in der Au
 
 Verfügbare Parameter für config.inc.php
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Hint:: Nur für Oxid eShop
 
 wawiExportOrdersOnlyFromDate (str)
     Shop-Bestellungen nur ab einem bestimmten Datum importieren (z.B $this->wawiExportOrdersOnlyFromDate = '2022-01-01 00:00:00';)
