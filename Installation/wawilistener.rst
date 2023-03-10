@@ -11,8 +11,8 @@ Installation
 ~~~~~~~~~~~~
 
 -  Installieren Sie Open JDK (8 oder 9) (https://adoptopenjdk.net/)
--  Installieren Sie LibreOffice 6.1 (https://de.libreoffice.org/)
--  Installieren Sie Adobe Reader DC (https://get.adobe.com/de/reader/)
+-  Installieren Sie LibreOffice (https://de.libreoffice.org/)
+-  Installieren Sie FOXIT PDF Reader (https://www.foxit.com/de/pdf-reader/)
 -  Laden Sie den WAWIListener herunter, die aktuellste Version finden Sie in Ihrer Warenwirtschaft unter dem Punkt "Systemverwaltung" => "Systemaktualisierung" oben rechts
 -  Entpacken Sie das \*.zip Archiv direkt nach :guilabel:`C:\\WAWIListener`
 -  Starten Sie die Datei :program:`WAWIListener.jar` per Doppelklick - das Programm muss immer laufen wenn Sie mit Warexo arbeiten.
@@ -81,13 +81,6 @@ Pfad zu LibreOffice
 Falls Sie LibreOffice nicht im standard Pfad installiert haben geben 
 Sie hier den kompletten Pfad bis zur soffice.exe Datei ein - 
 z.B. :program:`D:\\Programme\\\LibreOffice\\\program\\\soffice.exe`
-
-Pfad zu AdobeReader
-^^^^^^^^^^^^^^^^^^^
-
-Falls Sie Adobe Reader nicht im standard Pfad installiert haben geben 
-Sie hier den kompletten Pfad bis zur AcroRd32.exe Datei ein - 
-z.B. :program:`C:\\Program Files (x86)\\Adobe\\Reader 11.0\\Reader\\AcroRd32.exe`
 
 Rechnungen und Gutschriften in Ordner kopieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
