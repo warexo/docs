@@ -38,6 +38,7 @@ Aufträge / Rechnungen
 -  {{order.saleschannel}} - Vertriebskanal
 -  {{order.clerk.username}} - Auftragsbearbeiter (Benutzername)
 -  {{order.clerk.firstName}} {{order.clerk.lastName}} - Auftragsbearbeiter (Vorname und Nachname)
+-  {{order.offer.customerReference}} - "Ihr Zeichen" / Kundenreferenz
 -  {{order.lastRemindWithRemindCosts.remindcosts|m}} - Mahngebühren
 -  {{order.remind1.timestamp|d}} - Erste Mahnung: Datum
 -  {{order.remind1.paymentTermDate|d}} - Erste Mahnung: Zahlungsziel
