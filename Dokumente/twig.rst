@@ -64,6 +64,20 @@ Um einen Filter auf eine code Stelle anzuwenden schließen Sie diese in den *fil
 
 Mehr Informationen zu Filtern finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/filters/index.html>`__.
 
+Verfügbare Filter
+-----------------
+
+* cursign - Währungszeichen, z.B. {{offer.currency|cursign}}
+* d - Datum, z.B. {{order.created|d}}
+* m - Preisformatierung, z. B. {{offer.sum|m}}
+* q - Formatierung für Mengen (ganze Zahlen werden ohne Komma dargestellt), z. B. {{item.quantity|q}}
+* unitname - Übersetzung der Mengeneinheit, z.B. {{product.unitName|unitname}}
+* basename - PHP-Funktion basename
+* json_decode - PHP-Funktion json_decode
+* base64 - PHP-Funktion base64_encode
+* daysago - Zeitdifferenz in Tagen. z.B. Bestellung wurde vor {{order.created|daysago}} angelegt
+
+
 Funktionen
 ~~~~~~~~~~
 
