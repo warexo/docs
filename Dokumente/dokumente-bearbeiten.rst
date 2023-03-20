@@ -62,6 +62,7 @@ Um die Sondervariablen anzupassen (z.B. ##SUMMARY_VALUE##) kopieren Sie die Date
 z.B.
 
 .. code-block:: xml
+
    <?xml version="1.0" encoding="UTF-8"?>
       <variables>
 
