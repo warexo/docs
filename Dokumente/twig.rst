@@ -76,6 +76,7 @@ Verfügbare Filter
 * json_decode - PHP-Funktion json_decode
 * base64 - PHP-Funktion base64_encode
 * daysago - Zeitdifferenz in Tagen. z.B. Bestellung wurde vor {{order.created|daysago}} angelegt
+* number_spellout - Zahl ausschreiben
 
 
 Funktionen
