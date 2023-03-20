@@ -72,7 +72,7 @@ z.B.
          </variable>
 
       </variables>
-```
+
 
 Weitere Informationen zu Twig finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/>`__ und im
 entsprechenden :doc:`Handbucheintrag zu Twig </Dokumente/twig/>`.
