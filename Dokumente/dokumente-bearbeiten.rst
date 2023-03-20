@@ -57,6 +57,22 @@ Sondervariablen
 
    ##INVOICE_DATE##
 
+Um die Sondervariablen anzupassen (z.B. ##SUMMARY_VALUE##) kopieren Sie die Datei src/Aggrosoft/WAWIBundle/Resources/templates/template_variables.xml ins app/Resources/templates und löschen Sie alle Tags außer ##SUMMARY_VALUE## 
+
+z.B.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<variables>
+
+<variable>
+<name>SUMMARY_VALUE</name>
+<value>{{ cost.value|m }} {{ offer.currency }}{% if order.warehouse and order.warehouse.country.currency.isocode != offer.currency %} ({{ calc_in_currency(cost.value, offer.currency, order.warehouse.country.currency.isocode, offer.currencyrate)|m }} {{order.warehouse.country.currency.isocode}}){% endif %}</value>
+</variable>
+
+</variables>
+```
+
 Weitere Informationen zu Twig finden Sie in der `Twig Dokumentation <https://twig.symfony.com/doc/2.x/>`__ und im
 entsprechenden :doc:`Handbucheintrag zu Twig </Dokumente/twig/>`.
 
