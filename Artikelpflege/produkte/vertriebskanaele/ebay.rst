@@ -10,7 +10,7 @@ Kategorie
     Bis zu 2 eBay Kategorien in der dieser Artikel gelistet werden soll
 
 Shop Kategorie Id
-    Bis zu 2 eBay Shop Kategorien in der dieser Artikel gelistet werden soll
+    Bis zu 2 eBay Shop Kategorien in der dieser Artikel gelistet werden soll. Leeren Sie den Warexo Cache, falls irgendwelche eBay-Shopkategorien in der Liste fehlen.
 
 An eBay nicht exportieren
     Diesen Artikel nicht zu eBay exportieren
