@@ -1,4 +1,4 @@
-Kontakt
+Kontakt / Ticket System
 ########################
 
 Warexo beinhaltet ein Ticket System das es Ihnen erlaubt den E-Mail und Telefonkontakt zu koordinieren.
@@ -40,6 +40,7 @@ Auf Nachrichten antworten
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Wählen Sie die gewünschte Nachricht aus, verfassen Sie ihre gewünschte Antwort im Bereich :menuselection:`Antwort verfassen`
+(die E-Mail-Vorlage können Sie im Textbaustein "Kontakt: Antwort für Kunde" anpassen)
 
 Betreff
     Vorausgefüllt mit ursprünglichem Betreff, Re: als Prefix
