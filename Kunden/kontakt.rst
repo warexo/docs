@@ -72,10 +72,10 @@ Betreff
     Ändert den Betreff der Nachricht
 
 Ticketbearbeiter
-    Zuständiger Benutzer der diese Nachricht bearbeiten soll
+    Zuständiger Benutzer (aus der Benutzergruppe "Ticket-Support") der diese Nachricht bearbeiten soll.
 
 Zugewiesene Benutzer
-    Mehrere Benutzer die diese Nachricht überwachen sollen
+    Mehrere Benutzer (aus der Benutzergruppe "Ticket-Support") die diese Nachricht überwachen sollen
 
 Kunde
     Verknüpfter Kunde
