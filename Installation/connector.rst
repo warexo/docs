@@ -268,6 +268,8 @@ Oxid-Widgets in Warexo einbauen
 
 .. code-block:: php
 
+    <?php
+
     //Artikel
     $extra_product_widgets = array(
         array("title" => "<Widget-Titel>", "id" => "<id, z.B. mywidget>", "controller" => "<cl-Klasse>", "height" => "<z.B. 300px>", "article" => "<false|true (100%-Breite)>")
