@@ -260,6 +260,29 @@ afterSetProductPictures($oArticle, $data)
     * $oArticle - oxarticle-Objekt
 
 
+Oxid-Widgets in Warexo einbauen
+~~~~~~~~~~~~~~~~~~~~
+
+* Legen Sie im wawi-Ordner des Oxid-Shops die Datei *_widgets.inc.php an
+* Fügen Sie folgende Zeilen hinzu:
+
+.. code-block:: php
+
+    //Artikel
+    $extra_product_widgets = array(
+        array("title" => "<Widget-Titel>", "id" => "<id, z.B. mywidget>", "controller" => "<cl-Klasse>", "height" => "<z.B. 300px>", "article" => "<false|true (100%-Breite)>")
+    );
+
+
+Verfügbare Variablen:
+    * $extra_product_widgets
+    * $extra_category_widgets
+    * $extra_manufacturer_widgets
+    * $extra_customer_widgets
+    * $extra_discount_widgets
+    * $extra_order_widgets
+    * $extra_attribute_widgets
+
 Extranet
 ~~~~~~~~~~~~~~~~~~~~
 
