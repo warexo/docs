@@ -263,7 +263,7 @@ afterSetProductPictures($oArticle, $data)
 Oxid-Widgets in Warexo einbauen
 ~~~~~~~~~~~~~~~~~~~~
 
-* Legen Sie im wawi-Ordner des Oxid-Shops die Datei *_widgets.inc.php an
+* Legen Sie im wawi-Ordner des Oxid-Shops die Datei *_widgets.inc.php (z.B. meinmodule_widgets.inc.php) an
 * Fügen Sie folgende Zeilen hinzu:
 
 .. code-block:: php
