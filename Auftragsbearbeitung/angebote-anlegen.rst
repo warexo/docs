@@ -214,3 +214,14 @@ Angebote annehmen
 Wenn Sie einen Auftrag für dieses Angebot anlegen möchten klicken Sie die Schaltfläche :guilabel:`Auftrag anlegen` - 
 der zugehörige Auftrag wird angelegt und Sie werden automatisch zum 
 :doc:`Auftragsbildschirm </Auftragsbearbeitung/auftraege-bearbeiten>` weiter geleitet.
+
+Festschreibung
+~~~~~~~~~~~~~~~~
+
+.. attention:: In der Standard Einstellung können beliebige Benutzer die Festschreibung aufheben.
+               Sie können diese Funktion jedoch für einzelne Benutzer begrenzen. Nutzen Sie hierzu
+               die :doc:`Benutzerverwaltung </System/benutzerverwaltung>`.
+
+Sobald zum zugehörigen Auftrag eine Rechnung erstellt wurde wird das Angebot festgeschrieben.
+Angebote die festgeschrieben wurden können nicht mehr bearbeitet werden.
+Verwenden Sie die Schaltfläche :guilabel:`Festschreibung aufheben` um das Angebot wieder bearbeiten zu können.
