@@ -95,5 +95,5 @@ L-Shop Bestellung
 OSS-Umsätze
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:download:`Report-Schema herunterladen </_static/reports/OSS-Umsaetze.json>`
+:download:`Report-Schema herunterladen </_static/reports/OSS Umsaetze.json>`
     
