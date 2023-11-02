@@ -91,4 +91,9 @@ L-Shop Bestellung
        * Benutzerdef. Bedingung: {{not entity.exportDate}}
     
     2. EDI-Exportdatum setzen
+
+OSS-Umsätze
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`Report-Schema herunterladen </_static/reports/OSS-Umsaetze.json>`
     
