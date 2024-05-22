@@ -7,9 +7,7 @@ Um die Dateien zu bearbeiten wird LibreOffice benötigt, bitte stellen installie
 Dokumentenvorlagen herunterladen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Öffnen Sie :menuselection:`Einstellungen --> Vorlagen --> Dokumente` und wählen Sie das gewünschte Dokument aus.
-Wählen Sie in der Aktionsleiste die Schaltfläche :menuselection:`Vorlage herunterladen` und wählen Sie den gewünschten Mandanten oder die globale Vorlage.
-Wenn noch keine Vorlagen angepasst wurden können Sie nur die globale Vorlage für alle Mandanten herunterladen.
+Öffnen Sie :menuselection:`Einstellungen --> Vorlagen --> Dokumente` und wählen Sie das gewünschte Dokument aus. Laden Sie die gewünschte Vorlage herunter (Download-Icon neben dem Feld "Datei")
 
 .. DANGER:: Sichern Sie sich immer eine separate Kopie der Datei bevor Sie sie anpassen, in manchen Fällen zerstören die Formatierungen von LibreOffice die Kompatibilität mit Warexo
 
