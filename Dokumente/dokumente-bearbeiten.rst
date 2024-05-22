@@ -32,7 +32,8 @@ Twig Variable
 
 .. code-block:: twig
 
-   {{ order.orderNumber }}
+   {{ order.orderNumber }} oder {{ entity.orderNumber }} (in eigenen Dokumenten)
+
 
 Twig Funktion
 ^^^^^^^^^^^^^
