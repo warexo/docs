@@ -4,6 +4,8 @@ Extrafelder
 Warexo erlaubt es Ihnen über Extrafelder beliebige Metadaten zu speichern und in weitere Systeme zu exportieren.
 Die Felder können für beliebige Entitäten wie Kategorien, Produkte etc. hinzugefügt werden.
 
+.. attention:: Warexo erstellt keine Spalten in den Oxid-Tabellen! Sie müssen die Spalten manuell hinzufügen, die Views aktualisieren und den Oxid-Cache leeren
+
 Felder hinzufügen
 ~~~~~~~~~~~~~~~~~
 
