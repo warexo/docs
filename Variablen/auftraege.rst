@@ -101,10 +101,11 @@ Aufträge / Rechnungen
 
 **Upload in Bestellposition**
 
-```
+.. code-block:: twig
+
 {% if item.filename %}
 {{odt_offeritem_file(item,1,135,135)|raw}}
 {%endif%}
-```
+
 
 
