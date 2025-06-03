@@ -117,7 +117,7 @@ z.B.
 
 .. code-block:: twig
 
- {% if item.filename %}
+ {% if offer.uploads|length != 0 %}
     {{odt_offer_file(offer, 1, 135, 135)|raw}}
  {% endif %}
 
