@@ -103,9 +103,9 @@ Aufträge / Rechnungen
 
 .. code-block:: twig
 
-{% if item.filename %}
-{{odt_offeritem_file(item,1,135,135)|raw}}
-{%endif%}
+ {% if item.filename %}
+    {{odt_offeritem_file(item,1,135,135)|raw}}
+ {% endif %}
 
 
 
