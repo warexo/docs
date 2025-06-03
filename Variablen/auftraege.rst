@@ -98,3 +98,11 @@ Aufträge / Rechnungen
 -  {{item.stornoPositionSum}} - gutgeschriebener Betrag
 -  {{item.stornoPositionText}} - Referenz
 -  `{{item.product}} - Artikel <https://docs.warexo.de/twig-variablen-produkte/>`__
+
+**Upload in Bestellposition**
+
+{% if item.filename %}
+{{odt_offeritem_file(item,1,135,135)|raw}}
+{%endif%}
+
+
