@@ -122,17 +122,6 @@ z.B.
  {% endif %}
 
 
-**Produktbild**
-
-.. code-block:: twig
-
-  {{odt_product_pic(product, <Position>, <Breite in px>, <Höhe in px>)|raw}}
-
-z.B. 
-
-.. code-block:: twig
-
-    {{odt_product_pic(product, 1, 135, 135)|raw}}
 
 
 
