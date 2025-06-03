@@ -104,7 +104,21 @@ Aufträge / Rechnungen
 .. code-block:: twig
 
  {% if item.filename %}
-    {{odt_offeritem_file(item,1,135,135)|raw}}
+    {{odt_offeritem_file(item, 1, 135,135)|raw}}
+ {% endif %}
+
+**Upload im Angebot**
+
+.. code-block:: twig
+
+  {{odt_offer_file(offer, <Position>, <Breite in px>, <Höhe in px>)|raw}}
+
+z.B. 
+
+.. code-block:: twig
+
+ {% if item.filename %}
+    {{odt_offer_file(offer, 1, 135, 135)|raw}}
  {% endif %}
 
 
