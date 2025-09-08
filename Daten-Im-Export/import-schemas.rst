@@ -51,4 +51,4 @@ Bestellpositionen
 
 CSV-Import für den Widget "CSV-Datei importieren" im Angebotsformular
 
-:download:`CSV Import Schema herunterladen </_static/imports/lagerplaetze.json>`
+:download:`CSV Import Schema herunterladen </_static/imports/Bestellpositionen.json>`
