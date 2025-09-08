@@ -45,3 +45,10 @@ L-Shop Bestandsimport
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :download:`CSV Import Schema herunterladen </_static/imports/L-Shop-Lagerbestaende.json>`
+
+Bestellpositionen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CSV-Import für den Widget "CSV-Datei importieren" im Angebotsformular
+
+:download:`CSV Import Schema herunterladen </_static/imports/lagerplaetze.json>`
