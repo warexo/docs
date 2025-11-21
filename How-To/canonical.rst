@@ -1,107 +1,61 @@
 Canonical & Kategorien – Warexo → Shopware 6
 ============================================
 
-Bevor in **Warexo** etwas zu Kategorien oder Canonicals eingestellt wird, muss klar sein:
-
-- Warexo verwaltet Kategorien zentral
-- Shopware hat pro Verkaufskanal seine eigenen Strukturen
-- Die Canonical-URL entsteht durch die Kombination aus beiden
+Dieses Dokument erklärt, wie Warexo als zentrale Kategorieverwaltung mit mehreren Shopware-Shops
+zusammenarbeitet und wie Canonical-URLs im Multishop-System sauber gesetzt werden.
 
 -----
 
 1) Warexo – zentraler Kategoriebaum
 ------------------------------------
 
-In Warexo gibt es einen **zentralen Kategoriebaum**.  
-Ziel: Jede logische Kategorie – z. B. **„T-Shirt“** – wird **einmal** angelegt und anschließend
-für jeden Shopware-Shop per Mapping zugeordnet.
+In Warexo gibt es einen **zentralen Kategoriebaum**. Ziel ist es, jede logische Kategorie,
+z. B. **„T-Shirts“**, nur **einmal** anzulegen und nicht pro Shop zu duplizieren.
 
 Vorteile:
 
-- keine doppelten Kategorien in Warexo
-- zentrale Pflege
-- konsistente Logik in allen Shops
-- weniger Fehler in SEO und Struktur
+- zentrale Pflege nur an einer Stelle
+- kein Kategorien-Chaos in der WaWi
+- Shops können komplett unterschiedliche Strukturen besitzen
+- SEO bleibt sauber, da Canonicals klar definiert werden können
 
-**Grafik-Platzhalter (soll später ersetzt werden)**
+Beispiel – zentrale Kategorie in Warexo:
 
-    Warexo-Kategorie „T-Shirt“
+- Warexo-Kategorie: ``T-Shirts``
+
+Mapping in den Shops:
+
+- Shop A → ``/t-shirts/``
+- Shop B → ``/herren/t-shirts/``
+- Shop C → ``/sortiment/tops/``
+
+Platzhalter-Grafik (später ersetzen):
+
+    Warexo-Kategorie „T-Shirts“
         → Shop A Kategorie
         → Shop B Kategorie
         → Shop C Kategorie
 
-Shops in Shopware können vollkommen unterschiedliche Kategoriebäume haben, z. B.:
-
-- ``/herren/t-shirts/``
-- ``/tops/``
-- ``/sommer/neuheiten/``
-
-Über die Kategorie-Verknüpfungen in Warexo wird definiert:
-
-- welche Warexo-Kategorie → zu welcher Shopware-Kategorie gehört
-- für welchen Verkaufskanal welches Mapping gilt
-- dass die Warexo-Kategorie *nicht* dupliziert werden soll
-
-**Best Practice**
-
-- Möglichst wenige zentrale Kategorien in Warexo verwenden
-- Unterschiede der Shops ausschließlich per Mapping lösen
-
 -----
 
-2) Warexo – Kategorie-Konfiguration (Artikelebene)
---------------------------------------------------
-
-Auf Artikelebene legt Warexo fest:
-
-- die **Hauptkategorie (Canonical)**
-- die **zusätzlichen Kategorien**, in denen der Artikel angezeigt werden soll
-
-### Hauptkategorie (Canonical)
-
-Beispiel::
-
-    /t-shirts/
-
-Diese Kategorie bestimmt später die Canonical-URL in Shopware.
-
-.. image:: https://www.laden-kasse.de/media/aa/0c/01/1763730166/hauptkat.png?ts=1763732058
-   :alt: Warexo Hauptkategorie
-   :width: 600px
-
-### Kategorien-Auswahl
-
-Weitere Kategorien für zusätzliche Sichtbarkeit, z. B.:
-
-::
-
-    /damen/bestseller/
-    /sale/
-    /neuheiten/
-
-.. image:: https://www.laden-kasse.de/media/0d/75/7d/1763730321/kategorien.png?ts=1763730321
-   :alt: Warexo Kategorien
-   :width: 600px
-
------
-
-3) Kategorien in Shopware 6 anlegen
+2) Kategorien in Shopware 6 anlegen
 ------------------------------------
 
-Shopware erhält seine Kategorien **zuerst im System selbst**.  
-Diese Kategorien sind später die Zielpunkte für das Mapping aus Warexo.
+Bevor Warexo Kategorien oder Canonicals korrekt exportieren kann, müssen die Kategorien
+**zuerst in Shopware 6** existieren. Diese Kategorien bilden die Zielpunkte für das spätere
+Mapping in Warexo.
 
 Vorgehen:
 
 1. Shopware Admin öffnen: *Kataloge → Kategorien*
-2. Für jeden Verkaufskanal einen eigenen Kategoriebaum anlegen
-3. Kategorien unterhalb der Hauptnavigation erstellen:
+2. Pro Verkaufskanal einen eigenen Kategoriebaum anlegen
+3. Kategorien erstellen, z. B.:
    - ``/t-shirts/``
    - ``/damen/bestseller/``
    - ``/sale/``
    - ``/neuheiten/``
-4. Im Verkaufskanal den Einstiegspunkt setzen
-5. Kategorien dienen später für:
+4. Im Verkaufskanal den **Kategorie-Einstiegspunkt** setzen
+5. Diese Kategorien stehen später in Warexo für:
    - Kategorie-Verknüpfungen
    - Canonical Kategorie
 
@@ -109,43 +63,79 @@ Vorgehen:
    :alt: Shopware Kategorienbaum
    :width: 600px
 
-**Merksatz**
+Merksatz
+~~~~~~~~
 
     Shopware bildet die Struktur ab – Warexo steuert, wo der Artikel landet.
 
 -----
 
-4) Canonical- & Shopware-Einstellungen (Warexo → Kategorie)
+3) Canonical- & Shopware-Einstellungen (Warexo → Kategorie)
 ------------------------------------------------------------
 
-Für jede Warexo-Kategorie werden anschließend die eigentlichen Shopware-relevanten Einstellungen gesetzt:
+In jeder Warexo-Kategorie werden die Einstellungen gepflegt, die für den Export nach Shopware
+relevant sind.
 
-### Wichtige Felder
+Wichtige Felder:
 
-1. **Kategorie-Verknüpfungen**
-   - Mapping von Warexo → Shopware je Verkaufskanal
+1. **Kategorie-Verknüpfungen**  
+   Mapping von Warexo-Kategorie → Shopware-Kategorie je Verkaufskanal
 
-2. **Produkt-Zuweisungs-Typ**
-   - manuell  
-   - oder dynamische Produktgruppen aus Shopware
+2. **Produkt-Zuweisungs-Typ**  
+   Manuell oder dynamische Produktgruppen
 
-3. **Canonical Kategorie**
-   - Shopware-Kategorie, die der Hauptpfad für Canonicals ist
+3. **Canonical Kategorie**  
+   Die Shopware-Hauptkategorie für die Canonical-URL
 
-4. **Canonical Verkaufskanal**
-   - der Shop, dessen Domain als Canonical dient
+4. **Canonical Verkaufskanal**  
+   Der Shop, dessen Domain als Canonical verwendet wird
 
-5. **Canonical Verhalten**
-   - **Nur Produkte** → empfohlen  
-   - **Kategorien & Produkte** → Kategorie selbst wird ebenfalls canonical
+5. **Canonical Verhalten**  
+   - **Nur Produkte** (empfohlen)
+   - **Kategorien & Produkte** (Kategorie selbst wird canonical)
 
 .. image:: https://www.laden-kasse.de/media/c1/86/44/1763731897/kateinstellungenshopware-shirt-x.png?ts=1763731897
-   :alt: Canonical Einstellungen Shopware
+   :alt: Canonical Einstellungen in Warexo und Shopware
    :width: 600px
 
-**Wichtig**
+Wichtig
+~~~~~~~
 
-    Erst die zentrale Warexo-Kategorie definieren, dann die Canonical- und Shopware-Mappings festlegen.
+    Erst die zentrale Kategorie in Warexo anlegen – dann Canonical & Shopware-Mappings konfigurieren.
+
+-----
+
+4) Warexo – Kategorie-Konfiguration (Artikelebene)
+--------------------------------------------------
+
+Auf Artikelebene wird in Warexo eingestellt:
+
+- die **Hauptkategorie (canonical)**  
+- die **weiteren Kategorien** (zusätzliche Sichtbarkeit)
+
+### Hauptkategorie (Canonical)
+
+Beispiel::
+
+    /t-shirts/
+
+Diese Kategorie definiert später die Canonical-URL in Shopware.
+
+.. image:: https://www.laden-kasse.de/media/aa/0c/01/1763730166/hauptkat.png?ts=1763732058
+   :alt: Warexo Hauptkategorie am Artikel
+   :width: 600px
+
+### Kategorien (weitere Sichtbarkeit)
+
+Beispiel::
+
+    /damen/bestseller/
+    /sale/
+    /neuheiten/
+
+.. image:: https://www.laden-kasse.de/media/0d/75/7d/1763730321/kategorien.png?ts=1763730321
+   :alt: Warexo Kategorien-Auswahl am Artikel
+   :width: 600px
 
 -----
 
@@ -154,11 +144,14 @@ Für jede Warexo-Kategorie werden anschließend die eigentlichen Shopware-releva
 
 Nach dem Export erscheinen Produkte:
 
-- in allen zugewiesenen Kategorien
-- mit einem sauberen Canonical-Pfad
-- ohne Duplicate Content
+- in allen zugewiesenen Kategorien aller Shops  
+- aber mit einer **einheitlichen Canonical-URL**, die in Warexo definiert wurde  
 
-### Beispiel – Hauptshop (Shop A)
+### Shop A – Hauptshop
+
+Domain::
+
+    https://shop-a.de
 
 Canonical-URL::
 
@@ -174,18 +167,44 @@ Canonical-Tag::
 
     <link rel="canonical" href="https://shop-a.de/t-shirts/artikelname">
 
-### Andere Shops (B, C …)
+### Shop B – eigene Kategorienstruktur
 
-- können abweichende Kategorien besitzen
-- nutzen aber den gleichen Canonical-Pfad
+Domain::
+
+    https://shop-b.de
+
+Artikel-URLs::
+
+    https://shop-b.de/herren/t-shirts/artikelname
+    https://shop-b.de/sale/artikelname
+    https://shop-b.de/angebote/neu/artikelname
+
+Canonical-Tag::
+
+    <link rel="canonical" href="https://shop-a.de/t-shirts/artikelname">
+
+### Shop C – komplett anderer Kategoriebaum
+
+Domain::
+
+    https://shop-c.de
+
+Artikel-URLs::
+
+    https://shop-c.de/sortiment/tops/artikelname
+    https://shop-c.de/trends/sommer/artikelname
+    https://shop-c.de/neuheiten/artikelname
+
+Canonical-Tag::
+
+    <link rel="canonical" href="https://shop-a.de/t-shirts/artikelname">
 
 -----
 
 Kurzfazit
 ---------
 
-+ Zentrale Warexo-Kategorie: z. B. **T-Shirt**
-+ Je Shop Mapping per Kategorie-Verknüpfung
-+ Unterschiedliche Shopware-Strukturen → kein Problem
-+ Eine eindeutige Canonical-URL → keine SEO-Duplikate
-
+- zentrale Warexo-Kategorie: z. B. ``T-Shirts``
+- Mapping je Shop auf unterschiedliche Shopware-Kategorien
+- Artikel bekommt eine feste Canonical-URL (Hauptshop + Hauptkategorie)
+- alle anderen Shops zeigen korrekt per Canonical auf den Hauptshop
