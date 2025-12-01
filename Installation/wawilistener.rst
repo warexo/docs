@@ -34,7 +34,7 @@ Ist der Button Grün ist die Verbindung aktiv, ist der Button Rot konnte keine V
 
 Klicken Sie auf den roten Button um zu prüfen warum die Verbindung nicht hergestellt werden konnte.
 
-Beachten Sie unbedingt auch `Lokaler Netzwerk Zugriff WAWI Listener </how-to/wawi-listener-netzwerk-zugriff>`__
+Beachten Sie unbedingt auch `Lokaler Netzwerk Zugriff WAWI Listener </How-To/wawi-listener-netzwerk-zugriff>`__
 
 Einrichtung
 ~~~~~~~~~~~
