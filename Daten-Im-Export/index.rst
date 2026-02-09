@@ -5,6 +5,7 @@ Daten Im-/Export
    :caption: Inhalt
    :maxdepth: 2
 
+   api
    extrafelder
    webshop
    csv-import
