@@ -433,12 +433,7 @@ Erstellt eine neue Entität.
 .. code-block:: json
 
     {
-      "id": 1050,
-      "sku": "PROD-NEW-001",
-      "title": "Neues Produkt",
-      "price": 39.99,
-      "active": true,
-      "createdAt": "2026-02-09T12:00:00+00:00"
+      "id": 1050
     }
 
 
@@ -524,6 +519,227 @@ Löscht eine Entität anhand ihrer ID.
 .. code-block:: text
 
     (Leerer Response-Body bei erfolgreichem Löschen)
+
+
+Aktionen / Action Endpoints
+-------------------------------------
+
+Bestimmte vordefinierte Aktionen können über spezielle Endpunkte aufgerufen werden, z.B. um einen Auftrag zu bestätigen oder eine Rechnung zu stornieren.
+
+**Endpoint Format:** ``POST /api/v1/_action/{action_name}``
+
+Angebot bestätigen
+~~~~~~~~~~~~~~~~~~~
+
+**Endpoint:** ``POST /api/v1/_action/placeoffer``
+
+**Body:**
+
+.. code-block:: json
+
+    {
+      "id": 1234,
+      "assignOfferNumber": true,
+      "calculatePrices": true
+    }
+
+Parameter
+
+.. list-table::
+  :header-rows: 1
+
+  * - Parameter
+    - Beschreibung
+  * - ``id``
+    - ID des Angebots, das bestätigt werden soll
+  * - ``assignOfferNumber``
+    - Ob eine Angebotsnummer zugewiesen werden soll (Standard: false)
+  * - ``calculatePrices``
+    - Ob die Preise neu berechnet werden sollen (Standard: false)
+
+Auftrag anlegen
+~~~~~~~~~~~~~~~~~~~
+
+**Endpoint:** ``POST /api/v1/_action/placeorder``
+
+**Body:**
+
+.. code-block:: json
+
+    {
+      "id": 1234,
+      "salesChannel": 1234,
+      "sendmails": true,
+      "numberRange": "$123-{year}-ORD-{counter}",
+      "noevents": true
+    }
+
+Parameter
+
+.. list-table::
+  :header-rows: 1
+
+  * - Parameter
+    - Beschreibung
+  * - ``id``
+    - ID des Angebots, das in einen Auftrag umgewandelt werden soll
+  * - ``salesChannel``
+    - ID des Vertriebskanals für den Auftrag (optional)
+  * - ``sendmails``
+    - Ob E-Mails versendet werden sollen (Standard: false)
+  * - ``numberRange``
+    - Nummernkreis für die Auftragsnummer (optional)
+  * - ``noevents``
+    - Ob keine Workflow Events ausgeführt werden sollen (Standard: false)
+
+
+Spezielle Steuerungsfelder
+---------------------------
+
+Bei der Erstellung und Aktualisierung von Entitäten können spezielle Felder mit doppeltem Unterstrich als Präfix verwendet werden, um das Verhalten der API zu steuern.
+
+__foreignKeys
+~~~~~~~~~~~~~
+
+Definiert, wie Fremdschlüssel-Relationen aufgelöst werden sollen. Standardmäßig werden Relationen über die ID aufgelöst, aber mit ``__foreignKeys`` können Sie alternative Felder angeben.
+
+**Format:** Array von Objekten mit Zuordnungsschlüsseln
+
+**Beispiel:**
+
+.. code-block:: json
+
+    {
+      "__foreignKeys": [
+        {"payment": "id"},
+        {"shipping": "id"},
+        {"customer": "customerNumber"}
+      ],
+      "customer": "KK-41",
+      "payment": "9e257793-3fec-11e4-a1c5-4061862b83cf",
+      "shipping": "9e260baa-3fec-11e4-a1c5-4061862b83cf"
+    }
+
+In diesem Beispiel:
+
+- ``{"payment": "id"}`` - Die Zahlungsart wird nach dem Feld ``id`` gesucht
+- ``{"customer": "customerNumber"}`` - Der Kunde wird nach dem Feld ``customerNumber`` statt nach ``id`` gesucht
+
+__customPrimaryKey
+~~~~~~~~~~~~~~~~~~
+
+Definiert einen benutzerdefinierten Primärschlüssel für die Entität. Dies ermöglicht Idempotenz - bei wiederholten Anfragen mit demselben Schlüssel wird die existierende Entität aktualisiert statt eine neue zu erstellen.
+
+**Verwendung:** Idempotency Key für sichere Wiederholungen von Anfragen
+
+.. note::
+   Dieses Feld ist **Pflicht** bei der Verwendung von speziellen Steuerungsfeldern
+
+**Beispiel:**
+
+.. code-block:: json
+
+    {
+      "__customPrimaryKey": "uniqNumber",
+      "uniqNumber": "550e8400-e29b-41d4-a716-446655440000",
+      "customer": "123",
+      "items": [...]
+    }
+
+Wenn eine Entität mit demselben ``uniqNumber`` bereits existiert, wird diese aktualisiert statt eine neue zu erstellen.
+
+__collectionBehavior
+~~~~~~~~~~~~~~~~~~~~
+
+Steuert das Verhalten bei der Aktualisierung von Collection-Feldern (Arrays von verwandten Entitäten).
+
+**Format:** Assoziatives Objekt mit Collection-Feldnamen als Schlüssel
+
+**Operatoren:**
+
+- ``replace`` - Leert die Collection vor dem Hinzufügen neuer Elemente
+- ``remove`` - Entfernt Elemente aus der Collection basierend auf ``assignmentKeys``
+
+**Beispiel 1: Collection ersetzen**
+
+.. code-block:: json
+
+    {
+      "__collectionBehavior": {
+        "items": {
+          "operator": "replace"
+        }
+      },
+      "items": [
+        {"quantity": 2, "product": "5a8b7cfc-6a4b-11e4-8574-4061862b83cf"}
+      ]
+    }
+
+Die bestehenden Items werden gelöscht und durch die neuen ersetzt.
+
+**Beispiel 2: Elemente entfernen**
+
+.. code-block:: json
+
+    {
+      "__collectionBehavior": {
+        "pictures": {
+          "operator": "remove",
+          "assignmentKeys": ["sort"]
+        }
+      },
+      "pictures": [
+        {"sort": 2}
+      ]
+    }
+
+Entfernt alle Bilder mit ``sort = 2`` aus der Collection.
+
+**Vollständiges Beispiel: Auftrag erstellen**
+
+.. code-block:: json
+
+    {
+      "__foreignKeys": [
+        {"customer": "id"},
+        {"client": "id"},
+        {"payment": "id"},
+        {"shipping": "id"},
+        {"language": "id"},
+        {"billingCountry": "id"}
+      ],
+      "__customPrimaryKey": "uniqNumber",
+      "__collectionBehavior": {
+        "items": {
+          "operator": "replace"
+        }
+      },
+      "customer": "840ae227-335d-11e4-a1c5-4061862b83cf",
+      "uniqNumber": "550e8400-e29b-41d4-a716-446655440000",
+      "billingFirstName": "Max",
+      "billingLastName": "Mustermann",
+      "billingCompany": "Musterfirma GmbH",
+      "billingStreet": "Musterstraße 1",
+      "billingZip": "12345",
+      "billingCity": "Musterstadt",
+      "billingCountry": "de",
+      "billingEMail": "max@example.com",
+      "created": "2026-02-09 12:45:00",
+      "updated": "2026-02-09 12:45:00",
+      "client": "840ae227-335d-11e4-a1c5-4061862b83cf",
+      "payment": "9e257793-3fec-11e4-a1c5-4061862b83cf",
+      "shipping": "9e260baa-3fec-11e4-a1c5-4061862b83cf",
+      "language": "582d3ccd-a443-11e3-893c-4061862b83cf",
+      "currency": "EUR",
+      "items": [
+        {
+          "quantity": 2,
+          "product": "5a8b7cfc-6a4b-11e4-8574-4061862b83cf",
+          "productTitle": "Lagerartikel",
+          "__foreignKeys": [{"product": "id"}]
+        }
+      ]
+    }
 
 
 Relationen und verschachtelte Felder
