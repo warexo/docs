@@ -529,7 +529,7 @@ Der Bezeichner entspricht dem Wert "Feld" im Extrafeld.
 
 Für eine Liste aller im System gepflegten Extrafelder nutzen Sie den folgenden Endpunkt:
 
-**Endpoint:** ``GET /api/v1/searchentity/clientscheme``
+**Endpoint:** ``POST /api/v1/searchentity/clientscheme``
 
 
 Aktionen / Action Endpoints
