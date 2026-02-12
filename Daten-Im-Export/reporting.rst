@@ -14,7 +14,7 @@ Erstellen Sie einen neuen Report über :menuselection:`Systemverwaltung --> Im-/
 Entity
     Die sog. Entity legt das zugrunde liegende Datenbankobjekt für den Report fest, dies sollte immer die Haupttabelle
     sein aus der Sie die Daten exportieren möchten. Über die Felder können Sie auch verknüpfte Tabellen mit ansprechen.
-    Eine vollständige Übersicht über die Datenbankstruktur finden Sie `unter diesem Link <https://dbdocs.warexo.de>`__.
+    Eine vollständige Übersicht über die Datenbankstruktur finden Sie `unter diesem Link <https://warexo.github.io/entity-docs/>`__.
 
 Aktiv
     Nur aktivierte Reports können automatisiert im Hintergrund exportiert werden.

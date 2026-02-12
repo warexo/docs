@@ -520,6 +520,17 @@ Löscht eine Entität anhand ihrer ID.
 
     (Leerer Response-Body bei erfolgreichem Löschen)
 
+Extrafelder
+-------------------------------------
+
+Die vorhandenen :doc:`Extrafelder </Daten-Im-Export/extrafelder>` können über die API wie normale Felder behandelt werden.
+Sie können in der Feldauswahl, bei der Erstellung und Aktualisierung von Entitäten verwendet werden.
+Der Bezeichner entspricht dem Wert "Feld" im Extrafeld.
+
+Für eine Liste aller im System gepflegten Extrafelder nutzen Sie den folgenden Endpunkt:
+
+**Endpoint:** ``GET /api/v1/searchentity/clientscheme``
+
 
 Aktionen / Action Endpoints
 -------------------------------------
