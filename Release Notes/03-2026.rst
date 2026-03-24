@@ -1,0 +1,242 @@
+März 2026
+============================
+
+Version 2.1.31
+--------------
+
+✨ Neue Funktionen
+=================
+
+🧩 Workflow & Automatisierung
+----------------------------
+
+- Neue Workflow-Aktion: **Virtuelle Pickliste aktualisieren** (automatische Umwandlung bei ausreichendem Bestand)
+- Workflow-Aktion: **Lagerbuchung sofort exportieren**
+- Erweiterte Workflow-Events:
+
+  - HTML-Attribute
+  - Sicherheitsabfragen inkl. Textdefinition
+
+- Neue Workflow-Aktionen für Auswertungen:
+
+  - Verkäufe, Wareneingänge & Warenausgänge (benutzerdefinierter Zeitraum)
+
+- Workflow-Event: **Artikel in Shop exportiert**
+- Gutschein-Workflows:
+
+  - Export von Gutscheinserien
+  - Gutscheine als eingelöst markieren
+
+
+📦 WMS (Warehouse Management)
+-----------------------------
+
+- Kommissionierung (inkl. Beta → Ausbau):
+
+  - Sammelkommissionierung
+  - Packboxen
+  - Barcode-Scan (Picklisten, Versand)
+  - Lieferadressen & Bestellpositionen
+
+- Artikelentnahme vor Kommissionierung
+- Teilartikelentnahme
+- Verbesserte Umbuchungen
+- Neue Funktionen bei Lieferantenbestellungen (Scan, Buchung)
+
+
+🛒 Marktplatz-Integrationen
+---------------------------
+
+**Amazon**
+
+- GPSR-Sicherheitsbescheinigung wird automatisch exportiert
+- Option: Artikel löschen & Verkauf stoppen
+- Erweiterte Reporting-Optionen für Listings
+
+**Otto**
+
+- Neue Felder (z. B. Retoure-Adresse-ID, Versandprofil-ID, Zusatzattribute)
+- Verbesserungen im Artikel-, Bestell- und Versandexport
+
+**Kaufland**
+
+- Verbesserter Produktdatenabgleich
+- Option zur Übernahme stornierter Bestellungen
+
+**eBay**
+
+- Verbesserungen im Artikel-Export und Retourenhandling
+
+**Real/Kaufland**
+
+- Optimierter Artikeldatenabgleich
+
+
+💳 Zahlungsanbieter & Finanzen
+------------------------------
+
+**Mollie**
+
+- Erweiterter Zahlungsabgleich + Fixes
+
+**Amazon Pay**
+
+- Verbesserungen & Optionen zur automatischen Erstattung
+
+**Klarna**
+
+- Fix bei Doppelzahlungen
+
+**DATEV**
+
+- Neue Pluginoptionen (z. B. BU-Schlüssel)
+- Verbesserter Export (inkl. VB-Datum & Steuererstattung)
+- Vermeidung doppelter Buchungen
+
+**HBCI**
+
+- Import von CAMT-Dateien
+
+
+🧾 Angebote, Aufträge & Retouren
+--------------------------------
+
+**Angebote**
+
+- Barcode-Scan für Positionen
+- Duplizierung gesperrt bei bestehender Pickliste
+- Option zur internen Bestandsreservierung
+
+**Retouren**
+
+- Materialretouren inkl. Gutschrift & Lagerbuchung
+- Verbesserungen bei Retourenkosten
+
+**Kommissionsverträge**
+
+- Verknüpfung mit Rechnungsrückforderungen
+
+
+🧑‍💼 Kunden & Benutzer
+-----------------------
+
+- Feld **„Ausfuhrland“** in Kundenadressen & Konditionen
+- Benutzeraktion: **2FA deaktivieren**
+- Kunden: Widget „Verbindlichkeiten“
+
+
+🧮 Reporting & UI
+-----------------
+
+- Neue Reporting-Funktion: **DISTINCT-Verkettung**
+- Grids:
+
+  - Operatoren für Kollektionsspalten
+  - Performanceverbesserungen
+
+- Dashboard & globale Suche optimiert
+
+
+🔌 API & Integrationen
+----------------------
+
+**Warexo API**
+
+- Neue Routes (inkl. Login per Token)
+- Entity PATCH & POST Support
+- JWT & Vue App (Basis)
+
+**Extranet API**
+
+- Neue Funktionen & Fehlerbehebungen
+- Kategorie-Routen & Widgets
+
+
+🛍 POS (Kasse)
+--------------
+
+- Neue Optionen:
+
+  - EC-Storno-Button ausblenden
+  - Kundennamen anzeigen
+  - Dezimalpunkte verhindern
+  - Automatisches Drucken deaktivieren
+
+- Verbesserte Erstattungslogik (Überzahlungen)
+- Stabilere Synchronisation
+
+
+⚡ Verbesserungen
+=================
+
+- Performance-Optimierungen:
+
+  - Dashboard
+  - Grids
+  - Globale Suche
+
+- Extranet:
+
+  - Neue Widgets & Konfigurationsmöglichkeiten
+
+- CSV-Import erweitert (z. B. ``CategoriesAllClients``, TRIM-Flag)
+- Artikelpreise über **1 Mio. €** möglich
+- Erweiterte Extrafelder (z. B. Ansprechpartner, Lagerbuchungen)
+- Verbesserte Unterstützung für Twig in verschiedenen Bereichen
+
+
+🐞 Fehlerbehebungen (Auswahl)
+=============================
+
+- Versandprozess („Versand starten“) stabilisiert
+
+**Shopware**
+
+- Export-/Mapping-Fixes
+- Behandlung von Kundengruppen
+
+**Amazon / eBay / Otto**
+
+- Diverse Fixes in Exporten & Synchronisation
+
+**DATEV**
+
+- Korrekte Buchungen & Exportstabilität
+
+**Retouren & Lager**
+
+- Korrekte Bestandsbuchungen
+
+**POS**
+
+- Fehler bei Mengeneingabe & Synchronisation behoben
+
+- PDF-Rechnungsausgangsbuch korrigiert
+
+**XRechnung**
+
+- Versand ohne Logo korrigiert
+
+
+🔧 Technisches
+==============
+
+- Docker Compose Setup hinzugefügt
+- Datenbankänderungen (z. B. ``forms.sql``)
+
+- Neue Tabellen:
+
+  - ``storekeyvaluestorage`` (Extranet)
+
+
+🚑 Hotfixes (27.10.2025)
+========================
+
+- Mehrere kurzfristige Fehlerbehebungen im Produktivsystem
+
+
+⚠️ Hinweise
+============
+
+- Teilweise Änderungen (z. B. Shopware-Reverts) können bestehende Anpassungen beeinflussen
+- Neue Optionen (z. B. Twig-Bedingungen) sollten vor Produktiveinsatz getestet werden
