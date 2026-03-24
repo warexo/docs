@@ -3,6 +3,6 @@ Release Notes
 
 .. toctree::
    :caption: Release Notes
-   :maxdepth: 2
+   :maxdepth: 1
 
    03-2026
