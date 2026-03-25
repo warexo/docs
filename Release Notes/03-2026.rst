@@ -240,3 +240,205 @@ Version 2.1.31
 
 - Teilweise Änderungen (z. B. Shopware-Reverts) können bestehende Anpassungen beeinflussen
 - Neue Optionen (z. B. Twig-Bedingungen) sollten vor Produktiveinsatz getestet werden
+
+Version 2.1.35
+--------------
+
+**Release-Datum:** 25.03.2026
+
+Fehlerbehebungen
+^^^^^^^^^^^^^^^^
+- Reporting: Revert eines Fixes (weitere Tests erforderlich)
+- DHL-Retouren: Fehlerbehebung
+- Shopware: Min-/Max.-Verkaufsmengen werden wieder korrekt exportiert
+- Shopware: Fehlerbehebung im Bestellimport
+- DHL: Zusätzliche Informationen werden korrekt exportiert
+- CAMT-Import: Mehrere Fehlerbehebungen
+
+
+Version 2.1.34
+--------------
+
+**Release-Datum:** 23.03.2026
+
+Technisches
+^^^^^^^^^^^
+- Datenbank-Update (``update.sql``)
+
+
+Version 2.1.33
+--------------
+
+**Release-Zeitraum:** Dezember 2025 – März 2026
+
+
+Neue Funktionen
+^^^^^^^^^^^^^^^
+
+Workflow & Automatisierung
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Neues Workflow-Event: **Rechnung storniert**
+- Neues Workflow-Event: **Auftragsaufgabe angelegt**
+- Neue Workflow-Aktion: **Aktionen für Auftragsaufgaben ausführen**
+- Erweiterte Workflow-Bedingungen:
+  - Bestellung enthält bestimmte Artikelnummern
+  - Pickliste für Warenlager
+- Erweiterung der Fehlermeldungen (HTML-Parameter)
+
+
+WMS & Lager
+~~~~~~~~~~~
+- Verbesserungen und Fehlerbehebungen im WMS (inkl. Inventur)
+- Neue Inventurart: **FIXSTORAGELOCATIONUPDATE**
+- Lagerplatz-Inventur mit Seriennummern verbessert
+- Neue Methoden für Picklisten (z. B. ``getUsedWarehouses``, ``getItemsOfWarehouse``)
+
+
+Marktplatz- & Shop-Integrationen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Amazon
+""""""
+- Prime REST API Integration
+- Verbesserungen im Bestell- und Transaktionsimport
+- FBA-Optimierungen
+- Rechnungsupload (rollenbasiert)
+
+Shopware
+""""""""
+- Verbesserungen im Produktimport/-export
+- Dezimalmodus für Lagermengen
+- Min-/Max.-Mengen Export
+- Erweiterte Feld- und Attribut-Mappings
+
+Otto
+""""
+- Weitere Verbesserungen im Artikelexport
+
+Kaufland
+""""""""
+- Verbesserungen im Artikelexport
+
+Mirakl
+""""""
+- Neue Integration (Plugin, Services, Entities)
+
+
+Versand & Logistik
+~~~~~~~~~~~~~~~~~~
+DHL REST API
+""""""""""""
+- Retouren (inkl. QR-Code & A4-Format)
+- Adressvalidierung
+- Packstationen & Filialen
+- Zolldokumente
+- Manifestierung
+
+GLS ShipIT
+""""""""""
+- Neue Integration (Beta → Verbesserungen)
+
+Internetmarke
+"""""""""""""
+- REST-API Integration
+
+Neue Felder:
+- ADR-Verpackungscode
+- Gefahrgut (inkl. UN-Nummer)
+
+
+Finanzen & Buchhaltung
+~~~~~~~~~~~~~~~~~~~~~~
+- DATEV: Weitere Fehlerbehebungen und Optimierungen
+- HBCI:
+  - CAMT53 Unterstützung
+  - Erweiterte IBAN-Funktionen
+- Zahlungsbedingungen:
+  - Anzahlungsrechnungen stornieren
+- Währungskurse:
+  - Automatische tägliche Aktualisierung
+
+
+Kunden, Lieferanten & Verkauf
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Verkaufskonditionen:
+  - Feld **Max. Bestellmenge**
+- Lieferanten:
+  - Feld **Max. Lieferzeit**
+  - Option für EKP-Berechnung
+- Produktionsaufträge:
+  - Lagerplatz-Feld
+- Dokumente:
+  - Feld „Bestätigungsanfrage“
+
+
+Angebote, Rechnungen & Dokumente
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Rechnungen:
+  - Download als ZIP (inkl. PDFs)
+- Rechnungsausgangsbuch:
+  - Export inkl. CSV + PDFs
+- Historischer kalkulatorischer EKP
+- Verbesserungen bei Teilgutschriften
+
+
+API & Integrationen
+~~~~~~~~~~~~~~~~~~~
+- Warexo API:
+  - Neue Actions (``placeoffer``, ``placeorder``)
+  - Erweiterte Filterparameter (``CONJUNCTION``)
+  - Verbesserungen & Fehlerbehebungen
+- CSV-Importer:
+  - Unterstützung für ``ftpspasv://``
+
+
+POS (Kasse)
+~~~~~~~~~~~
+- Neue Optionen:
+  - Picklisten-Reservierungen ignorieren
+- Verbesserungen bei Kartenzahlungen
+- Gutscheine korrekt im Kassenbericht
+
+
+Reporting & UI
+~~~~~~~~~~~~~~
+- Dashboard:
+  - Neue Steuerstatistiken
+  - Abbrechen-Button
+- Globale Suche:
+  - Suche nach Teillieferungsnummern
+- Neue Widgets und Verbesserungen im Extranet
+
+
+Verbesserungen
+^^^^^^^^^^^^^^
+- Variantengenerator (neu & verbessert)
+- CSV-Import/Inventur optimiert
+- Extranet deutlich erweitert
+- Verbesserte Varianten-Dropdowns
+- Performance-Optimierungen in mehreren Bereichen
+
+
+Fehlerbehebungen (Auswahl)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Shopware:
+  - Diverse Import-/Export-Fixes
+  - Attribut- und Herstellerabgleich korrigiert
+- DATEV:
+  - Mehrere Korrekturen im Export
+- CAMT-Import:
+  - Stabilitätsverbesserungen
+- Retouren:
+  - Seriennummern korrekt verarbeitet
+- POS:
+  - Diverse Stabilitätsverbesserungen
+- Extranet:
+  - Fehler bei SEO-URLs behoben
+- GLS / DHL:
+  - Mehrere Fixes in Versandprozessen
+
+
+Technisches
+^^^^^^^^^^^
+- Datenbankänderungen (``install.sql``)
+- Neue Felder & Tabellen (z. B. productindex-Erweiterungen)
+- WAWIListener Update auf Version 1.56
