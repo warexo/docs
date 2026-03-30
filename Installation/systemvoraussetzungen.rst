@@ -2,13 +2,12 @@ Systemvoraussetzungen
 #####################
 
 -  Apache2
--  MySQL 5
--  PHP 7.2, 7.3
+-  MariaDB 11+ / MySQL 5.7+ (andere Versionen können funktionieren, werden aber nicht offiziell unterstützt)
+-  PHP 7.4
 -  JSON
 -  ctype
 -  SOAP
 -  date.timezone in der php.ini gesetzt
--  Ioncube loader
 -  CURL
 -  PHP exec Funktion erlaubt und folgende Programme erlaubt und im $PATH verfügbar: mysqldump, wget, unzip, rm, grep
 -  `Libreoffice <https://de.libreoffice.org/>`__ (Server Installation)
@@ -36,10 +35,6 @@ Empfohlene Einstellungen
    -  register_globals = Off
    -  session.auto_start = Off
 
-PHP Beschränkungen
-~~~~~~~~~~~~~~~~~~
-
-Warexo wird nur für PHP 7.2 und höher unterstützt.
 
 Hardware Empfehlungen
 ~~~~~~~~~~~~~~~~~~~~~
