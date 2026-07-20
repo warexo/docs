@@ -264,6 +264,7 @@ Durchsucht Entitäten mit komplexen Filtern und Bedingungen.
 
 - ``limit`` (Integer, optional): Maximale Anzahl der Ergebnisse
 - ``offset`` (Integer, optional): Offset für Paginierung
+- ``sort[{field}]`` (String, optional): Sortiert nach dem angegebenen Feld mit ``ASC`` (aufsteigend) oder ``DESC`` (absteigend)
 
 **Request Headers:**
 
@@ -333,6 +334,30 @@ Sie können über Relationen hinweg suchen, indem Sie Punkt-Notation verwenden:
       "operator": "EQ",
       "value": "Lieferant GmbH"
     }
+
+**Sortierung:**
+
+Die Sortierung wird als Query-Parameter übergeben. Für mehrere Sortierfelder kann
+``sort[{field}]`` mehrfach angegeben werden. Die Reihenfolge der Parameter legt
+die Priorität der Sortierung fest.
+
+.. code-block:: text
+
+    POST /api/v1/searchentity/product?sort[title]=ASC&sort[id]=DESC
+
+In diesem Beispiel werden Produkte zuerst nach ``title`` aufsteigend und bei
+gleichem Titel nach ``id`` absteigend sortiert.
+
+Bei cURL muss die URL-Glob-Funktion für die eckigen Klammern deaktiviert werden:
+
+.. code-block:: bash
+
+    curl --globoff -X POST \
+      -H "Authorization: Bearer {token}" \
+      -H "X-Client-Id: 123" \
+      -H "Content-Type: application/json" \
+      -d '{"fields": ["id", "title"]}' \
+      "https://ihre-instanz.warexo.com/api/v1/searchentity/product?sort[title]=ASC&sort[id]=DESC"
 
 **Beispiel (cURL):**
 
