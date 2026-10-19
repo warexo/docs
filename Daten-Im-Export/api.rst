@@ -5,6 +5,12 @@ Die Warexo API ist eine REST-basierte Schnittstelle zum Warexo ERP-System. Sie e
 
 **Base URL Format:** ``https://ihre-instanz.warexo.com/api/v1``
 
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   api-aktionen/index
+
 
 Authentifizierung
 -----------------
