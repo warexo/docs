@@ -6,6 +6,7 @@ Daten Im-/Export
    :maxdepth: 2
 
    api
+   api-aktionen/index
    extrafelder
    webshop
    csv-import

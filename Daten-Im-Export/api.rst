@@ -557,76 +557,20 @@ Für eine Liste aller im System gepflegten Extrafelder nutzen Sie den folgenden 
 **Endpoint:** ``POST /api/v1/searchentity/clientscheme``
 
 
+.. _angebot-bestatigen:
+.. _auftrag-anlegen:
+
 Aktionen / Action Endpoints
 -------------------------------------
 
-Bestimmte vordefinierte Aktionen können über spezielle Endpunkte aufgerufen werden, z.B. um einen Auftrag zu bestätigen oder eine Rechnung zu stornieren.
+Referenz für benannte Aktionen (``/api/v1/action/{action}``) und Routed Actions
+(``/api/v1/routedaction/{route}/{action}/{id}``):
+:doc:`API-Aktionen <api-aktionen/index>`.
 
-**Endpoint Format:** ``POST /api/v1/_action/{action_name}``
-
-Angebot bestätigen
-~~~~~~~~~~~~~~~~~~~
-
-**Endpoint:** ``POST /api/v1/_action/placeoffer``
-
-**Body:**
-
-.. code-block:: json
-
-    {
-      "id": 1234,
-      "assignOfferNumber": true,
-      "calculatePrices": true
-    }
-
-Parameter
-
-.. list-table::
-  :header-rows: 1
-
-  * - Parameter
-    - Beschreibung
-  * - ``id``
-    - ID des Angebots, das bestätigt werden soll
-  * - ``assignOfferNumber``
-    - Ob eine Angebotsnummer zugewiesen werden soll (Standard: false)
-  * - ``calculatePrices``
-    - Ob die Preise neu berechnet werden sollen (Standard: false)
-
-Auftrag anlegen
-~~~~~~~~~~~~~~~~~~~
-
-**Endpoint:** ``POST /api/v1/_action/placeorder``
-
-**Body:**
-
-.. code-block:: json
-
-    {
-      "id": 1234,
-      "salesChannel": 1234,
-      "sendmails": true,
-      "numberRange": "$123-{year}-ORD-{counter}",
-      "noevents": true
-    }
-
-Parameter
-
-.. list-table::
-  :header-rows: 1
-
-  * - Parameter
-    - Beschreibung
-  * - ``id``
-    - ID des Angebots, das in einen Auftrag umgewandelt werden soll
-  * - ``salesChannel``
-    - ID des Vertriebskanals für den Auftrag (optional)
-  * - ``sendmails``
-    - Ob E-Mails versendet werden sollen (Standard: false)
-  * - ``numberRange``
-    - Nummernkreis für die Auftragsnummer (optional)
-  * - ``noevents``
-    - Ob keine Workflow Events ausgeführt werden sollen (Standard: false)
+- :doc:`Angebote und Aufträge <api-aktionen/angebote-auftraege>`
+- :doc:`Kunden und Kontakte <api-aktionen/kunden>`
+- :doc:`Stammdaten und Lager <api-aktionen/stammdaten-lager>`
+- :doc:`Formulare, Listen und Workflows <api-aktionen/formulare-workflows>`
 
 
 Spezielle Steuerungsfelder
