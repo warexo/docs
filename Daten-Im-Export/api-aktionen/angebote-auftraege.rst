@@ -348,6 +348,202 @@ erfolgreiche Speicherung ist nicht gewährleistet.
 Routed Actions für Aufträge
 ---------------------------
 
+Eigenständigen Auftrag abspalten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``POST /api/v1/routedaction/order/splitseparateorder/{order_id}``
+
+Überträgt ausgewählte Positionen oder Teilmengen in einen eigenständigen Auftrag
+mit neuer Auftragsnummer. Die übertragenen Mengen werden aus dem ursprünglichen
+Auftrag entfernt. Der neue Auftrag verweist auf seinen Ursprungsauftrag.
+
+Pfad- und JSON-Parameter: :ref:`order-split-parameter`.
+Der Aufteilungsmodus ist fest vorgegeben; ``separateOrder`` wird ignoriert.
+Ein Zielmandant über ``client`` ist bei dieser Aktion nicht zulässig.
+
+**Request-Body**
+
+.. code-block:: json
+
+   {
+     "items": [
+       {"id": "{offer_item_id}", "quantity": 2}
+     ],
+     "transferShippingCosts": true,
+     "paymentsSplittingType": 0
+   }
+
+**Response:** ``200 OK``
+
+.. code-block:: json
+
+   {
+     "redirectLocation": {
+       "name": "order_edit",
+       "params": {"entityId": "{new_order_id}"}
+     },
+     "id": "{new_order_id}"
+   }
+
+Teillieferung erstellen
+~~~~~~~~~~~~~~~~~~~~~~~
+
+``POST /api/v1/routedaction/order/createpartialshipping/{order_id}``
+
+Ordnet ausgewählte Positionen oder Teilmengen einer neuen Teillieferung zu.
+Diese bleibt dem Hauptauftrag zugeordnet und erhält dessen Auftragsnummer mit
+fortlaufender Teilnummer. Die Positionen bleiben Bestandteil des Hauptauftrags.
+Der Aufruf erstellt die Teillieferung; er bucht keinen Versand.
+
+Pfad- und JSON-Parameter: :ref:`order-split-parameter`.
+Der Aufteilungsmodus ist fest vorgegeben; ``separateOrder`` wird ignoriert.
+
+**Request-Body**
+
+.. code-block:: json
+
+   {
+     "items": [
+       {"id": "{offer_item_id_1}", "quantity": 2},
+       {"id": "{offer_item_id_2}", "quantity": 1}
+     ]
+   }
+
+**Response:** ``200 OK``
+
+.. code-block:: json
+
+   {
+     "redirectLocation": {
+       "name": "order_edit",
+       "params": {"entityId": "{partial_order_id}"}
+     },
+     "id": "{partial_order_id}"
+   }
+
+Bei Angabe eines gültigen Zielmandanten in ``client`` bleibt die erfolgreiche
+Response leer. Der Zielmandant benötigt eine passende Versandart mit demselben
+Bezeichner oder Titel wie die Versandart des Quellauftrags.
+
+.. _order-split-parameter:
+
+Parameter der Aufteilung
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Die folgenden Parameter gelten für ``splitseparateorder`` und
+``createpartialshipping`` sowie den allgemeinen Endpunkt
+``POST /api/v1/routedaction/order/split/{order_id}``.
+
+**Pfadparameter**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Parameter
+     - Typ
+     - Beschreibung
+   * - ``order_id``
+     - string
+     - ID des Quellauftrags (``Order``). Bei einer Teillieferung wird deren Hauptauftrag aufgeteilt.
+
+**JSON-Parameter**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Parameter
+     - Typ
+     - Pflicht
+     - Standard
+     - Beschreibung
+   * - ``items``
+     - array<object>
+     - Ja
+     - —
+     - Nicht leere Liste der aufzuteilenden Positionen mit ID und Menge.
+   * - ``transferShippingCosts``
+     - boolean
+     - Nein
+     - ``false``
+     - Überträgt bei einem eigenständigen Auftrag die Versandkosten vollständig auf den neuen Auftrag und setzt sie im Quellauftrag auf null. Ohne Wirkung bei Teillieferungen.
+   * - ``paymentsSplittingType``
+     - integer
+     - Nein
+     - ``0``
+     - Verteilung vorhandener Zahlungen bei eigenständigen Aufträgen: ``0`` anteilig nach Auftragswert, ``1`` neuer Auftrag zuerst, ``2`` Quellauftrag zuerst.
+   * - ``client``
+     - string
+     - Nein
+     - —
+     - ID des Zielmandanten (``Client``); nur für Teillieferungen. Ohne Angabe bleibt der Mandant unverändert.
+   * - ``separateOrder``
+     - boolean
+     - Nein
+     - ``false``
+     - Nur bei ``/order/split``: ``true`` erstellt einen eigenständigen Auftrag, ``false`` eine Teillieferung. Die beiden spezialisierten Endpunkte überschreiben diesen Wert.
+
+**Positionsschema (``items[]``)**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Feld
+     - Typ
+     - Pflicht
+     - Beschreibung
+   * - ``id``
+     - string
+     - Ja
+     - ID der Auftragsposition (``OfferItem``) des Quellauftrags.
+   * - ``quantity``
+     - number | string
+     - Ja
+     - Positive Menge, maximal die bestellte Positionsmenge. Dezimalzahlen können als Zahl oder als String mit Punkt oder Komma übergeben werden.
+
+Bei ``quantity`` gleich der Positionsmenge wird die gesamte Position übernommen.
+Bei einer kleineren Menge wird die Position zunächst in die übertragene Menge
+und die Restmenge aufgeteilt.
+
+**Bekannte Einschränkungen**
+
+- Für ``paymentsSplittingType`` sind die numerischen Werte ``0``, ``1`` und ``2``
+  zu verwenden. Die symbolischen Werte ``DISTRIBUTE``, ``SPLITTED_ORDER_FIRST``
+  und ``MAIN_ORDER_FIRST`` werden derzeit nicht korrekt ausgewertet.
+- Die Einzelaufteilung mit ``quantity: "*"`` und die Materialaufteilung über
+  ``materials`` bzw. ``optionMaterials`` sind derzeit fehlerhaft.
+
+**Fachliche Fehler**
+
+Fehlerstatus und Fehlerformat: :doc:`API-Aktionen <index>`.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Bedingung
+     - Fehlermeldung / Verhalten
+   * - ``items`` ist leer
+     - ``Wählen Sie die Bestellpositionen``
+   * - Position nicht gefunden
+     - ``OfferItem with id {id} not found``
+   * - Menge nicht positiv oder nicht numerisch
+     - ``Anzahl muss eine positive Zahl sein``
+   * - Menge größer als die Positionsmenge
+     - ``Anzahl größer als die bestellte Menge``
+   * - Auftrag gehört zu einer Sammelpickliste mit mehreren Aufträgen
+     - ``Bestellungen für die eine Sammelpickliste erstellt wurde, können nicht gesplittet werden``
+   * - Auftrag kommissioniert, aber noch nicht versendet
+     - ``Kommissionierte Bestellungen dürfen nicht gesplittet werden``
+   * - Auftrag storniert
+     - ``Stornierte Bestellungen können nicht gesplittet werden``
+   * - Eigenständiger Auftrag mit Zielmandant
+     - Abweisung; Mandantenwechsel ist nur bei Teillieferungen zulässig.
+   * - Eigenständiger Auftrag mit Rechnungsnummer, eingelöstem Kaufgutschein oder mehreren Zahlungsbedingungen
+     - Abweisung mit der jeweiligen fachlichen Fehlermeldung.
+   * - Zahlungsart für eigenständigen Auftrag nicht unterstützt
+     - Zulässige Zahlungs-Handler: ``invoice``, ``prepayment``, ``paypal``, ``debitnote``, ``nopayment``.
+   * - Teillieferung aus bereits versendeten Positionen
+     - Abweisung mit ``Die Bestellung wurde schon versendet``.
+
 Auftrag stornieren
 ~~~~~~~~~~~~~~~~~~
 
