@@ -544,6 +544,219 @@ Fehlerstatus und Fehlerformat: :doc:`API-Aktionen <index>`.
    * - Teillieferung aus bereits versendeten Positionen
      - Abweisung mit ``Die Bestellung wurde schon versendet``.
 
+Auftragsposition aufteilen
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``POST /api/v1/routedaction/order/splititem/-1``
+
+Teilt eine Auftragsposition in zwei neue Positionen innerhalb desselben Auftrags
+auf: eine Position mit ``quantity`` und eine mit der Restmenge. Die ursprüngliche
+Position wird gelöscht. Die Response enthält die ID der Position mit der
+abgetrennten Menge; die Restposition kann anschließend über den Auftrag
+abgerufen werden. Es wird kein zusätzlicher Auftrag angelegt.
+
+Die Positions-ID wird als ``offerItem`` übergeben. Der Pfadwert ``-1`` bezeichnet
+den ungespeicherten Auftragskontext.
+
+**JSON-Parameter**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Parameter
+     - Typ
+     - Pflicht
+     - Standard
+     - Beschreibung
+   * - ``offerItem``
+     - string
+     - Ja
+     - —
+     - ID der aufzuteilenden Auftragsposition (``OfferItem``).
+   * - ``quantity``
+     - number | string
+     - Ja
+     - —
+     - Abzutrennende Menge; größer als null und kleiner als die Positionsmenge. Numerische Strings benötigen einen Dezimalpunkt; Dezimalkommas werden abgewiesen.
+
+**Request-Body**
+
+.. code-block:: json
+
+   {
+     "offerItem": "{offer_item_id}",
+     "quantity": 2
+   }
+
+**Response:** ``200 OK``
+
+.. code-block:: json
+
+   {
+     "splittedItem": {
+       "id": "{split_offer_item_id}"
+     }
+   }
+
+Die ursprüngliche ``offerItem``-ID ist nach erfolgreicher Aufteilung nicht mehr
+verwendbar. Nachfolgende Positionsaktionen müssen die neuen IDs verwenden.
+
+**Fehler**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Bedingung
+     - Fehlermeldung
+   * - ``offerItem`` fehlt
+     - ``missing offerItem``
+   * - ``quantity`` fehlt
+     - ``Property quantity missing``
+   * - ``quantity`` ist nicht numerisch
+     - ``quantity: expected a numeric value``
+   * - Menge größer oder gleich der Positionsmenge
+     - ``Splitmenge ist zu groß``
+   * - Menge kleiner oder gleich null
+     - ``Splitmenge muss immer positive Zahl sein`` bzw. bei fehlender Splitmenge ``Geben Sie die Splitmenge ein``.
+
+Teilgutschrift für eine Auftragsposition erstellen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``POST /api/v1/routedaction/order/credititem/-1``
+
+Erstellt eine betragsbezogene Teilgutschrift für eine Auftragsposition und
+aktualisiert Rechnung und Gutschrift. Eine automatische Zahlungserstattung
+erfolgt, sofern sie im Mandanten aktiviert ist, ``notrefund`` nicht gesetzt ist
+und ein erstattbarer Betrag vorhanden ist.
+
+Die Positions-ID wird als ``offerItem`` übergeben. Der Pfadwert ``-1`` bezeichnet
+den ungespeicherten Auftragskontext.
+
+**JSON-Parameter**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Parameter
+     - Typ
+     - Pflicht
+     - Standard
+     - Beschreibung
+   * - ``offerItem``
+     - string
+     - Ja
+     - —
+     - ID der Auftragsposition (``OfferItem``).
+   * - ``total``
+     - number | string
+     - Ja
+     - —
+     - Positiver Bruttobetrag der Teilgutschrift in Auftragswährung. Numerische Strings benötigen einen Dezimalpunkt; Dezimalkommas werden abgewiesen.
+   * - ``reference``
+     - string | null
+     - Nein
+     - ``null``
+     - Referenztext, der an den Teilgutschrifttext der Position angehängt wird.
+   * - ``notrefund``
+     - boolean
+     - Nein
+     - ``false``
+     - ``true`` unterdrückt die automatische Zahlungserstattung; die Teilgutschrift wird dennoch erstellt.
+
+**Request-Body**
+
+.. code-block:: json
+
+   {
+     "offerItem": "{offer_item_id}",
+     "total": 10.50,
+     "reference": "Preisnachlass wegen Beschädigung",
+     "notrefund": true
+   }
+
+**Response:** ``200 OK``, leerer Body.
+
+Der Betrag wird zu vorhandenen Teilgutschriften addiert. Ein wiederholter Aufruf
+erstellt eine weitere Teilgutschrift. Auftragsrabatte werden bei der Berechnung
+des Erstattungsbetrags anteilig berücksichtigt.
+
+**Fehler**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Bedingung
+     - Fehlermeldung
+   * - ``offerItem`` fehlt
+     - ``missing offerItem``
+   * - ``total`` fehlt
+     - ``Property total missing``
+   * - ``total`` ist nicht numerisch
+     - ``total: expected a numeric value``
+   * - Betrag kleiner oder gleich null
+     - ``Der Betrag muss positiv sein``
+   * - Betrag übersteigt den Positionswert abzüglich vorhandener Teilgutschriften; Auftrag ohne Auftragsrabatt
+     - ``Der Betrag ist zu hoch``
+   * - Auftrag mit Zahlungsbedingungen ohne Rechnungsnummer
+     - ``Teilgutschrift kann nicht erstellt werden. Die Bestellung hat die Zahlungsbedingungen.``
+
+Steuer einer Auftragsposition erstatten
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``POST /api/v1/routedaction/order/refunditemtax/-1``
+
+Erstattet den Steueranteil einer Auftragsposition unter Berücksichtigung
+vorhandener Teilgutschriften und Auftragsrabatte. Aktualisiert die
+Steuererstattungsbeträge an Position und Auftrag sowie Rechnung und Gutschrift.
+Der Aufruf löst keine direkte Zahlungserstattung aus.
+
+Die Positions-ID wird als ``offerItem`` übergeben. Der Pfadwert ``-1`` bezeichnet
+den ungespeicherten Auftragskontext.
+
+**JSON-Parameter**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Parameter
+     - Typ
+     - Pflicht
+     - Standard
+     - Beschreibung
+   * - ``offerItem``
+     - string
+     - Ja
+     - —
+     - ID der Auftragsposition (``OfferItem``).
+
+**Request-Body**
+
+.. code-block:: json
+
+   {
+     "offerItem": "{offer_item_id}"
+   }
+
+**Response:** ``200 OK``, leerer Body.
+
+**Fehler**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Bedingung
+     - Fehlermeldung
+   * - ``offerItem`` fehlt
+     - ``missing offerItem``
+   * - Position storniert
+     - ``Die Bestellposition wurde schon storniert``
+   * - Steuer bereits erstattet
+     - ``Der Steuer wurde schon erstattet``
+   * - Position steuerfrei
+     - ``Die Bestellposition ist steuerfrei``
+   * - Auftrag mit Zahlungsbedingungen ohne Rechnungsnummer
+     - ``Teilgutschrift kann nicht erstellt werden. Die Bestellung hat die Zahlungsbedingungen.``
+
 Auftrag stornieren
 ~~~~~~~~~~~~~~~~~~
 
