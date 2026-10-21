@@ -1,6 +1,8 @@
 Installation
 ############
 
+.. attention:: Beschränken Sie den Zugriff auf Ihre Installation auf feste, vertrauenswürdige IP-Adressen. Eine Anleitung mit Beispielen für ``web/.htaccess`` finden Sie unter :doc:`zugriff-absichern`.
+
 .. attention:: Bitte achten Sie genau darauf welche Teile von Warexo lesbar im Document Root ihres Servers liegen dürfen, wenn andere Ordner als der web Unterordner über das Internet aufrufbar sind ist das ein extremes Sicherheitsrisiko! Sollten Sie bedenken haben lässt sich Warexo natürlich auch auf einem Server in Ihrem Intranet ablegen.
 
 Die Installation von Warexo sollte durch einen technisch versierten Mitarbeiter erfolgen, bitte beachten Sie `die Systemanforderungen </handbuch/systemvoraussetzungen>`__ bevor Sie mit der Arbeit beginnen. Sollten Sie sich unsicher sein treten Sie mit uns in Kontakt, wir helfen Ihnen gerne bei der Einrichtung. Die Warnungen in dieser Anleitung beziehen sich auf eine Installation auf einen im Internet erreichbaren Server, für Intranet Server empfehlen wir trotzdem unserer Anleitung zu folgen.

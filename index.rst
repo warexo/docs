@@ -6,6 +6,8 @@ Dieses Handbuch stellt den allgemeinen Leitfaden für die Verwendung von Warexo 
 finden oder wenn etwas unklar ist schreiben Sie uns bitte eine E-Mail an hilfe@aggrosoft.de oder erstellen Sie ein
 Support Ticket.
 
+.. attention:: Sichern Sie Ihre Warexo-Installationen durch eine Beschränkung auf feste IP-Adressen ab. Die Anleitung :doc:`Installation/zugriff-absichern` enthält die empfohlenen Regeln für ``web/.htaccess`` und eine weniger sichere Alternative mit Passwortschutz und JSON-Ausnahme.
+
 Verbesserungsvorschläge können gerne auch per `Github <https://www.github.com/warexo/docs>`__ Pull Request erstellt werden.
 
 .. toctree::
