@@ -5,10 +5,11 @@ Warexo per .htaccess absichern
 
 .. attention:: Benötigen Sie Unterstützung bei der Absicherung Ihrer Installation? Wenden Sie sich bitte per Support-Ticket an uns.
 
+.. attention:: Hetzner hat die Sicherheitslücke in PHP 7.4 geschlossen. Wir raten trotzdem dringend, den Zugriff auf Ihre Installation einzuschränken.
+
 Warexo läuft derzeit mit PHP 7.4; ein Versionswechsel ist aktuell nicht möglich.
 Aufgrund der `gemeldeten PHP-Sicherheitslücken <https://watchtowr.com/intelligence/php-cve-2026-109618-faq/>`__
 sollten alle Kunden den Zugriff auf ihre Installation einschränken.
-Die Zugriffssperre reduziert die Angriffsfläche, behebt aber nicht die PHP-Lücke selbst.
 
 Die folgenden Beispiele gelten für Apache 2.4 und gehören in ``web/.htaccess``.
 Ersetzen Sie bisherige Zugriffsfreigaben wie ``Order allow,deny``, ``Allow from All``
@@ -29,11 +30,12 @@ von Büro, VPN, Shopserver und weiteren benötigten Systemen:
 .. code-block:: apache
 
    <RequireAny>
-       Require expr "%{REQUEST_URI} =~ m#^/json(/|$)# || reqenv('REDIRECT_URL') =~ m#^/json(/|$)#"
-       Require expr "%{REQUEST_URI} == '/services/notify_payment_status' || reqenv('REDIRECT_URL') == '/services/notify_payment_status'"
-       # Nur aktivieren, wenn /anonymousgateway* genutzt wird:
-       # Require expr "%{REQUEST_URI} =~ m#^/anonymousgateway# || reqenv('REDIRECT_URL') =~ m#^/anonymousgateway#"
-
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/json#"
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/uploads#"
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/services/notify_payment_status#"
+      # Nur aktivieren, wenn /anonymousgateway* genutzt wird:
+      # Require expr "%{THE_REQUEST} =~ m#^\S+\s/anonymousgateway#"
+      
        # Büro
        Require ip 203.0.113.10
        # Shopserver
@@ -68,11 +70,12 @@ Tragen Sie anschließend in ``web/.htaccess`` ein und passen Sie ``AuthUserFile`
    AuthUserFile "/pfad/zu/warexo/.htpasswd"
 
    <RequireAny>
-       Require expr "%{REQUEST_URI} =~ m#^/json(/|$)# || reqenv('REDIRECT_URL') =~ m#^/json(/|$)#"
-       Require expr "%{REQUEST_URI} == '/services/notify_payment_status' || reqenv('REDIRECT_URL') == '/services/notify_payment_status'"
-       # Nur aktivieren, wenn /anonymousgateway* genutzt wird:
-       # Require expr "%{REQUEST_URI} =~ m#^/anonymousgateway# || reqenv('REDIRECT_URL') =~ m#^/anonymousgateway#"
-
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/json#"
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/uploads#"
+      Require expr "%{THE_REQUEST} =~ m#^\S+\s/services/notify_payment_status#"
+      # Nur aktivieren, wenn /anonymousgateway* genutzt wird:
+      # Require expr "%{THE_REQUEST} =~ m#^\S+\s/anonymousgateway#"
+      
        Require valid-user
    </RequireAny>
 
