@@ -286,7 +286,6 @@ Durchsucht Entitäten mit komplexen Filtern und Bedingungen.
 
     {
       "fields": ["sku", "title", "price", "vendor.title"],
-      "limit": 10,
       "filter": [
         {
           "field": "sku",
@@ -311,23 +310,29 @@ Durchsucht Entitäten mit komplexen Filtern und Bedingungen.
 
 - ``EQ`` - Gleich
 - ``NEQ`` - Ungleich
+- ``NEQORNOTDEFINED`` - Ungleich oder IS NULL
 - ``GR`` - Größer als
 - ``GREQ`` - Größer oder gleich
+- ``GREQORNOTDEFINED`` - Größer gleich oder IS NULL
 - ``LE`` - Kleiner als
 - ``LEQ`` - Kleiner oder gleich
-- ``LEQORNOTDEFINED`` - Kleiner gleich oder nicht definiert
+- ``LEQORNOTDEFINED`` - Kleiner gleich oder IS NULL
 - ``CONTAINS`` - Enthält (Teilstring)
+- ``NOTCONTAINS`` - Enthält nicht (Teilstring)
 - ``STARTSWITH`` - Beginnt mit
+- ``NOTSTARTSWITH`` - Beginnt nicht mit
 - ``ENDSWITH`` - Endet mit
 - ``NOTDEFINED`` - Ist definiert (NOT NULL und != '')
 - ``DEFINED`` - Ist nicht definiert (NULL oder '')
 - ``INCOMMALIST`` - In Liste enthalten (durch Komma getrennt)
 - ``BETWEENINCL`` - Zwischen zwei Werten (inklusiv)
+- ``HASEQELEMENTS`` - Enthält x Elemente (SIZE in Doctrine)
+- ``HASNEQELEMENTS`` - Enthält nicht x Elemente (SIZE in Doctrine)
 
 **Konjunktionen:**
 
 - ``AND`` - UND-Verknüpfung (Standard)
-- ``OR`` - ODER-Verknüpfung
+- ``OR`` - ODER-Verknüpfung (AND/OR werden von links nach rechts verknüpft)
 
 **Relationen durchsuchen:**
 
