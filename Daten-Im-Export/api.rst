@@ -180,7 +180,7 @@ Ruft eine Liste von Entitäten eines bestimmten Typs ab.
 **Query-Parameter:**
 
 - ``fields[]`` (Array, optional): Zu ladende Felder. Kann mehrfach angegeben werden. Standard: alle Felder
-- ``limit`` (Integer, optional): Maximale Anzahl der Ergebnisse (Standard: 10)
+- ``limit`` (Integer, optional): Maximale Anzahl der Ergebnisse (Standard: 100)
 - ``offset`` (Integer, optional): Offset für Paginierung (Standard: 0)
 
 **Request Headers:**
