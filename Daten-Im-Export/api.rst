@@ -311,17 +311,17 @@ Durchsucht Entitäten mit komplexen Filtern und Bedingungen.
 
 - ``EQ`` - Gleich
 - ``NEQ`` - Ungleich
-- ``GT`` - Größer als
+- ``GR`` - Größer als
 - ``GREQ`` - Größer oder gleich
-- ``LT`` - Kleiner als
-- ``LTEQ`` - Kleiner oder gleich
+- ``LE`` - Kleiner als
+- ``LEQ`` - Kleiner oder gleich
+- ``LEQORNOTDEFINED`` - Kleiner gleich oder nicht definiert
 - ``CONTAINS`` - Enthält (Teilstring)
 - ``STARTSWITH`` - Beginnt mit
 - ``ENDSWITH`` - Endet mit
-- ``ISNULL`` - Ist NULL
-- ``ISNOTNULL`` - Ist nicht NULL
-- ``IN`` - In Liste enthalten
-- ``NOTIN`` - Nicht in Liste enthalten
+- ``NOTDEFINED`` - Ist definiert (NOT NULL und != '')
+- ``DEFINED`` - Ist nicht definiert (NULL oder '')
+- ``INCOMMALIST`` - In Liste enthalten (durch Komma getrennt)
 - ``BETWEENINCL`` - Zwischen zwei Werten (inklusiv)
 
 **Konjunktionen:**
