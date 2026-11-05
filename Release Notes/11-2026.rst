@@ -1,0 +1,359 @@
+Oktober/November 2026
+=========================
+
+**Versionen:** 2.1.36 bis 2.1.40
+
+**Stand:** 03.11.2026
+
+Alle Neuerungen und Änderungen seit **Version 2.1.35 (März 2026)**,
+einschließlich der Nachbesserungen bis Version 2.1.40.
+Version 2.1.36 wurde zunächst als Vorschau bereitgestellt.
+
+✨ Neue Funktionen
+---------------------
+
+🧩 Workflow & Automatisierung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Neue Workflow-Aktionen:
+
+  - **Artikelnummer vergeben**
+  - **Aufgabenstatus setzen**
+  - **Gruppierte Teillieferungen erstellen**
+  - **Teillieferungen erstellen (nach den Breite/Höhe/Länge)**
+  - **Artikelpreise in Shop exportieren** nach CSV-Imports
+  - **DPD-Label per E-Mail senden**
+
+- Neue Workflow-Events:
+
+  - **Angebot geöffnet**
+  - **Teillieferung storniert (Hauptauftrag-Storno)**
+  - **Pickprofil-Kommissionierung gestartet**
+  - **WMS-Kommissionierung: Artikelentnahme abgeschlossen**
+  - **GLS-Label erstellt** und **GLS-Label konnte nicht erstellt werden**
+  - **DHL-Label manuell erstellt** und **DHL-Label in Workflows erstellt**
+
+- Workflows für Attribute und Feld **„Aktionsgruppe“** bei Workflow-Events
+- Erweiterte Aktionsparameter:
+
+  - „Warehouse-Id“ bei **Packbox zuweisen**
+  - „Aktion“ bei **Artikel klonen**
+  - „Aktion für Aufgabe“ bei **Aufgabenstatus setzen**
+  - „Nur die Preise exportieren“ beim Hintergrundexport in Vertriebskanäle
+
+📦 WMS & Lager
+^^^^^^^^^^^^^^^^^
+
+- **Pickprofile im WMS** mit eigener Mandantenoption und Berücksichtigung
+  des Bestelldatums
+- Neue WMS-Seite **„Artikel (Umbuchung)“**
+- Neues **Angebotsformular im WMS (Beta)**
+- Erweiterte Formulare und Tabellen:
+
+  - Filter, Sortierung, Aktionsmenüs und Workflow-Aktionen
+  - Dateiuploads, Mehrfachauswahl und Kollektionsfelder
+  - Widgets und WYSIWYG-Editor
+  - Kundenformulare und Widget **„Kunden → Angebote“**
+
+- Artikel erhalten das Feld **„Standard-Lagerplätze“** für das WMS
+- Lagerplatzanzeige in den Positionen von Sammelbuchungen
+- Anzeige zugewiesener Packboxen bei der Artikelentnahme
+- Kommissionierung speichern und Seriennummernänderungen automatisch sichern
+- Lagerplatzoption **„Klärplatz: Aus Kommissionierung ausschließen“**
+- Neue Optionen zur getrennten Reservierung von Klärplatzbeständen und deren
+  Berücksichtigung in Bestellvorschlägen; siehe **Hinweise**
+
+🏷 Artikel & Einkauf
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- Neue Aktionen in der Produktliste:
+
+  - **Kategorie zuweisen** und **Kategorie entfernen**
+  - **Feldwert setzen**
+
+- Schreibgeschützte Einsicht in gelöschte Artikel
+- Feld **„Abwertungsfaktor“** im Artikelwidget „Lager“ und zusätzliche
+  Kennzahlen wie **„Ausbuchungen 30 Tage“**
+- **Meldebestand in Bestellvorschlägen** mit eigener Spalte und Formular
+  **„Meldebestand hochladen“**; der Meldebestand hat Vorrang vor dem Mindestbestand
+- Lieferantenbestellungen:
+
+  - Lieferzeiten pro Bestellposition
+  - Feld **„Zus. Info“**
+  - Mandantenoption **„Erste Lieferantenbestellnummer“** für den Startwert
+    der Nummerierung
+  - Berücksichtigung beim Verbuchen von Lagerbuchungen per CSV
+
+- Feld **„Zus. Info“** bei Warenlagern
+
+🛒 Shop- & Marktplatzanbindungen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Shopware**
+
+- Erweiterte Unterstützung für **digitale Produkte** und Produktmedien
+- Zubehörartikel als **Cross-Selling**
+- **Restwertgutscheine** und erweiterter Gutscheinimport bei Bestellungen
+- Konfigurierbare Produktsichtbarkeit und automatische Deckelung von Staffelpreisen
+- Erweiterter Import von SEPA-Bestelldaten
+- Pluginoption **„Nur versendete Bestellungen importieren“**
+
+**Amazon**
+
+- Unterstützung für den **Verkaufskanal Irland**
+- Meldung von Teillieferungen an Amazon Seller Central
+- Rechnungsupload 30 Minuten nach dem Versand
+- Neue Optionen für **Bewertungsaufforderungen**:
+
+  - Startdatum für den Versand der Aufforderungen
+  - Zeitlicher Abstand zum Versand der Bestellung
+
+- Fulfillment-Felder für zusätzliche Artikelnummern
+- Übernahme der E-Mail-Adresse beim Adressimport
+- Neue Aktionen im Produktdatenabgleich:
+
+  - **Artikel erneut anhängen**
+  - **Angebot im Amazon löschen**
+  - **Reporting: Sofortexport**
+
+**Mirakl**
+
+- Ausbau um **Bestellimport, Bestands- und Versandexport,
+  Rechnungsupload und Erstattungen**
+- Angebote aktivieren und deaktivieren
+- Abweichende Angebots-SKUs
+- Import von Konkurrenzpreisen zur Anzeige im Feld **„Mirakl Preis“**
+
+**eBay**
+
+- Produktdatenabgleich mit Aktion **„Produktdaten importieren“**
+- Fehlerspalte für den Artikelexport
+- Optionen zum Export der minimalen Grundpreismenge von Varianten und zum
+  Ignorieren eines Variantenmerkmalsfehlers bei bestehenden Angeboten
+
+**Kaufland**
+
+- Neue GPSR-Spalten
+
+🚚 Versand & Logistik
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+**FedEx REST API (Beta)**
+
+- Dokumentenupload
+- Frachtkostenberechnung
+- Stornierung von Labels
+
+**DHL & DHL Express**
+
+- Absenderreferenz, Abholdatum und benutzerdefinierte Referenz
+- Zusätzliche Angaben für abweichende Absender und Option **„PDDP“**
+- Erweiterter DHL-Express-Auslandsversand:
+
+  - Incoterm und alternativer Zolltitel für Artikel
+  - Upload von Rechnung und Zollinhaltserklärung
+
+**DPD**
+
+- Gefahrgut und LQ-Versand
+- Shop2Shop, Food und Payment Term
+- Ident Check für Express, Wunschort und abweichende Retourenadresse
+
+**GLS**
+
+- Nachnahme und benutzerdefinierte Referenz
+- Mindestgewicht von 0,1 kg
+
+**Weitere Versandfunktionen**
+
+- Neues **Gefahrgutformular** sowie Felder für Gefahrgutklasse und
+  ADR-Verpackungsart in den erweiterten Artikelinformationen
+- Aktion **„Klonen“** für Versandarten
+
+🧾 Angebote, Aufträge & Retouren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- **Benutzerdefinierte Materialien in Bestellpositionen**
+- Mindest-MHD auch für Set-Artikel in Angeboten und im Bestandswidget
+- Feld **„Kundenbestellnr“** im Angebotsformular
+- Mandantenoption **„Rechnungssperre bei Twig-Bedingung“**
+- Neue Aktionen **„Retoure stornieren“** und **„Rechnungskorrektur stornieren“**
+- Erweiterte Materialretouren und Retouren für Verbindlichkeiten, beispielsweise
+  für einzelne Materialien
+- Abzug von Retourenkosten auch bei Materialretouren
+- MHD-Eingabe bei Retouren, auch bei ursprünglich ohne MHD versendeten Artikeln
+  und bei Set-Artikeln mit einem Material
+- Protokollierung von Aufgaben in der Auftragshistorie
+
+💳 Rechnungen, Zahlungen & Finanzen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**XRechnung & Dokumente**
+
+- **CII-Format** mit Formatauswahl am Kunden
+- Zusätzliche Felder: **Buyer Identifier**, **Supplier/Seller Identifier**
+  und **„Vermerk“** am Kunden
+- Übertragung der Kundenbestellnummer als **BT-13** und der GLN der
+  Lieferadresse im CII-Format
+- Gutschriften und Rechnungskorrekturen:
+
+  - Filter **„Datum von“** und **„Datum bis“**
+  - Download als **ZIP-Datei** oder **Sammeldokument**
+
+**Zahlungsanbieter & Buchhaltung**
+
+- **Stripe:** Erstattungen und Widget „Stripe“ im Auftrag
+- **HBCI:** Unterstützung für CSV-Imports
+- **DocuSign:** Erweiterungen zum Zurückziehen von Dokumenten
+
+🧑‍💼 Kunden & Benutzer
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Neue Benutzergruppe **„Nur WMS“**
+- Felder **„GLN“** und **„Zus. Info 2“** bei Lieferadressen
+- Kundenwidgets mit Angebotsstatus und Spalte **„Erstattet“** bei Aufträgen
+- Extrafelder für Abonnementverträge und Vertriebskanäle
+- Feld **„Ausnahme“** in Objektgruppen
+
+🔌 API & Integrationen
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Warexo API**
+
+- Sortierung über ``sort``, auch nach Feldern verknüpfter Datensätze
+- Neue API-Aktionen:
+
+  - Auftragsstatus setzen: ``setorderstatus``
+  - Wareneingänge anlegen und buchen: ``placedeliverysubmission``,
+    ``bookdeliverysubmission``
+  - Reporting starten: ``startreport``
+  - Hintergrundaufgaben anlegen: ``placetask``
+  - Workflow-Events auslösen: ``raiseworkflowevent``
+
+- Neue Auftragsaktionen für **Auftragsaufteilung, Teillieferungen,
+  Positionsaufteilung, Teilgutschriften, Steuererstattungen und Stornierungen**;
+  Details unter :doc:`/Daten-Im-Export/api-aktionen/angebote-auftraege`
+- Aktionen zum Löschen von Hersteller-Icons und zum Exportieren von Webshop-Artikeln
+- Formulare über die Warexo API speichern, einschließlich zusätzlicher Feldtypen,
+  verknüpfter Datensätze, Kollektionen, Dateiuploads und Tabellenfilter
+
+**Benutzerdefinierte API-Integrationen (Beta)**
+
+- Anbindung eigener Vertriebskanäle
+- Kategorie- und Herstellerimport, Bestellimport, Artikelexport,
+  Bestandsexport und Versandbestätigungen
+- Aktion **„Anhängen“** zur Zuordnung von Artikeln
+
+**CSV-Import**
+
+- Neue Importmöglichkeiten für **DATEV-Buchungen, Produktmedien, Zubehör sowie
+  Verkaufs- und Lagerkonditionen von Artikeln**
+
+**OpenAI / ChatGPT**
+
+- Konfigurierbare verfügbare AI-Modelle und Modellauswahl je Prompt
+- Optionen für abweichende Base-URL, Timeout, maximale Tokenzahl
+  und **„Reasoning Effort“**
+
+🛍 POS & Kommunikation
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- **„Gutscheinbon (Restwert)“** nach der Zahlung und für Gutscheine mit Restwert
+- POS-Option **„Mengenabfrage: ausgeschlossene Mengeneinheiten“**
+- Textbausteine mit **BCC** und **Reply-To**, auch per Twig befüllbar
+- Anzeige von BCC im Mailprotokoll
+- Variable ``order`` in Textbausteinen für das Ticketsystem
+
+🧮 Reporting & Oberfläche
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Neue Tabellenansichten für Formulare, Plugins, EAN-Verwaltung und Extranet-Websites
+- Optionaler **Suchindex für Grids**
+- Dashboard-Auswertungen nach **Shopware-Verkaufskanälen** und Umsatzvergleich
+  mit **„Umsätze 30 Tage im Vorjahr“**
+- Reporting-Bedingung **„Kleiner gleich oder nicht definiert“** und Anzeige
+  **„Letzte Generierung am“**
+
+⚡ Verbesserungen
+--------------------
+
+- **Performance:** Schnellere Tabellensuche, schnellerer Shopware-Bestellimport,
+  verbesserter Produkt-Export bei großen Datenmengen und optimierter DATEV-Export
+- **WMS:** Verbesserte Pickprofile, Artikelentnahme und Lagerbuchungen
+- **Reservierungen:** Übersichtliche Tabellen für Bestell- und
+  Picklistenreservierungen mit Mengen, Bestellnummern, Datum und Status;
+  zusätzliches Lieferland bei offenen Bestellungen
+- **Shopware:** Verbesserte Staffelpreise und Rundung von Dezimalmengen,
+  Import und Export von UVP, Attributen, Varianten und übersetzten Suchwörtern;
+  verbesserter Kundenabgleich, insbesondere ab Shopware 6.7.10
+- **Shopware-Bilder:** Verbesserter Bildimport für Shopware 6.7, Bildexport,
+  Aktualisierung von Alt-Texten und Logging nicht exportierter Attribute
+- **Marktplätze:** Verbesserter Amazon-Multichannel- und Preisexport pro
+  Verkaufskanal, Mirakl-Artikelexport, Kaufland-GPSR-Export sowie
+  Otto-Artikelexport und Markenimport
+- **Finanzen:** Verbesserte Anzeige von PayPal-Sammelzahlungen, CAMT-Import
+  und DocuSign-Anbindung
+- **Dokumente:** Dateinamen im Rechnungsausgangsbuch mit PDF-Rechnungen
+  enthalten zusätzlich den Kundennamen
+- **Formulare:** Längere Werte in Angebotsextrafeldern und verbesserte
+  Optionsgruppen bei Plugins
+- **Auftragshistorie:** Seitennavigation ab 100 Einträgen
+- **Extranet:** SEO-Optimierungen, Produkt-SEO-URL-Formel und Twig-Bedingungen
+  für die Verwendung von Kategorien in Canonical-URLs
+- **Oberfläche:** Cookie-Fenster mit Checkboxen, Strg+Klick zum Öffnen in einem
+  neuen Tab und Ausblenden des OXID-Adminmenüs bei Shopware-Mandanten
+
+🐞 Fehlerbehebungen (Auswahl)
+--------------------------------
+
+**Shopware & Marktplätze**
+
+- Trackingnummern werden auch bei erst im Event „Bestellung versendet“
+  erzeugten Labels korrekt exportiert
+- Korrekturen beim Import stornierter Bestellungen von Amazon und Kaufland
+- Amazon-Zustandstext wird wieder exportiert
+- Korrigierter Versandexport von Otto-Teillieferungen
+
+**Lager & Retouren**
+
+- Korrekturen bei Reservierungen abweichender Materialien und Picklistenreservierungen
+- Verbesserte Verarbeitung von Materialien, Seriennummern und MHD bei der Kommissionierung
+- Korrekturen bei Materialretouren und Teillieferungen nach Artikelabmessungen
+- Korrekturen bei Kundenpreisen und der Vererbung von Lieferantenpreisen
+
+**Versand & Finanzen**
+
+- Korrekturen bei DHL-Retourenlabels, Postfilialen und DHL-Express-Nicht-EU-Lieferungen
+- Weitere Fehlerbehebungen in der FedEx-Anbindung
+- Korrekturen im DATEV-Export sowie bei steuerfreien XRechnungen und CII-Rechnungen
+
+**POS, API & System**
+
+- Korrekturen bei „Kassenbericht prüfen“ und negativen Ausbuchungen vom letzten Lagerplatz
+- Korrigierter Import von E-Mail-Anhängen im Ticketsystem
+- Sicherheitskorrektur bei der **Zwei-Faktor-Authentifizierung (2FA)**
+- Verbesserte Zugriffsrechte in der Produktliste
+- Stabilitätsverbesserungen in Warexo API, Formularen und WMS
+
+🔧 Technisches
+-----------------
+
+- Datenbankoptimierungen und Datenbankupdates in den Versionen 2.1.37 und 2.1.38
+- **WAWIListener 1.57**
+- Hintergrundprozess ``wawi:tasker`` zur schnellen Ausführung von Aufgaben
+- Konfigurationsoption ``picture_name_prefix`` in ``parameters.yml``
+
+⚠️ Hinweise
+---------------
+
+- **Retouren:** Bei Artikeln ohne aktive Lagerverwaltung ist jetzt
+  **„Gutschrift erstellen (keine Lagerbuchung)“** vorausgewählt. Mit der Maßnahme
+  „Ins Lager buchen“ kann die Lagerverwaltung für diese Artikel aktiviert werden.
+- **Klärplatzreservierungen:** Die Mandantenoption **„Bestand auf Klärplätzen
+  getrennt reservieren“** ersetzt „Auf den Lagerplätzen reservierten Bestand
+  ignorieren“. Zusätzlich lässt sich festlegen, dass auf Klärplätzen reservierter
+  Bestand in Bestellvorschlägen nicht berücksichtigt wird.
+- **Produktwidgets:** Die Anordnung wird wieder **pro Widgetgruppe** gespeichert.
+
+Die Anleitung zur Installation des Updates finden Sie unter
+:doc:`/System/systemaktualisierung`.
